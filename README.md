@@ -3,8 +3,8 @@ A correlation of Trump tweets and the stock market.
 
 ## Roles
 
-Chantee
-* Financial API
+* Chantee
+** Financial API & search
 
 Gaura
 * Twitter API & page layout
