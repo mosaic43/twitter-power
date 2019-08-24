@@ -29,9 +29,7 @@ Joey
 * Alpha Vantage https://www.alphavantage.co/
 
 ## CSS Frameworks
-* Quasar https://quasar.dev/
-* Bootstrap 
-* Bulma
+* Bulma https://bulma.io/
 
 ## JS Library
 * Chartist https://gionkunz.github.io/chartist-js/
