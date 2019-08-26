@@ -1,10 +1,18 @@
-document.addEventListener('DOMContentLoaded', function(){
+// document.addEventListener('DOMContentLoaded', function(){
 
-    var urlData;
 
-$.getJSON('https://www.bloomberg.com/bbg-gfx/trump-market-tweets-vs-dow/main.json', function(myresponse){
-    urlData = myresponse
-    console.log(urlData)
-});
-})
+    var bloombergMainUrl;
+
+  
+
+    $.ajax({
+        type: "GET",
+        headers: {"Access-Control-Allow-Origin": "*"},
+        url: 'https://www.bloomberg.com/bbg-gfx/trump-market-tweets-vs-dow/main.json?callback=?'
+        }).done(function (myresponse) {
+            bloombergMainUrl = myresponse
+        });
+
+
+// })
 
