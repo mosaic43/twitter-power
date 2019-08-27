@@ -1,4 +1,4 @@
-var delayInMilliseconds = 100; 
+var delayInMilliseconds = 500; 
 
 setTimeout(function() {
     var chart = new Taucharts.Chart({
