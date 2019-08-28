@@ -7,9 +7,10 @@
     <title>Twitter Power</title>
     <link rel="stylesheet" href="bulma.css">
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="stock-ticker.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
     <!-- REQUIRED TAUCHART CSS -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/taucharts@2/dist/taucharts.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/taucharts@2/dist/taucharts.min.css"> -->
     <!-- END TAUCHART CSS -->
 
 
@@ -32,11 +33,18 @@
     
     <!-- STOCK TICKER  -->
 
-    <section class="hero is-dark has-text-centered">
-        <div class="hero-body" id="stockTicker">
-         <p>STOCK TICKER</p>
+    <section id="stockTicker">
+      <div class="ticker-wrap">
+        <div class="ticker">
+          <div class="ticker__item__up">DOW</div>
+          <div class="ticker__image"><img src="img/happy-trump-face.png" alt="Trump Face"></div>
+          <div class="ticker__value__up">23850</div>
+          <div class="ticker__item__down">NASDAQ</div>
+          <div class="ticker__image"><img src="img/sad-trump-face.png" alt="Sad Trump Face"></div>
+          <div class="ticker__value__down">5525</div>
         </div>
-      </section>
+      </div>
+    </section>
   
     <!-- RENDERED TWEETS  -->
   
@@ -62,11 +70,11 @@
       <script src="bloomberg-api.js"></script>
       <script src="alphavantage.js"></script>
   <!-- REQUIRED TAUCHART SCRIPTS -->
-  <script src="https://cdn.jsdelivr.net/npm/d3@4.13.0/build/d3.min.js" charset="utf-8"></script>
-  <script src="https://cdn.jsdelivr.net/npm/taucharts@2/dist/taucharts.min.js" type="text/javascript"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/d3@4.13.0/build/d3.min.js" charset="utf-8"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/taucharts@2/dist/taucharts.min.js" type="text/javascript"></script> -->
   <!-- END OF TAUCHART SCRIPTS -->
-  <script src="sample-data.js"></script>
-  <script src="chart.js"></script>
+  <!-- <script src="sample-data.js"></script> -->
+  <!-- <script src="chart.js"></script> -->
 
 </body>
 
