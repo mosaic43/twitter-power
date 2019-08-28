@@ -15,9 +15,6 @@
 
 </head>
 <body>
-
-    <!-- NAVBAR  -->
-
     <nav class="navbar is-light">
 
         <div class="navbar-brand">
@@ -29,35 +26,31 @@
             <a href="#" class="navbar-item">About</a>
         </div>
     </nav>
-    
-    <!-- STOCK TICKER  -->
 
-    <section class="hero is-dark has-text-centered">
-        <div class="hero-body" id="stockTicker">
-         <p>STOCK TICKER</p>
+    <section class="hero is-dark is-fullheight-with-navbar has-text-centered">
+        <div class="hero-body">
+          <div class="container">
+              <!-- CHART DIV -->
+              <div style="color: white" id='stocks'></div>
+              <!-- END CHART DIV -->
+          </div>
         </div>
       </section>
   
-    <!-- RENDERED TWEETS  -->
+    <!-- My addin -->
+    <div class="searchArea">
+      <h3>Search for Major Stock Market Events</h3>
+      <input class="input is-rounded" type="text" placeholder="Rounded input">
+      <button class="btn btn-primary input-group-btn" type="submit">Search</button>
+    </div>
+    <section class="searchResults">
+    <div class="container">
+
+    </div>
+    </section>
+      <!-- My addin - end -->
   
-    <section class="hero is-light has-text-centered">
-            <div class="hero-body" id="renderedTweets">
-             <p>RENDERED TWEETS</p>
-            </div>
-          </section>
-
-    <!-- CALENDER  -->
-
-    <section class="hero is-dark has-text-centered">
-            <div class="hero-body" id="calender">
-             <p>CALENDER</p>
-            </div>
-          </section>
-
-
-
-    <!-- JS  -->
-
+  
       <script src="jquery-3.3.1.min.js"></script>
       <script src="bloomberg-api.js"></script>
       <script src="alphavantage.js"></script>
