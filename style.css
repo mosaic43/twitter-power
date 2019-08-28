@@ -2,6 +2,11 @@
     max-height: 64px;
 }
 
+#tweet {
+    max-width: 300px;
+    height: 300px;
+}
+
 #stocks {
     background-color: ivory;
 }
