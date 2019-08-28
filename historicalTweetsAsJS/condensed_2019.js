@@ -1,4 +1,4 @@
-[
+let tweets2019 = [
   {
     "source": "Twitter for iPhone",
     "text": "Just returned to Washington from France and the very successful G-7, only to find that the Fake News is still trying to perpetuate the phony story that I wanted to use Nuclear weapons to blow up hurricanes before they reach shore. This is so ridiculous, never happened!",

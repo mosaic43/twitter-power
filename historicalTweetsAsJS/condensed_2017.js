@@ -1,4 +1,4 @@
-[
+const tweets2017 = [
   {
     "source": "Twitter for iPhone",
     "id_str": "947614110082043904",
