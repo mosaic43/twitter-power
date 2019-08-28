@@ -1,23 +1,15 @@
 let TweetContainer = $('#renderedTweets');
+let datePicker = $('#datePicker');
 
-// console.log(tweets2019);
+// function datePickerFn () {
+//     datePicker.datePicker();
+// }
 
-function changeDateFormat (twitterTimelineArray) {
+// // datePickerFn();
 
-    twitterTimelineArray.map(changeDate)
-
-}
-
-function changeDate (tweetObject) {
-    console.log(parseTwitterDate(tweetObject.created_at))
-}
-
-function parseTwitterDate(aDate)
-{   
-  return new Date(
-    aDate.replace(/^\w+ (\w+) (\d+) ([\d:]+)(\d+)$/,
-        "$1 $2 $4 $3 UTC"));
-  //sample: Wed Mar 13 09:06:07 +0000 2013 
-}
-
-changeDateFormat(tweets2019);
+datePicker.datePicker({
+    onSelect: function() { 
+        var dateObject = datePicker.datepicker('getDate'); 
+        console.log(dateObject);
+    }
+})
