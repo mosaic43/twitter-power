@@ -1,4 +1,4 @@
-[
+const tweets2018 = [
   {
     "source": "Twitter for iPhone",
     "text": "HAPPY NEW YEAR! https://t.co/bHoPDPQ7G6",
@@ -35622,3 +35622,4 @@
     "date": "2018-01-01"
   }
 ]
+
