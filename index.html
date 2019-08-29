@@ -41,48 +41,26 @@
     <!-- RENDERED TWEETS  -->
   
     <section class="hero is-light has-text-centered">
-            <div class="hero-body" id="renderedTweets">
-
+        <div class="hero-body" id="renderedTweets">
+            <!-- DATE PICKER  -->
             <div id="datePickerContainer">
 
-                <p>Date: <input type="date" name="dates" id="datePicker"></p>
+                    <p>Date: <input type="date" name="datePicker" id="datePicker">
 
             </div>
-             <p>RENDERED TWEETS</p>
-             
-             <div class="card" id="tweet">
 
-                <div class="card-content">
+            <br>
 
-                    <div class="media">
-                        <div class="media-left">
-                            <figure class="image is-48x48">
-                                <img src="img/trump-face.png" alt="trump-face">
-                            </figure>    
-                        </div>
-                   
+            <!-- RENDERED TWEETS -->
+            <div id="tweetContainer"class="tile is-ancestor">
 
-                        <div class="media-content">
-
-                            <p class="title is-4">Donald J. Trump</p>
-                            <p class="subtitle is-6">@realDonaldTrump</p>
-
-                        </div>
-
-                    </div>    
-
-                    <div class="content">
-
-                        THIS IS A SAMPLE TWEET
-
-                    </div>
-
-                </div>
-
-             </div>
+               
 
             </div>
-          </section>
+
+        </div>
+
+    </section>
 
     <!-- CALENDER  -->
 
@@ -99,19 +77,20 @@
       <script src="jquery-3.3.1.min.js"></script>
       <script src="bloomberg-api.js"></script>
       <script src="alphavantage.js"></script>
+      <script src="https://kit.fontawesome.com/ff95eb7062.js"></script> <!-- fontawesome-->
   <!-- REQUIRED TAUCHART SCRIPTS -->
-  <script src="https://cdn.jsdelivr.net/npm/d3@4.13.0/build/d3.min.js" charset="utf-8"></script>
-  <script src="https://cdn.jsdelivr.net/npm/taucharts@2/dist/taucharts.min.js" type="text/javascript"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/d3@4.13.0/build/d3.min.js" charset="utf-8"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/taucharts@2/dist/taucharts.min.js" type="text/javascript"></script> -->
   <!-- END OF TAUCHART SCRIPTS -->
   <script src="sample-data.js"></script>
   <script src="chart.js"></script>
-
-  <!-- ONLY FOR DEVELOPMENT//WILL USE JSON ONCE SITE IS DEPLOYED -->
+  <!-- FOR TWEET RENDERING  -->
+  <script src="TWITTER DATE PARSING/moment.js"></script>
   <script src="historicalTweetsAsJS/condensed_2019.js"></script>
-  <!-- END OF DEV JS -->
-  
+  <script src="historicalTweetsAsJS/condensed_2018.js"></script>
+  <script src="historicalTweetsAsJS/condensed_2017.js"></script>
   <script src="tweets.js"></script>
-
+  <!-- END OF TWEET RENDERING  -->
 </body>
 
 
