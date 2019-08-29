@@ -1,7 +1,7 @@
-var today = new Date();
-var dd = today.getDate()-1;
-var mm = today.getMonth()+1; //January is 0!
-var yyyy = today.getFullYear();
+let yesterday = new Date();
+let dd = yesterday.getDate()-1;
+let mm = yesterday.getMonth()+1; //January is 0!
+let yyyy = yesterday.getFullYear();
 
 if(dd<10) {
     dd = '0'+dd
@@ -11,57 +11,95 @@ if(mm<10) {
     mm = '0'+mm
 } 
 
-today = yyyy + '-' + mm + '-' + dd;
-console.log(today);
+yesterday = yyyy + '-' + mm + '-' + dd;
+console.log(yesterday);
 
-function getDow(resolve, reject) {
-    $.getJSON('https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=DJIA&apikey=NOO8RI5C6S41PIKA', function(myresponse){
-        console.log("Dow:")
-        console.log(myresponse["Time Series (Daily)"][today])
-        return myresponse
+
+function fetchDow() {
+    fetch('https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=DJIA&apikey=NOO8RI5C6S41PIKA')    
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function(json) {
+        let dowJSON = json;  
+        let dowOpen = dowJSON["Time Series (Daily)"][yesterday]["1. open"]
+        let dowClose = dowJSON["Time Series (Daily)"][yesterday]["4. close"]      
+        console.log("Dow open:")
+        // console.log(dowJSON["Time Series (Daily)"][yesterday]["1. open"])
+        console.log(dowOpen)
+        console.log("Dow close:")
+        // console.log(dowJSON["Time Series (Daily)"][yesterday]["4. close"])
+        console.log(dowClose)
+        // if (dowJSON["Time Series (Daily)"][yesterday]["1. open"])
+        // let dowHTML = ""
+    })
+    
+}
+
+function fetchSP500() {
+    fetch('https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=SPX&apikey=NOO8RI5C6S41PIKA')    
+    .then(function(response) {
+        return response.json();
+      })
+    .then(function(json) {
+        let SP500JSON = json;        
+        console.log("S&P 500 open:")
+        console.log(SP500JSON["Time Series (Daily)"][yesterday]["1. open"])
+        console.log("S&P 500 close:")
+        console.log(SP500JSON["Time Series (Daily)"][yesterday]["4. close"])
     });
 }
 
-function getSP500(resolve, reject) {
-    $.getJSON('https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=SPX&apikey=NOO8RI5C6S41PIKA', function(myresponse){
-        console.log("S&P 500:")
-        console.log(myresponse["Time Series (Daily)"][today])
-        return myresponse
+function fetchNASDAQ() {
+    fetch('https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=NDAQ&apikey=NOO8RI5C6S41PIKA')    
+    .then(function(response) {
+        return response.json();
+      })
+    .then(function(json) {
+        let NASDAQJSON = json;        
+        console.log("NASDAQ open:")
+        console.log(NASDAQJSON["Time Series (Daily)"][yesterday]["1. open"])
+        console.log("NASDAQ close:")
+        console.log(NASDAQJSON["Time Series (Daily)"][yesterday]["4. close"])
     });
 }
 
-function getNASDAQ(resolve, reject){
-    $.getJSON('https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=COMP&apikey=NOO8RI5C6S41PIKA', function(myresponse){
-        console.log("NASDAQ:")
-        console.log(myresponse["Time Series (Daily)"][today])
-        return myresponse
+function fetchOil() {
+    fetch('https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=OIL&apikey=NOO8RI5C6S41PIKA')    
+    .then(function(response) {
+        return response.json();
+      })
+    .then(function(json) {
+        let OilJSON = json;   
+        console.log("Oil open:")
+        console.log(OilJSON["Time Series (Daily)"][yesterday]["1. open"])
+        console.log("Oil close:")
+        console.log(OilJSON["Time Series (Daily)"][yesterday]["4. close"])
     });
 }
 
-function getOil(resolve, reject) {
-    $.getJSON('https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=CL.1&apikey=NOO8RI5C6S41PIKA', function(myresponse){
-        console.log("Oil:")
-        console.log(myresponse["Time Series (Daily)"][today])
-        return myresponse
-
-    });
-}
-
-function getGold(resolve, reject) {
-    $.getJSON('https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=GC00&apikey=NOO8RI5C6S41PIKA', function(myresponse){
-        console.log("Gold:")
-        console.log(myresponse["Time Series (Daily)"][today])
-        
+function fetchGold() {
+    fetch('https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=GOLD&apikey=NOO8RI5C6S41PIKA')    
+    .then(function(response) {
+        return response.json();
+      })
+    .then(function(json) {
+        let GoldJSON = json;   
+        console.log("Gold open:")
+        console.log(GoldJSON["Time Series (Daily)"][yesterday]["1. open"])
+        console.log("Gold close:")
+        console.log(GoldJSON["Time Series (Daily)"][yesterday]["4. close"])
     });
 }
 
 document.addEventListener('DOMContentLoaded', function(){
 
-    Promise(getDow)
-    .then(getSP500)
-    .then(getNASDAQ)
-    .then(getOil)
-    .then(getGold)
+    fetchDow()
+    fetchSP500()
+    fetchNASDAQ()
+    fetchOil()
+    fetchGold()
 
+    // Promise.all(fetchDow())
 })
 
