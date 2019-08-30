@@ -2,6 +2,21 @@ let tweetContainer = $('#tweetContainer');
 let datePickerEl = $('#datePicker');
 
 datePickerEl.change(findTweets) //listens for a change on the datepicker
+       
+        function checkFetch () {
+        fetch('http://localhost:5000/historicalTweets/condensed_2017.json')
+        .then(function (response) {
+            return response.json()
+        })
+        .then(function (data) {
+             alert(data);
+        })
+        }
+        
+        let tweets2017 = checkFetch();
+
+       
+       
 
 function findTweets (e) {
 
