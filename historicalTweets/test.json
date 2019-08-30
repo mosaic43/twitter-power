@@ -1,0 +1,17 @@
+[
+    {
+        "test": "testing",
+        "double-test": "testTesting"
+      },
+      {
+        "source": "Twitter for iPhone",
+        "id_str": "947592785519173637",
+        "text": "As our Country rapidly grows stronger and smarter, I want to wish all of my friends, supporters, enemies, haters, and even the very dishonest Fake News Media, a Happy and Healthy New Year. 2018 will be a great year for America!",
+        "created_at": "Sun Dec 31 22:18:20 +0000 2017",
+        "retweet_count": 39428,
+        "in_reply_to_user_id_str": null,
+        "favorite_count": 157655,
+        "is_retweet": false,
+        "date": "2017-12-31"
+      }
+]

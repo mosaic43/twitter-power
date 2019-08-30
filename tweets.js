@@ -9,11 +9,19 @@ datePickerEl.change(findTweets) //listens for a change on the datepicker
             return response.json()
         })
         .then(function (data) {
-             alert(data);
+            var tweets2017 = data;
+            console.log('Data has arrived', tweets2017); 
+
+            
+            // var readableData = JSON.parse(data);
+            // console.log('data is parsed', readableData)
+            // return readaa
+             
         })
         }
-        
-        let tweets2017 = checkFetch();
+            checkFetch();
+        // let tweets2017 = checkFetch();
+        // console.log('THis is the variable', tweets2017)
 
        
        
