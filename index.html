@@ -50,10 +50,26 @@
     <!-- RENDERED TWEETS  -->
   
     <section class="hero is-light has-text-centered">
-            <div class="hero-body" id="renderedTweets">
-             <p>RENDERED TWEETS</p>
+        <div class="hero-body" id="renderedTweets">
+            <!-- DATE PICKER  -->
+            <div id="datePickerContainer">
+
+                    <p>Date: <input type="date" name="datePicker" id="datePicker">
+
             </div>
-          </section>
+
+            <br>
+
+            <!-- RENDERED TWEETS -->
+            <div id="tweetContainer"class="tile is-ancestor">
+
+               
+
+            </div>
+
+        </div>
+
+    </section>
 
     <!-- CALENDER  -->
     <div id='calendar'></div>
@@ -64,29 +80,31 @@
           </section> -->
       
     <!-- JS  -->
+  <!--Calendar Scripts-->
+ <link href='fullcalendar/core/main.css' rel='stylesheet' />
+ <link href='fullcalendar/daygrid/main.css' rel='stylesheet' />
+ <script src='fullcalendar/core/main.js'></script>
+ <script src='fullcalendar/daygrid/main.js'></script>
+ <script src='fullcalendar/interaction/main.js'></script>
+  <!--End Calendar Scripts-->
 
       <script src="jquery-3.3.1.min.js"></script>
       <script src="bloomberg-api.js"></script>
       <script src="alphavantage.js"></script>
+      <script src="https://kit.fontawesome.com/ff95eb7062.js"></script> <!-- fontawesome-->
   <!-- REQUIRED TAUCHART SCRIPTS -->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/d3@4.13.0/build/d3.min.js" charset="utf-8"></script>
-  <script src="https://cdn.jsdelivr.net/npm/taucharts@2/dist/taucharts.min.js" type="text/javascript"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/d3@4.13.0/build/d3.min.js" charset="utf-8"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/taucharts@2/dist/taucharts.min.js" type="text/javascript"></script> -->
   <!-- END OF TAUCHART SCRIPTS -->
-  <!-- <script src="sample-data.js"></script>
-  <script src="chart.js"></script> -->
-
-
-
-    <!--Test Script Load-->
-    <link href='fullcalendar/core/main.css' rel='stylesheet' />
-    <link href='fullcalendar/daygrid/main.css' rel='stylesheet' />
-
-    <script src='fullcalendar/core/main.js'></script>
-    <script src='fullcalendar/daygrid/main.js'></script>
-    <script src='fullcalendar/interaction/main.js'></script>
-    <!--End Test Script Load-->
-
-
+  <script src="sample-data.js"></script>
+  <script src="chart.js"></script>
+  <!-- FOR TWEET RENDERING  -->
+  <script src="TWITTER DATE PARSING/moment.js"></script>
+  <script src="historicalTweetsAsJS/condensed_2019.js"></script>
+  <script src="historicalTweetsAsJS/condensed_2018.js"></script>
+  <script src="historicalTweetsAsJS/condensed_2017.js"></script>
+  <script src="tweets.js"></script>
+  <!-- END OF TWEET RENDERING  -->
 </body>
 
 
@@ -94,3 +112,13 @@
 
 
 </html>
+
+
+ <!--Test Script Load-->
+ <!-- <link href='fullcalendar/core/main.css' rel='stylesheet' />
+ <link href='fullcalendar/daygrid/main.css' rel='stylesheet' />
+
+ <script src='fullcalendar/core/main.js'></script>
+ <script src='fullcalendar/daygrid/main.js'></script>
+ <script src='fullcalendar/interaction/main.js'></script> -->
+ <!--End Test Script Load-->
