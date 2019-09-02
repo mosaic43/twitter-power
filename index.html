@@ -24,15 +24,10 @@
 
     <!-- NAVBAR  -->
 
-    <nav class="navbar is-light">
-
+    <nav class="navbar is-dark is-fixed-top">
         <div class="navbar-brand">
             <img class="navbar-item" id="navbar-photo" src="img/trump-face.png" alt="Trump Face">
             <a href="#" class="navbar-item">Twitter-Power</a>
-        </div>
-
-        <div class="navbar-end">
-            <a href="#" class="navbar-item">About</a>
         </div>
     </nav>
     
@@ -40,9 +35,7 @@
 
     <section id="stockTicker">
       <div class="ticker-wrap">
-        <div id="ticker" class="ticker">
-
-        </div>
+        <div id="ticker" class="ticker"></div>
       </div>
     </section>
   
@@ -50,21 +43,16 @@
   
     <section class="hero is-light has-text-centered">
         <div class="hero-body" id="renderedTweets">
-            <!-- DATE PICKER  -->
-            <div id="datePickerContainer">
+          <!-- DATE PICKER  -->
+          <div id="datePickerContainer">
+            <p>Date: <input type="date" name="datePicker" id="datePicker">
+          </div>
 
-                    <p>Date: <input type="date" name="datePicker" id="datePicker">
+          <br>
 
-            </div>
-
-            <br>
-
-            <!-- RENDERED TWEETS -->
-            <div id="tweetContainer"class="tile is-ancestor">
-
-               
-
-            </div>
+          <!-- RENDERED TWEETS -->
+          <div id="tweetContainer" class="tile is-ancestor">
+          </div>
 
         </div>
 
@@ -72,41 +60,39 @@
 
     <!-- CALENDER  -->
     <div id='calendar'></div>
-    <!-- <section class="hero is-dark has-text-centered">
-            <div class="hero-body" id="calender">
-             <p>CALENDER Work In Progress</p>
-            </div>
-          </section> -->
-      
+
     <!-- JS  -->
-  <!--Calendar Scripts-->
- <link href='fullcalendar/core/main.css' rel='stylesheet' />
- <link href='fullcalendar/daygrid/main.css' rel='stylesheet' />
- <script src='fullcalendar/core/main.js'></script>
- <script src='fullcalendar/daygrid/main.js'></script>
- <script src='fullcalendar/interaction/main.js'></script>
-  <!--End Calendar Scripts-->
-      <script src="jquery-3.3.1.min.js"></script>
-      <script src="bloomberg-api.js"></script>
-      <script src="alphavantage.js"></script>
-      <script src="https://kit.fontawesome.com/ff95eb7062.js"></script> <!-- fontawesome-->
-  <!-- REQUIRED TAUCHART SCRIPTS -->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/d3@4.13.0/build/d3.min.js" charset="utf-8"></script> -->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/taucharts@2/dist/taucharts.min.js" type="text/javascript"></script> -->
-  <!-- END OF TAUCHART SCRIPTS -->
 
-  <!-- <script src="sample-data.js"></script> -->
-  <!-- <script src="chart.js"></script> -->
+    <!--Calendar Scripts-->
+    <link href='fullcalendar/core/main.css' rel='stylesheet' />
+    <link href='fullcalendar/daygrid/main.css' rel='stylesheet' />
+    <script src='fullcalendar/core/main.js'></script>
+    <script src='fullcalendar/daygrid/main.js'></script>
+    <script src='fullcalendar/interaction/main.js'></script>
+    <!--End Calendar Scripts-->
 
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="bloomberg-api.js"></script>
+    <script src="alphavantage.js"></script>
+    <script src="https://kit.fontawesome.com/ff95eb7062.js"></script> <!-- fontawesome-->
+    
+    <!-- REQUIRED TAUCHART SCRIPTS -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/d3@4.13.0/build/d3.min.js" charset="utf-8"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/taucharts@2/dist/taucharts.min.js" type="text/javascript"></script> -->
+    <!-- END OF TAUCHART SCRIPTS -->
 
+    <!-- <script src="sample-data.js"></script> -->
+    <!-- <script src="chart.js"></script> -->
 
-  <!-- FOR TWEET RENDERING  -->
-  <script src="TWITTER DATE PARSING/moment.js"></script>
-  <script src="historicalTweetsAsJS/condensed_2019.js"></script>
-  <script src="historicalTweetsAsJS/condensed_2018.js"></script>
-  <script src="historicalTweetsAsJS/condensed_2017.js"></script>
-  <script src="tweets.js"></script>
-  <!-- END OF TWEET RENDERING  -->
+    <!-- FOR TWEET RENDERING  -->
+    <script src="TWITTER DATE PARSING/moment.js"></script>
+    <script src="historicalTweetsAsJS/condensed_2019.js"></script>
+    <script src="historicalTweetsAsJS/condensed_2018.js"></script>
+    <script src="historicalTweetsAsJS/condensed_2017.js"></script>
+    <script src="tweets.js"></script>
+    <!-- END OF TWEET RENDERING  -->
+
+    <script src="historical-stock-data.js"></script>
 
 </body>
 
