@@ -42,6 +42,7 @@
 	background-color: #363636;
 	padding-left: 100%;
 	box-sizing: content-box;
+	z-index: 30;
 }
 
 .ticker-wrap .ticker {
