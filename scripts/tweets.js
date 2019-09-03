@@ -1,57 +1,44 @@
-let tweetContainer = $('#tweetContainer');
-let datePickerEl = $('#datePicker');
+const tweetContainer = $('#tweetContainer')
+const datePickerEl = $('#datePicker')
 
-datePickerEl.change(findTweets) //listens for a change on the datepicker
+datePickerEl.change(findTweets) // listens for a change on the datepicker
 
 function findTweets (e) {
+  const chosenDate = datePickerEl.val()
 
-    let chosenDate = datePickerEl.val(); 
+  tweetContainer.empty() // clears out previous tweets
 
-        tweetContainer.empty(); //clears out previous tweets
-   
-        if (chosenDate.includes("2019")) {
+  if (chosenDate.includes('2019')) {
+    // for 2019
 
-            //for 2019
-            
-            tweets2019.map(function (tweet) {
+    tweets2019.map(function (tweet) {
+      if (tweet.date === chosenDate) {
+        tweetContainer.append(renderTweets(tweet))
+      }
+    })
+  } else if (chosenDate.includes('2018')) {
+    // for 2018
 
-                if (tweet.date === chosenDate) {
-                    tweetContainer.append(renderTweets(tweet));
-                } 
-            })
+    tweets2018.map(function (tweet) {
+      if (tweet.date === chosenDate) {
+        tweetContainer.append(renderTweets(tweet))
+      }
+    })
+  } else if (chosenDate.includes('2017')) {
+    // for 2017
 
-        } else if (chosenDate.includes("2018")) {
-            
-            //for 2018
-
-            tweets2018.map(function (tweet) {
-
-                if (tweet.date === chosenDate) {
-                    tweetContainer.append(renderTweets(tweet));
-                } 
-            })
-
-        } else if (chosenDate.includes("2017")) {
-            
-            //for 2017
-
-            tweets2017.map(function (tweet) {
-
-                if (tweet.date === chosenDate) {
-                    tweetContainer.append(renderTweets(tweet));
-                } 
-            })
-
-        } else {
-            tweetContainer.html("NO TWEETS AVAILABLE")
-        }
-
-
+    tweets2017.map(function (tweet) {
+      if (tweet.date === chosenDate) {
+        tweetContainer.append(renderTweets(tweet))
+      }
+    })
+  } else {
+    tweetContainer.html('NO TWEETS AVAILABLE')
+  }
 }
 
 function renderTweets (tweet) {
-
-    return `
+  return `
     <div class="tile is-4 is-parent">
 
         <div class="tile is-child tweet">
@@ -79,7 +66,4 @@ function renderTweets (tweet) {
             </div>
         </div>
     </div>`
-
-
 }
-
