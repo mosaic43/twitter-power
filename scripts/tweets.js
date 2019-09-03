@@ -1,9 +1,9 @@
 let tweetContainer = $('#tweetContainer');
 let datePickerEl = $('#datePicker');
 
-var tweets2019 = []
-var tweets2018 = []
-var tweets2017 = []
+// var tweets2019 = []
+// var tweets2018 = []
+// var tweets2017 = []
 
 datePickerEl.change(findTweets) //listens for a change on the datepicker
        
@@ -90,31 +90,31 @@ function renderTweets (tweet) {
 
 // PROMISES!!
 
-function fetchTweets2017 () {
-    fetch('http://localhost:5000/historicalTweets/condensed_2017.json')
-    .then(res=>res.clone().json())
-    }
+// function fetchTweets2017 () {
+//     fetch('http://localhost:5000/historicalTweets/condensed_2017.json')
+//     .then(res=>res.clone().json())
+//     }
 
-    function fetchTweets2018 () {
-        fetch('http://localhost:5000/historicalTweets/condensed_2018.json')
-        .then(res=>res.clone().json())
-        }
+//     function fetchTweets2018 () {
+//         fetch('http://localhost:5000/historicalTweets/condensed_2018.json')
+//         .then(res=>res.clone().json())
+//         }
         
-        function fetchTweets2019 () {
-            fetch('http://localhost:5000/historicalTweets/condensed_2019.json')
-            .then(res=>res.clone().json())
-            }
+//         function fetchTweets2019 () {
+//             fetch('http://localhost:5000/historicalTweets/condensed_2019.json')
+//             .then(res=>res.clone().json())
+//             }
 
-Promise.all([fetchTweets2017(), fetchTweets2018(), fetchTweets2019()]).then((resultsArr) => {
+// Promise.all([fetchTweets2017(), fetchTweets2018(), fetchTweets2019()]).then((resultsArr) => {
 
-    tweets2017 = resultsArr[0];
-    tweets2018 = resultsArr[1];
-    tweets2019 = resultsArr[2];
+//     tweets2017 = resultsArr[0];
+//     tweets2018 = resultsArr[1];
+//     tweets2019 = resultsArr[2];
 
-    console.log(resultsArr)
-    console.log('This is 2017', tweets2017)
-    console.log('This is 2018', tweets2018)
-    console.log('This is 2019', tweets2019)
+//     console.log(resultsArr)
+//     console.log('This is 2017', tweets2017)
+//     console.log('This is 2018', tweets2018)
+//     console.log('This is 2019', tweets2019)
 
-})
+// })
             
