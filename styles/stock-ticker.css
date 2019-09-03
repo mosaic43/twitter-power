@@ -1,0 +1,110 @@
+* {
+	box-sizing: border-box;
+}
+
+#stockTicker {
+    height: 64px;
+}
+
+@-webkit-keyframes ticker {
+	0% {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+		visibility: visible;
+	}
+
+	100% {
+		-webkit-transform: translate3d(-100%, 0, 0);
+		transform: translate3d(-100%, 0, 0);
+	}
+}
+
+@keyframes ticker {
+	0% {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+		visibility: visible;
+	}
+
+	100% {
+		-webkit-transform: translate3d(-100%, 0, 0);
+		transform: translate3d(-100%, 0, 0);
+	}
+}
+
+.ticker-wrap {
+	position: fixed;
+    top: 64px;
+    left: 0;
+	width: 100%;
+	overflow: hidden;
+	height: 4rem;
+	background-color: #363636;
+	padding-left: 100%;
+	box-sizing: content-box;
+	z-index: 30;
+}
+
+.ticker-wrap .ticker {
+	display: inline-block;
+	height: 4rem;
+	line-height: 4rem;
+	white-space: nowrap;
+	padding-right: 100%;
+	box-sizing: content-box;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-name: ticker;
+	animation-name: ticker;
+	-webkit-animation-duration: 20s;
+	animation-duration: 20s;
+}
+
+.ticker-wrap .ticker__item__up {
+	display: inline-block;
+	padding: 0 .5rem 0 2rem;
+	font-size: 2rem;
+    color: green;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.ticker-wrap .ticker__value__up {
+	display: inline-block;
+	padding: 0 2rem 0 .5rem;
+	font-size: 2rem;
+    color: green;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.ticker-wrap .ticker__item__down {
+	display: inline-block;
+	padding: 0 .5rem 0 2rem;
+	font-size: 2rem;
+    color: red;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.ticker-wrap .ticker__value__down {
+	display: inline-block;
+	padding: 0 2rem 0 .5rem;
+	font-size: 2rem;
+    color: red;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.ticker-wrap .ticker__image {
+	display: inline-block;
+	padding: .25rem .5rem;
+    height: 44px;
+    width: 44px;
+}
+
+body {
+	padding-bottom: 5rem;
+}
+
+h1, h2, p {
+	padding: 0 5%;
+}
