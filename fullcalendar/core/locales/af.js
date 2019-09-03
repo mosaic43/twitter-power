@@ -18,7 +18,8 @@
             month: "Maand",
             week: "Week",
             day: "Dag",
-            list: "Agenda"
+            list: "Agenda",
+            chooseTicker: "stock",
         },
         allDayHtml: "Heeldag",
         eventLimitText: "Addisionele",

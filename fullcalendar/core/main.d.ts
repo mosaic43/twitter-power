@@ -109,6 +109,7 @@ declare module '@fullcalendar/core/types/input-types' {
         prevYear?: string;
         nextYear?: string;
         today?: string;
+        chooseTicker?: string;
         month?: string;
         week?: string;
         day?: string;
@@ -1179,6 +1180,7 @@ declare module '@fullcalendar/core/Calendar' {
         prevYear(): void;
         nextYear(): void;
         today(): void;
+        chooseTicker(): void;
         gotoDate(zonedDateInput: any): void;
         incrementDate(deltaInput: any): void;
         getDate(): Date;
@@ -2708,6 +2710,7 @@ declare module '@fullcalendar/core/Toolbar' {
         isTodayEnabled: boolean;
         isPrevEnabled: boolean;
         isNextEnabled: boolean;
+        isChooseTicker: boolean;
     }
     export { Toolbar as default, Toolbar };
     class Toolbar extends Component<ToolbarRenderProps> {
@@ -2720,6 +2723,7 @@ declare module '@fullcalendar/core/Toolbar' {
         unrenderLayout(): void;
         renderSection(position: any, buttonStr: any): HTMLElement;
         updateToday(isTodayEnabled: any): void;
+        updateChooseTicker(isChooseTicker: any): void;
         updatePrev(isPrevEnabled: any): void;
         updateNext(isNextEnabled: any): void;
         updateTitle(text: any): void;

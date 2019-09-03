@@ -4476,7 +4476,7 @@ var globalDefaults = {
     header: {
         left: 'title',
         center: '',
-        right: 'today prev,next'
+        right: 'today prev,next,chooseTicker,'
     },
     weekends: true,
     weekNumbers: false,
@@ -4523,7 +4523,7 @@ var globalDefaults = {
 };
 var rtlDefaults = {
     header: {
-        left: 'next,prev today',
+        left: 'next,prev today, chooseTicker',
         center: '',
         right: 'title'
     },
@@ -4587,6 +4587,7 @@ var RAW_EN_LOCALE = {
         nextYear: 'next year',
         year: 'year',
         today: 'today',
+        chooseTicker: 'chooseTicker',
         month: 'month',
         week: 'week',
         day: 'day',
@@ -5984,6 +5985,7 @@ var Toolbar = /** @class */ (function (_super) {
         _this._updateTitle = memoizeRendering(_this.updateTitle, null, [_this._renderLayout]);
         _this._updateActiveButton = memoizeRendering(_this.updateActiveButton, null, [_this._renderLayout]);
         _this._updateToday = memoizeRendering(_this.updateToday, null, [_this._renderLayout]);
+        _this._updateChooseTikcer = memoizeRendering(_this._updateChooseTikcer, null, [_this._renderLayout]);
         _this._updatePrev = memoizeRendering(_this.updatePrev, null, [_this._renderLayout]);
         _this._updateNext = memoizeRendering(_this.updateNext, null, [_this._renderLayout]);
         _this.el = createElement('div', { className: 'fc-toolbar ' + extraClassName });
@@ -5999,6 +6001,7 @@ var Toolbar = /** @class */ (function (_super) {
         this._updateTitle(props.title);
         this._updateActiveButton(props.activeButton);
         this._updateToday(props.isTodayEnabled);
+        this._updateChooseTikcer(props.isChooseTickerEnsbled);
         this._updatePrev(props.isPrevEnabled);
         this._updateNext(props.isNextEnabled);
     };
@@ -6110,6 +6113,9 @@ var Toolbar = /** @class */ (function (_super) {
     Toolbar.prototype.updateToday = function (isTodayEnabled) {
         this.toggleButtonEnabled('today', isTodayEnabled);
     };
+    Toolbar.prototype._updateChooseTikcer = function (isChooseTickerEnabled) {
+        this.toggleButtonEnabled('chooseTicker', isChooseTickerEnabled);
+    };
     Toolbar.prototype.updatePrev = function (isPrevEnabled) {
         this.toggleButtonEnabled('prev', isPrevEnabled);
     };
@@ -6202,12 +6208,14 @@ var CalendarComponent = /** @class */ (function (_super) {
         var footerLayout = this.opt('footer');
         var now = this.calendar.getNow();
         var todayInfo = dateProfileGenerator.build(now);
+        var chooseTicker = dateProfileGenerator.chooseTicker(stock, month);
         var prevInfo = dateProfileGenerator.buildPrev(dateProfile, currentDate);
         var nextInfo = dateProfileGenerator.buildNext(dateProfile, currentDate);
         var toolbarProps = {
             title: title,
             activeButton: viewSpec.type,
             isTodayEnabled: todayInfo.isValid && !rangeContainsMarker(dateProfile.currentRange, now),
+            isChooseTickerEnabled: chooseTicker.isValid,
             isPrevEnabled: prevInfo.isValid,
             isNextEnabled: nextInfo.isValid
         };
@@ -7087,6 +7095,13 @@ var Calendar = /** @class */ (function () {
         });
     };
     Calendar.prototype.today = function () {
+        this.unselect();
+        this.dispatch({
+            type: 'SET_DATE',
+            dateMarker: this.getNow()
+        });
+    };
+    Calendar.prototype.chooseTicker = function () {
         this.unselect();
         this.dispatch({
             type: 'SET_DATE',
