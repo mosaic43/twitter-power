@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var calendarEl = document.getElementById('calendar')
 
   var calendar = new FullCalendar.Calendar(calendarEl, {
-    plugins: ['dayGrid', 'timeGrid', 'list', 'reduceDateProfile', 'reduce', 'Calendar.reduce', 'Calendar.dispatch', 'Calendar.batchRendering', 'Calendar.hydrate', 'new Calendar', 'HTMLDocument.<anonymous>'],
+    plugins: ['dayGrid', 'timeGrid', 'list', 'reduceDateProfile', 'reduce', 'Calendar.reduce', 'Calendar.dispatch', 'Calendar.batchRendering', 'Calendar.hydrate', 'new Calendar', 'HTMLDocument.<anonymous>', 'interaction'],
     header: {
       left: 'prevYear,prev,next,nextYear today',
       center: 'title',
@@ -19,7 +19,10 @@ document.addEventListener('DOMContentLoaded', function () {
         url: 'http://google.com/',
         start: '2019-08-28'
       }
-    ]
+    ],
+    dateClick: function(info) {
+      calendarDateClick = info.dateStr
+    },
   })
   calendar.render()
 })
