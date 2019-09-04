@@ -19,7 +19,7 @@
 
 }
 .box {
-    height: 200px;
+    height: 250px;
 }
 #tweetContent {
 
@@ -40,4 +40,7 @@ body {
   #calendar {
     max-width: 900px;
     margin: 0 auto;
+
   }
+
+  
