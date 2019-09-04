@@ -1,19 +1,30 @@
-let yesterday = new Date()
-let dd = yesterday.getDate() - 1
-let mm = yesterday.getMonth() + 1 // January is 0!
-const yyyy = yesterday.getFullYear()
+var yesterday = moment().subtract(1, "days").format("YYYY-MM-DD");
+// var yesterday = "2019-09-01"
+// console.log(yesterday)
+// console.log(moment(yesterday).format('dddd'))
 
-if (dd < 10) {
-  dd = '0' + dd
+function checkForWeekday () {
+  if (moment(yesterday).format('dddd') === "Sunday") {
+    yesterday = moment(yesterday).subtract(2, "days").format("YYYY-MM-DD")
+    console.log("converting Sunday to Friday")
+    console.log("yesterday was Sunday. Changing date to: " + moment(yesterday).format('dddd') + " " + yesterday)
+    console.log("checking stock for " + moment(yesterday).format('dddd') + " " + yesterday)
+  }
+  else if (moment(yesterday).format('dddd') === "Saturday") {
+    yesterday = moment(yesterday).subtract(1, "days").format("YYYY-MM-DD")
+    console.log("yesterday was Saturday. Changing date to: " + moment(yesterday).format('dddd') + " " + yesterday)
+    console.log("checking stock for " + moment(yesterday).format('dddd') + " " + yesterday)
+  }
+  // this one checks for Labor Day 2019 specifically
+  else if (yesterday === "2019-09-02") {
+    yesterday = moment(yesterday).subtract(3, "days").format("YYYY-MM-DD")
+    console.log("yesterday was Labor Day. Changing date to: " + moment(yesterday).format('dddd') + " " + yesterday)
+    console.log("checking stock for " + moment(yesterday).format('dddd') + " " + yesterday)
+  }
+  else {
+    console.log("checking stock for " + moment(yesterday).format('dddd') + " " + yesterday)
+  }
 }
-
-if (mm < 10) {
-  mm = '0' + mm
-}
-
-// yesterday = yyyy + '-' + mm + '-' + dd;
-yesterday = '2019-08-27'
-console.log(yesterday)
 
 var dowArray = []
 var SP500Array = []
@@ -27,6 +38,9 @@ var fullOilJSON = []
 var fullGoldJSON = []
 
 function fetchDow () {
+
+  checkForWeekday()
+
   return fetch('https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=DJIA&outputsize=full&apikey=NOO8RI5C6S41PIKA')
     .then(function (response) {
       return response.json()
@@ -42,6 +56,9 @@ function fetchDow () {
 }
 
 function fetchSP500 () {
+
+  checkForWeekday()
+
   return fetch('https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=SPX&outputsize=full&apikey=NOO8RI5C6S41PIKA')
     .then(function (response) {
       return response.json()
@@ -57,6 +74,9 @@ function fetchSP500 () {
 }
 
 function fetchNASDAQ () {
+
+  checkForWeekday()
+
   return fetch('https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=NDAQ&outputsize=full&apikey=NOO8RI5C6S41PIKA')
     .then(function (response) {
       return response.json()
@@ -72,6 +92,9 @@ function fetchNASDAQ () {
 }
 
 function fetchOil () {
+
+  checkForWeekday()
+
   return fetch('https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=OIL&outputsize=full&apikey=NOO8RI5C6S41PIKA')
     .then(function (response) {
       return response.json()
@@ -87,6 +110,9 @@ function fetchOil () {
 }
 
 function fetchGold () {
+
+  checkForWeekday()
+
   return fetch('https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=GOLD&outputsize=full&apikey=NOO8RI5C6S41PIKA')
     .then(function (response) {
       return response.json()
@@ -153,11 +179,23 @@ document.addEventListener('DOMContentLoaded', function () {
       checkStockDelta(NASDAQArray)
       checkStockDelta(oilArray)
       checkStockDelta(goldArray)
-      console.log(stockTickerHTML)
-      ticker.innerHTML = stockTickerHTML
+      // console.log(stockTickerHTML)
+      ticker.innerHTML = `<div class="ticker__item__up">${moment(yesterday).format('MMMM Do YYYY')}</div>` + stockTickerHTML
     })
     .catch(function (error) {
-      console.log('error!')
+      console.log('error! Alphavantage API did not return a value! Reverting to historical data.')
       console.log(error)
+      dowArray = [historicalDow['Meta Data']['2. Symbol'], historicalDow['Time Series (Daily)']["2019-08-30"]['1. open'], historicalDow['Time Series (Daily)']["2019-08-30"]['4. close']]
+      SP500Array = [historicalSP500['Meta Data']['2. Symbol'], historicalSP500['Time Series (Daily)']["2019-08-30"]['1. open'], historicalSP500['Time Series (Daily)']["2019-08-30"]['4. close']]
+      NASDAQArray = [historicalNASDAQ['Meta Data']['2. Symbol'], historicalNASDAQ['Time Series (Daily)']["2019-08-30"]['1. open'], historicalNASDAQ['Time Series (Daily)']["2019-08-30"]['4. close']]
+      oilArray = [historicalOil['Meta Data']['2. Symbol'], historicalOil['Time Series (Daily)']["2019-08-30"]['1. open'], historicalOil['Time Series (Daily)']["2019-08-30"]['4. close']]
+      goldArray = [historicalGold['Meta Data']['2. Symbol'], historicalGold['Time Series (Daily)']["2019-08-30"]['1. open'], historicalGold['Time Series (Daily)']["2019-08-30"]['4. close']]
+      checkStockDelta(dowArray)
+      checkStockDelta(SP500Array)
+      checkStockDelta(NASDAQArray)
+      checkStockDelta(oilArray)
+      checkStockDelta(goldArray)
+      // console.log(stockTickerHTML)
+      ticker.innerHTML = `<div class="ticker__item__up">${moment(yesterday).format('MMMM Do YYYY')}</div>` + stockTickerHTML
     })
 })
