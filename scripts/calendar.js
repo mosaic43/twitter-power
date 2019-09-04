@@ -21,9 +21,6 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     ],
 
-    dateClick: function() {
-      alert('a day has been clicked!');
-    },
 // calendar changes for 9-3
 // var calendar = new FullCalendar.Calendar(calendarEl, {
 //   plugins: [ 'dayGrid' ],
