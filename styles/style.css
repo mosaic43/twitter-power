@@ -43,4 +43,25 @@ body {
 
   }
 
+  td {
+      /* background: red; */
+
+  }
   
+  /* td {
+    background-image: url('../img/trump-face.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+ } */
+
+ .trumpPicture {
+     background-image: url('../img/trump-face.png');
+     background-size: contain;
+     background-repeat: no-repeat;
+     background-position: center;
+ }
+
+ .fc-day-number {
+     /* font-size: 30px; */
+ }

@@ -7,17 +7,38 @@
 var eventArray = [] //empty array in which to load tweets
 var calendarEl = document.getElementById('calendar')
 
-//Adds tweets to calendar
-pushTweetEvents(tweets2019);
-pushTweetEvents(tweets2018);
-pushTweetEvents(tweets2017);
-
 //renders Calendar on dom load
 document.addEventListener('DOMContentLoaded', function () {
   
   calendar.render()
+  addTrumpPic()
+  $(".fc-day-number").click(renderTweetsForSpecificDay);
 })
 
+function renderTweetsForSpecificDay () {
+  //should render tweets in fc-day 
+}
+
+function pushTweets () {
+//Adds tweets to calendar
+pushTweetEvents(tweets2019);
+pushTweetEvents(tweets2018);
+pushTweetEvents(tweets2017);
+console.log(eventArray);
+// calendar.render();
+
+}
+
+pushTweets(); //adds tweets to eventArray;
+
+
+
+
+function addTrumpPic () {
+
+  $('.fc-day').addClass('trumpPicture'); //adds trump picture, can use make a css class for good and bad to correlate with closing numbers
+
+}
 //Calendar Object
 var calendar = new FullCalendar.Calendar(calendarEl, {
   plugins: ['dayGrid', 'interaction'],
@@ -32,7 +53,6 @@ var calendar = new FullCalendar.Calendar(calendarEl, {
   eventLimit: true, // allow "more" link when too many events
   events: eventArray,
   dateClick: tweetChecker
-  
 })
 
 
@@ -59,7 +79,8 @@ function pushTweetEvents (tweetArray) {
     if (individualTweet !== tweetArray.length) {
     eventArray.push( {
       title: 'HE TWEEEEETED',
-      start: individualTweet.date
+      start: individualTweet.date,
+      imageurl: '../img/trump-face.png'
     }, ) 
     } else {
       eventArray.push( {
