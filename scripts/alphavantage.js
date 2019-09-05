@@ -4,22 +4,22 @@ function checkForWeekday () {
   if (moment(yesterday).format('dddd') === "Sunday") {
       yesterday = moment(yesterday).subtract(2, "days").format("YYYY-MM-DD")
       // console.log("converting Sunday to Friday")
-      console.log("yesterday was Sunday. Changing date to: " + moment(yesterday).format('dddd') + " " + yesterday)
-      console.log("checking stock for " + moment(yesterday).format('dddd') + " " + yesterday)
+      // console.log("yesterday was Sunday. Changing date to: " + moment(yesterday).format('dddd') + " " + yesterday)
+      // console.log("checking stock for " + moment(yesterday).format('dddd') + " " + yesterday)
   }
   else if (moment(yesterday).format('dddd') === "Saturday") {
       yesterday = moment(yesterday).subtract(1, "days").format("YYYY-MM-DD")
-      console.log("yesterday was Saturday. Changing date to: " + moment(yesterday).format('dddd') + " " + yesterday)
-      console.log("checking stock for " + moment(yesterday).format('dddd') + " " + yesterday)
+      // console.log("yesterday was Saturday. Changing date to: " + moment(yesterday).format('dddd') + " " + yesterday)
+      // console.log("checking stock for " + moment(yesterday).format('dddd') + " " + yesterday)
   }
   // this one checks for Labor Day 2019 specifically
   else if (yesterday === "2019-09-02") {
       yesterday = moment(yesterday).subtract(3, "days").format("YYYY-MM-DD")
-      console.log("yesterday was Labor Day. Changing date to: " + moment(yesterday).format('dddd') + " " + yesterday)
-      console.log("checking stock for " + moment(yesterday).format('dddd') + " " + yesterday)
+      // console.log("yesterday was Labor Day. Changing date to: " + moment(yesterday).format('dddd') + " " + yesterday)
+      // console.log("checking stock for " + moment(yesterday).format('dddd') + " " + yesterday)
   }
   else {
-      console.log("checking stock for " + moment(yesterday).format('dddd') + " " + yesterday)
+      // console.log("checking stock for " + moment(yesterday).format('dddd') + " " + yesterday)
   }
 }
 
@@ -45,9 +45,9 @@ function fetchDow () {
     })
     .then(function (json) {
       fullDowJSON = json
-      console.log('fullDowJSON:')
-      console.log(fullDowJSON)
-      console.log('~~~~~~~~~~')
+      // console.log('fullDowJSON:')
+      // console.log(fullDowJSON)
+      // console.log('~~~~~~~~~~')
       dowArray = [json['Meta Data']['2. Symbol'], json['Time Series (Daily)'][yesterday]['1. open'], json['Time Series (Daily)'][yesterday]['4. close']]
       return dowArray
     })
@@ -63,9 +63,9 @@ function fetchSP500 () {
     })
     .then(function (json) {
       fullSP500JSON = json
-      console.log('fullSP500JSON:')
-      console.log(fullSP500JSON)
-      console.log('~~~~~~~~~~')
+      // console.log('fullSP500JSON:')
+      // console.log(fullSP500JSON)
+      // console.log('~~~~~~~~~~')
       SP500Array = [json['Meta Data']['2. Symbol'], json['Time Series (Daily)'][yesterday]['1. open'], json['Time Series (Daily)'][yesterday]['4. close']]
       return SP500Array
     })
@@ -81,9 +81,9 @@ function fetchNASDAQ () {
     })
     .then(function (json) {
       fullNASDAQJSON = json
-      console.log('fullNASDAQJSON:')
-      console.log(fullNASDAQJSON)
-      console.log('~~~~~~~~~~')
+      // console.log('fullNASDAQJSON:')
+      // console.log(fullNASDAQJSON)
+      // console.log('~~~~~~~~~~')
       NASDAQArray = [json['Meta Data']['2. Symbol'], json['Time Series (Daily)'][yesterday]['1. open'], json['Time Series (Daily)'][yesterday]['4. close']]
       return NASDAQArray
     })
@@ -99,9 +99,9 @@ function fetchOil () {
     })
     .then(function (json) {
       fullOilJSON = json
-      console.log('fullOilJSON:')
-      console.log(fullOilJSON)
-      console.log('~~~~~~~~~~')
+      // console.log('fullOilJSON:')
+      // console.log(fullOilJSON)
+      // console.log('~~~~~~~~~~')
       oilArray = [json['Meta Data']['2. Symbol'], json['Time Series (Daily)'][yesterday]['1. open'], json['Time Series (Daily)'][yesterday]['4. close']]
       return oilArray
     })
@@ -117,9 +117,9 @@ function fetchGold () {
     })
     .then(function (json) {
       fullGoldJSON = json
-      console.log('fullGoldJSON:')
-      console.log(fullGoldJSON)
-      console.log('~~~~~~~~~~')
+      // console.log('fullGoldJSON:')
+      // console.log(fullGoldJSON)
+      // console.log('~~~~~~~~~~')
       goldArray = [json['Meta Data']['2. Symbol'], json['Time Series (Daily)'][yesterday]['1. open'], json['Time Series (Daily)'][yesterday]['4. close']]
       return goldArray
     })
@@ -128,14 +128,14 @@ function fetchGold () {
 var stockTickerHTML = ''
 function checkStockDelta (stockArray) {
 if (stockArray[1] > stockArray[2]) {
-    console.log(stockArray[0] + ' open is higher than close')
+    // console.log(stockArray[0] + ' open is higher than close')
     stockTickerHTML = stockTickerHTML + `
         <div class="ticker__item__down">${stockArray[0]}</div>
         <div class="ticker__image"><img src="img/sad-trump-face.png" alt="Sad Trump Face"></div>
         <div class="ticker__value__down">${stockArray[2]}</div>
         `
 } else {
-    console.log(stockArray[0] + ' close is higher than open')
+    // console.log(stockArray[0] + ' close is higher than open')
     stockTickerHTML = stockTickerHTML + `
         <div class="ticker__item__up">${stockArray[0]}</div>
         <div class="ticker__image"><img src="img/happy-trump-face.png" alt="Happy Trump Face"></div>
@@ -149,28 +149,28 @@ var ticker = document.getElementById('ticker')
 
 Promise.all([fetchDow(), fetchSP500(), fetchNASDAQ(), fetchOil(), fetchGold()])
     .then(function (array) {
-    console.log('all', array)
-    console.info('~~~~~~~~')
+    // console.log('all', array)
+    // console.info('~~~~~~~~')
 
-    console.log('dowArray:')
-    console.log(dowArray)
-    console.info('~~~~~~~~')
+    // console.log('dowArray:')
+    // console.log(dowArray)
+    // console.info('~~~~~~~~')
 
-    console.log('SP500Array:')
-    console.log(SP500Array)
-    console.info('~~~~~~~~')
+    // console.log('SP500Array:')
+    // console.log(SP500Array)
+    // console.info('~~~~~~~~')
 
-    console.log('NASDAQArray:')
-    console.log(NASDAQArray)
-    console.info('~~~~~~~~')
+    // console.log('NASDAQArray:')
+    // console.log(NASDAQArray)
+    // console.info('~~~~~~~~')
 
-    console.log('oilArray:')
-    console.log(oilArray)
-    console.info('~~~~~~~~')
+    // console.log('oilArray:')
+    // console.log(oilArray)
+    // console.info('~~~~~~~~')
 
-    console.log('goldArray:')
-    console.log(goldArray)
-    console.info('~~~~~~~~')
+    // console.log('goldArray:')
+    // console.log(goldArray)
+    // console.info('~~~~~~~~')
 
     checkStockDelta(dowArray)
     checkStockDelta(SP500Array)
@@ -182,7 +182,7 @@ Promise.all([fetchDow(), fetchSP500(), fetchNASDAQ(), fetchOil(), fetchGold()])
     })
     .catch(function (error) {
     yesterday = "2019-08-27"
-    console.log('error! Alphavantage API did not return a value! Reverting to historical data.')
+    // console.log('error! Alphavantage API did not return a value! Reverting to historical data.')
     alert("Error! Either the API failed or the date selected was a holiday. Reverting to stored API data for " + yesterday)
     console.log(error)
     dowArray = [historicalDow['Meta Data']['2. Symbol'], historicalDow['Time Series (Daily)'][yesterday]['1. open'], historicalDow['Time Series (Daily)'][yesterday]['4. close']]
@@ -206,6 +206,7 @@ function changeStockTicker (date) {
     NASDAQArray = [historicalNASDAQ['Meta Data']['2. Symbol'], historicalNASDAQ['Time Series (Daily)'][date]['1. open'], historicalNASDAQ['Time Series (Daily)'][date]['4. close']]
     oilArray = [historicalOil['Meta Data']['2. Symbol'], historicalOil['Time Series (Daily)'][date]['1. open'], historicalOil['Time Series (Daily)'][date]['4. close']]
     goldArray = [historicalGold['Meta Data']['2. Symbol'], historicalGold['Time Series (Daily)'][date]['1. open'], historicalGold['Time Series (Daily)'][date]['4. close']]
+    stockTickerHTML = ""
     checkStockDelta(dowArray)
     checkStockDelta(SP500Array)
     checkStockDelta(NASDAQArray)
