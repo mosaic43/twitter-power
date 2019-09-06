@@ -1,22 +1,22 @@
 
 //document.addEventListener('DOMContentLoaded', function () {
 /////////////////Alphavantage Import////////////////////
-var yesterday = moment().subtract(1, "days").format("YYYY-MM-DD");
+// var yesterday = moment().subtract(1, "days").format("YYYY-MM-DD");
 var keyOne = '95HH1JNCQL22W9NX'
 var keyTwo = 'W9RSPLFTK9VC6IAY'
 var keyThree = '5BFY5U7SB317S6H0'
 var calendarEvents = []
-var dowArray = []
-var SP500Array = []
-var NASDAQArray = []
-var oilArray = []
-var goldArray = []
-var fullDowJSON = []
-var fullSP500JSON = []
-var fullNASDAQJSON = []
-var fullOilJSON = []
-var fullGoldJSON = []
-var calendarDateClick = ""
+// var dowArray = []
+// var SP500Array = []
+// var NASDAQArray = []
+// var oilArray = []
+// var goldArray = []
+// var fullDowJSON = []
+// var fullSP500JSON = []
+// var fullNASDAQJSON = []
+// var fullOilJSON = []
+// var fullGoldJSON = []
+// var calendarDateClick = ""
 var symbolTicker
 var open = "1. open"
 var close = "4. close"
@@ -107,6 +107,9 @@ function fetchOil () {
     .then(function () {
       setCalendar(calendarEvents) 
     })
+    .catch(function() {
+      setCalendar()
+    })
 
 
    
@@ -116,7 +119,7 @@ function setCalendar() {
 
 
   var calendar = new FullCalendar.Calendar(calendarEl, {
-    plugins: ['dayGrid', 'timeGrid', 'list', 'reduceDateProfile', 'reduce', 'Calendar.reduce', 'Calendar.dispatch', 'Calendar.batchRendering', 'Calendar.hydrate', 'new Calendar', 'HTMLDocument.<anonymous>'],
+    plugins: ['dayGrid', 'timeGrid', 'list', 'reduceDateProfile', 'reduce', 'Calendar.reduce', 'Calendar.dispatch', 'Calendar.batchRendering', 'Calendar.hydrate', 'new Calendar', 'HTMLDocument.<anonymous>', 'interaction'],
     header: {
       left: 'prevYear,prev,next,nextYear today',
       center: 'title,addEventButton',

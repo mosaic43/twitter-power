@@ -1,6 +1,7 @@
 var yesterday = moment().subtract(1, "days").format("YYYY-MM-DD");
-
+var firstAPIKey = "NOO8RI5C6S41PIKA"
 function checkForWeekday () {
+  // console.log("running checkForWeekday")
   if (moment(yesterday).format('dddd') === "Sunday") {
       yesterday = moment(yesterday).subtract(2, "days").format("YYYY-MM-DD")
       // console.log("converting Sunday to Friday")
@@ -39,7 +40,7 @@ function fetchDow () {
 
   checkForWeekday()
 
-  return fetch('https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=DJIA&outputsize=full&apikey=NOO8RI5C6S41PIKA')
+  return fetch(`https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=DJIA&outputsize=full&apikey=${firstAPIKey}`)
     .then(function (response) {
       return response.json()
     })
@@ -57,7 +58,7 @@ function fetchSP500 () {
 
   checkForWeekday()
 
-  return fetch('https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=SPX&outputsize=full&apikey=NOO8RI5C6S41PIKA')
+  return fetch(`https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=SPX&outputsize=full&apikey=${firstAPIKey}`)
     .then(function (response) {
       return response.json()
     })
@@ -75,7 +76,7 @@ function fetchNASDAQ () {
 
   checkForWeekday()
 
-  return fetch('https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=NDAQ&outputsize=full&apikey=NOO8RI5C6S41PIKA')
+  return fetch(`https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=NDAQ&outputsize=full&apikey=${firstAPIKey}`)
     .then(function (response) {
       return response.json()
     })
@@ -93,7 +94,7 @@ function fetchOil () {
 
   checkForWeekday()
 
-  return fetch('https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=OIL&outputsize=full&apikey=NOO8RI5C6S41PIKA')
+  return fetch(`https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=OIL&outputsize=full&apikey=${firstAPIKey}`)
     .then(function (response) {
       return response.json()
     })
@@ -111,7 +112,7 @@ function fetchGold () {
 
   checkForWeekday()
 
-  return fetch('https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=GOLD&outputsize=full&apikey=NOO8RI5C6S41PIKA')
+  return fetch(`https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=GOLD&outputsize=full&apikey=${firstAPIKey}`)
     .then(function (response) {
       return response.json()
     })
@@ -182,8 +183,8 @@ Promise.all([fetchDow(), fetchSP500(), fetchNASDAQ(), fetchOil(), fetchGold()])
     })
     .catch(function (error) {
     yesterday = "2019-08-27"
-    // console.log('error! Alphavantage API did not return a value! Reverting to historical data.')
-    alert("Error! Either the API failed or the date selected was a holiday. Reverting to stored API data for " + yesterday)
+    console.log('error! Alphavantage API did not return a value! Reverting to historical data.')
+    // alert("Error! Either the API failed or the date selected was a holiday. Reverting to stored API data for " + yesterday)
     console.log(error)
     dowArray = [historicalDow['Meta Data']['2. Symbol'], historicalDow['Time Series (Daily)'][yesterday]['1. open'], historicalDow['Time Series (Daily)'][yesterday]['4. close']]
     SP500Array = [historicalSP500['Meta Data']['2. Symbol'], historicalSP500['Time Series (Daily)'][yesterday]['1. open'], historicalSP500['Time Series (Daily)'][yesterday]['4. close']]
