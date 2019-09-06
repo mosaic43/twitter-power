@@ -13,6 +13,15 @@ document.addEventListener('DOMContentLoaded', function () {
   calendar.render()
   addTrumpPic()
   $(".fc-day-number").click(renderTweetsForSpecificDay);
+
+  console.log(calendarEl);
+
+  //*************** 
+  // EVENT LISTENER 
+  calendarEl.addEventListener("click", function(e) {
+    console.log(e.target)
+  })
+  //************* */
 })
 
 function renderTweetsForSpecificDay () {
