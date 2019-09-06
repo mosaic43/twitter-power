@@ -16,7 +16,17 @@ document.addEventListener('DOMContentLoaded', function () {
 })
 
 function renderTweetsForSpecificDay () {
-  //should render tweets in fc-day 
+  var selectedDay = $('.fc-today').data('date')
+  console.log("I've been clicked")
+  console.log(selectedDay)
+
+  // console.log(tweets2019.find(selectedDay))
+
+
+
+
+  
+  
 }
 
 function pushTweets () {
@@ -47,12 +57,23 @@ var calendar = new FullCalendar.Calendar(calendarEl, {
     center: 'title',
     right: 'dayGridMonth,dayGridWeek,dayGridDay'
   },
-  defaultDate: '2019-08-12',
   navLinks: true, // can click day/week names to navigate views
-  editable: true,
+  // editable: true,
   eventLimit: true, // allow "more" link when too many events
   events: eventArray,
-  dateClick: tweetChecker
+  dateClick: tweetChecker,
+  dayClick: function(date, jsEvent, view) {
+
+    alert('Clicked on: ' + date.format());
+
+    alert('Coordinates: ' + jsEvent.pageX + ',' + jsEvent.pageY);
+
+    alert('Current view: ' + view.name);
+
+    // change the day's background color just for fun
+    $(this).css('background-color', 'red');
+
+  }
 })
 
 
@@ -78,13 +99,13 @@ function pushTweetEvents (tweetArray) {
   tweetArray.map(individualTweet => {
     if (individualTweet !== tweetArray.length) {
     eventArray.push( {
-      title: 'HE TWEEEEETED',
+      title: individualTweet.text,
       start: individualTweet.date,
       imageurl: '../img/trump-face.png'
     }, ) 
     } else {
       eventArray.push( {
-        title: 'HE TWEEEEETED',
+        title: 'Last Tweet',
         start: individualTweet.date
       } )
     }
