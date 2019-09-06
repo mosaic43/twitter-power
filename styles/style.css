@@ -15,8 +15,10 @@
     flex-wrap: wrap;
     height: 40vh;
     overflow: auto;
-    
 
+}
+.hidden {
+    display: none;
 }
 .box {
     height: 250px;
@@ -40,6 +42,7 @@ body {
   #calendar {
     max-width: 900px;
     margin: 0 auto;
+    padding-top: 50px;
 
   }
 
