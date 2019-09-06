@@ -8,14 +8,9 @@
     <link rel="stylesheet" href="styles/bulma.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/stock-ticker.css">
+    <link href='fullcalendar/core/main.css' rel='stylesheet' />
+    <link href='fullcalendar/daygrid/main.css' rel='stylesheet' />
     <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
-
-    <!-- REQUIRED TAUCHART CSS -->
-    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/taucharts@2/dist/taucharts.min.css"> -->
-    <!-- END TAUCHART CSS -->
-    <!--Start Calendar CSS and JS-->
-    <script src='scripts/calendar.js'></script> 
-
 
 
 </head>
@@ -41,17 +36,11 @@
     <!-- RENDERED TWEETS  -->
   
     <section class="hero is-light has-text-centered">
-        <div class="hero-body" id="renderedTweets">
-          <!-- DATE PICKER  -->
-          <!-- <div id="datePickerContainer">
-            <p>Date: <input type="date" name="datePicker" id="datePicker">
-          </div>
-
-          <br> -->
-
+        <div class="hero-body hidden" id="renderedTweets">
+          
           <!-- RENDERED TWEETS -->
-          <!-- <div id="tweetContainer" class="tile is-ancestor"> -->
-          <div id="tweetContainer">
+
+          <div id="tweetContainer" class="tile is-ancestor">
 
           </div>
           
@@ -64,10 +53,8 @@
     <div id='calendar'></div>
 
     <!-- JS  -->
-
+    <script src="scripts/moment.js"></script>
     <!--Calendar Scripts-->
-    <link href='fullcalendar/core/main.css' rel='stylesheet' />
-    <link href='fullcalendar/daygrid/main.css' rel='stylesheet' />
     <script src='fullcalendar/core/main.js'></script>
     <script src='fullcalendar/daygrid/main.js'></script>
     <script src='fullcalendar/interaction/main.js'></script>
@@ -77,22 +64,17 @@
     <script src="scripts/jquery-3.3.1.min.js"></script>
     <script src="scripts/bloomberg-api.js"></script>
     <script src="scripts/alphavantage.js"></script>
-    <script src="https://kit.fontawesome.com/ff95eb7062.js"></script> <!-- fontawesome-->
+    <script src="https://kit.fontawesome.com/ff95eb7062.js"></script> 
     
-    <!-- REQUIRED TAUCHART SCRIPTS -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/d3@4.13.0/build/d3.min.js" charset="utf-8"></script> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/taucharts@2/dist/taucharts.min.js" type="text/javascript"></script> -->
-    <!-- END OF TAUCHART SCRIPTS -->
-
-    <!-- <script src="data/sample-data.js"></script> -->
-    <!-- <script src="scripts/chart.js"></script> -->
-
     <!-- FOR TWEET RENDERING  -->
     <script src="TWITTER DATE PARSING/moment.js"></script>
     <script src="historicalTweetsAsJS/condensed_2019.js"></script>
     <script src="historicalTweetsAsJS/condensed_2018.js"></script>
     <script src="historicalTweetsAsJS/condensed_2017.js"></script>
     <script src="scripts/tweets.js"></script>
+    <script src="scripts/tweetsCalendar.js"></script>
+    <script src='scripts/calendar.js'></script> 
+
     <!-- END OF TWEET RENDERING  -->
 
     <script src="data/historical-stock-data.js"></script>

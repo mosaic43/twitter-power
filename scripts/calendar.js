@@ -5,7 +5,7 @@
 var keyOne = '95HH1JNCQL22W9NX'
 var keyTwo = 'W9RSPLFTK9VC6IAY'
 var keyThree = '5BFY5U7SB317S6H0'
-var calendarEvents = []
+// var calendarEvents = []
 // var dowArray = []
 // var SP500Array = []
 // var NASDAQArray = []
@@ -26,6 +26,10 @@ var spOil = []
 var spSpx = []
 var spGold = []
 var dowEvent = []
+
+//adding tweet count to events
+
+
 
 //////// Main Function for Creating Event for Calendar////////
 function getEvents(tickerData) {
@@ -119,7 +123,7 @@ function setCalendar() {
 
 
   var calendar = new FullCalendar.Calendar(calendarEl, {
-    plugins: ['dayGrid', 'timeGrid', 'list', 'reduceDateProfile', 'reduce', 'Calendar.reduce', 'Calendar.dispatch', 'Calendar.batchRendering', 'Calendar.hydrate', 'new Calendar', 'HTMLDocument.<anonymous>', 'interaction'],
+    plugins: ['dayGrid', 'interaction'],
     header: {
       left: 'prevYear,prev,next,nextYear today',
       center: 'title,addEventButton',
@@ -130,18 +134,11 @@ function setCalendar() {
     editable: true,
     eventLimit: true, // allow "more" link when too many events
     events: calendarEvents,
+    eventOrder: "-title",
     dateClick: function(info) {
       calendarDateClick = info.dateStr
-    },
-
-  customButtons: {
-    addEventButton: {
-      text: 'add ticker number',
-      click: function() {
-        var dateStr = prompt('test');
-      }
+      findTweets(info.dateStr)
     }
-  }
 });
 
 

@@ -17,8 +17,11 @@
     display: flex;
     justify-content: center;
 }
+.hidden {
+    display: none;
+}
 .box {
-    height: 160px;
+    height: 250px;
 }
 #tweetContent {
 
@@ -39,7 +42,18 @@ body {
   #calendar {
     max-width: 900px;
     margin: 0 auto;
+
+    padding-top: 50px;
   }
+
+ 
+
+ .trumpPicture {
+     background-image: url('../img/trump-face.png');
+     background-size: contain;
+     background-repeat: no-repeat;
+     background-position: center;
+ }
 
   /* New twitter card styles */
 
@@ -90,3 +104,4 @@ body {
 .tweetFooterPadding {
     padding-right: 15px;
 }
+
