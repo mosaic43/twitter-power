@@ -75,7 +75,7 @@ function renderTweets (tweet) {
       <div class="twitterUserHeader">
 
         <div class="twitterProfilePic">
-          <img width="45" src="img/trump-face.png" alt="Trump Face">
+          <img src="img/trump-face.png" alt="Trump Face">
         </div>
 
         <div>
@@ -89,7 +89,7 @@ function renderTweets (tweet) {
       </div>
 
       <div class="tweetFooter">
-        <p><i class="fas fa-retweet"></i> <span class="tweetFooterPadding">${tweet.retweet_count}</span> <i class="far fa-heart"></i> <span class="tweetFooterPadding">${tweet.favorite_count}</span> <i class="far fa-envelope"></i></p>
+        <i class="fas fa-retweet"></i> <span class="tweetFooterPadding">${tweet.retweet_count}</span> <i class="far fa-heart"></i> <span class="tweetFooterPadding">${tweet.favorite_count}</span>
       </div>
     </div>
   `
