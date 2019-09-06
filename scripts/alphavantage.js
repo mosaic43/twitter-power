@@ -183,7 +183,7 @@ Promise.all([fetchDow(), fetchSP500(), fetchNASDAQ(), fetchOil(), fetchGold()])
     .catch(function (error) {
     yesterday = "2019-08-27"
     console.log('error! Alphavantage API did not return a value! Reverting to historical data.')
-    alert("Error! Either the API failed or the date selected was a holiday. Reverting to stored API data for " + yesterday)
+    //alert("Error! Either the API failed or the date selected was a holiday. Reverting to stored API data for " + yesterday)
     console.log(error)
     dowArray = [historicalDow['Meta Data']['2. Symbol'], historicalDow['Time Series (Daily)'][yesterday]['1. open'], historicalDow['Time Series (Daily)'][yesterday]['4. close']]
     SP500Array = [historicalSP500['Meta Data']['2. Symbol'], historicalSP500['Time Series (Daily)'][yesterday]['1. open'], historicalSP500['Time Series (Daily)'][yesterday]['4. close']]
