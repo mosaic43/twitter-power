@@ -15,7 +15,7 @@
     flex-wrap: wrap;
     height: 40vh;
     overflow: auto;
-    
+    display: flex;
 
 }
 .box {
@@ -41,3 +41,42 @@ body {
     max-width: 900px;
     margin: 0 auto;
   }
+
+  /* New twitter card styles */
+
+.tweetCard {
+    display: flex;
+    max-width: 450px;
+    border: 1px solid black;
+    flex-direction: column;
+    margin: 20px;
+    padding: 10px 20px;
+}
+
+.twitterUserHeader {
+    display: flex;
+    text-align:left;
+}
+
+.twitterProfilePic {
+    width: 50px;
+}
+
+.twitterUserName {
+    margin: 0;
+    font-weight: bold;
+}
+
+.twitterHandle {
+    font-size: .75em;
+}
+
+.tweetFooter {
+    font-size: .75em;
+    padding: 2px;
+    height: 25px;
+}
+
+.tweetFooterPadding {
+    padding-right: 15px;
+}
