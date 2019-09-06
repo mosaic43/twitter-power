@@ -42,35 +42,62 @@ function findTweets (e) {
   }
 }
 
-function renderTweets (tweet) {
+// function renderTweets (tweet) {
+//   return `
+//     <div class="tile is-4 is-parent">
+
+//         <div class="tile is-child tweet">
+
+//             <div class="box">
+//                 <article class="media">
+
+//                     <div class="media-left">
+//                         <figure class="image is-64x64">
+//                             <img src="img/trump-face.png" alt="Trump Face">
+//                         </figure>
+//                     </div>
+
+//                     <div class="media-content">
+//                         <div class="content">
+//                             <p>
+//                             <strong>Donald J. Trump</strong> <small>@realDonaldTrump</small> <small>${moment(tweet.created_at).format('h:mm A')}</small>
+//                             <br>
+//                             ${tweet.text}
+//                             </p>
+//                         </div>
+
+//                     </div>
+//                 </article>
+//             </div>
+//         </div>
+//     </div>`
+// }
+
+function renderTweets (tweet) { 
   return `
-    <div class="tile is-4 is-parent">
+    <div class="tweetCard">
 
-        <div class="tile is-child tweet">
+      <div class="twitterUserHeader">
 
-            <div class="box">
-                <article class="media">
-
-                    <div class="media-left">
-                        <figure class="image is-64x64">
-                            <img src="img/trump-face.png" alt="Trump Face">
-                        </figure>
-                    </div>
-
-                    <div class="media-content">
-                        <div class="content">
-                            <p>
-                            <strong>Donald J. Trump</strong> <small>@realDonaldTrump</small> <small>${moment(tweet.created_at).format('h:mm A')}</small>
-                            <br>
-                            ${tweet.text}
-                            </p>
-                        </div>
-
-                    </div>
-                </article>
-            </div>
+        <div class="twitterProfilePic">
+          <img src="img/trump-face.png" alt="Trump Face">
         </div>
-    </div>`
+
+        <div>
+          <p class="twitterUserName">Donald J. Trump <i class="fas fa-user-check"></i> ${moment(tweet.created_at).format('h:mm A')} <span class="twitterHandle">@realDonaldTrump</span></p>
+        </div>
+
+      </div>
+
+      <div class="tweetMessage">
+        <p>${tweet.text}</p>
+      </div>
+
+      <div class="tweetFooter">
+        <i class="fas fa-retweet"></i> <span class="tweetFooterPadding">${tweet.retweet_count}</span> <i class="far fa-heart"></i> <span class="tweetFooterPadding">${tweet.favorite_count}</span>
+      </div>
+    </div>
+  `
 }
 
 // PROMISES!!

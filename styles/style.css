@@ -11,11 +11,11 @@
 }
 
 #tweetContainer {
-
     flex-wrap: wrap;
     height: 40vh;
     overflow: auto;
-
+    display: flex;
+    justify-content: center;
 }
 .hidden {
     display: none;
@@ -42,21 +42,11 @@ body {
   #calendar {
     max-width: 900px;
     margin: 0 auto;
+
     padding-top: 50px;
-
   }
 
-  td {
-      /* background: red; */
-
-  }
-  
-  /* td {
-    background-image: url('../img/trump-face.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-
- } */
+ 
 
  .trumpPicture {
      background-image: url('../img/trump-face.png');
@@ -65,6 +55,53 @@ body {
      background-position: center;
  }
 
- .fc-day-number {
-     /* font-size: 30px; */
- }
+  /* New twitter card styles */
+
+.tweetCard {
+    display: flex;
+    max-width: 450px;
+    border: 1px solid black;
+    flex-direction: column;
+    margin: 20px;
+    padding: 10px 20px;
+    border-radius: 15px 50px 30px;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(192,222,237,.75));
+}
+
+.tweetMessage p {
+    padding-left: 0px;
+}
+
+.twitterUserHeader {
+    display: flex;
+    text-align:left;
+}
+
+.twitterProfilePic {
+    width: 35px;
+}
+
+.twitterUserName {
+    margin: 0;
+    font-weight: bold;
+}
+
+.twitterHandle {
+    font-size: .85em;
+}
+
+.tweetMessage {
+    text-align: justify;
+}
+
+.tweetFooter {
+    font-size: .85em;
+    padding: 2px;
+    height: 25px;
+    text-align: left;
+}
+
+.tweetFooterPadding {
+    padding-right: 15px;
+}
+

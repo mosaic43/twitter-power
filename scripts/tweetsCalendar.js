@@ -10,12 +10,12 @@ var calendarEl = document.getElementById('calendar')
 //renders Calendar on dom load
 document.addEventListener('DOMContentLoaded', function () {
   
-  calendar.render()
+  // calendar.render()
 
 
   calendarEl.addEventListener("click", function(e) {
     var target = $(e.target);
-    console.log(e.target);
+    // console.log(e.target);
 
     if (target.hasClass('fc-day-number')) {
 
@@ -78,21 +78,6 @@ pushTweets(); //adds tweets to eventArray;
 
 
 
-//Calendar Object
-var calendar = new FullCalendar.Calendar(calendarEl, {
-  plugins: ['dayGrid', 'interaction'],
-  header: {
-    left: 'prevYear,prev,next,nextYear today',
-    center: 'title',
-    right: 'dayGridMonth,dayGridWeek,dayGridDay'
-  },
-  navLinks: true, // can click day/week names to navigate views
-  // editable: true,
-  eventLimit: true, // allow "more" link when too many events
-  events: calendarEvents
-  // dateClick: tweetChecker
-})
-
 ///USED TO GET TWEET EVENT COUNT TO SHOW UP
 function pushTweetCount (tweetArray) {
 let tweetCount = 1;
@@ -112,36 +97,21 @@ for(let i=0; i < tweetArray.length; i++) {
 }
 }
 
-function renderTweets (tweet) {
-  return `
-    <div class="tile is-4 is-parent">
 
-        <div class="tile is-child tweet">
-
-            <div class="box">
-                <article class="media">
-
-                    <div class="media-left">
-                        <figure class="image is-64x64">
-                            <img src="img/trump-face.png" alt="Trump Face">
-                        </figure>
-                    </div>
-
-                    <div class="media-content">
-                        <div class="content">
-                            <p>
-                            <strong>Donald J. Trump</strong> <small>@realDonaldTrump</small> <small>${moment(tweet.created_at).format('h:mm A')}</small>
-                            <br>
-                            ${tweet.text}
-                            </p>
-                        </div>
-
-                    </div>
-                </article>
-            </div>
-        </div>
-    </div>`
-}
+//Calendar Object
+// var calendar = new FullCalendar.Calendar(calendarEl, {
+//   plugins: ['dayGrid', 'interaction'],
+//   header: {
+//     left: 'prevYear,prev,next,nextYear today',
+//     center: 'title',
+//     right: 'dayGridMonth,dayGridWeek,dayGridDay'
+//   },
+//   navLinks: true, // can click day/week names to navigate views
+//   // editable: true,
+//   eventLimit: true, // allow "more" link when too many events
+//   events: calendarEvents
+//   // dateClick: tweetChecker
+// })
 
 
 //UNUSED

@@ -18,6 +18,7 @@
     <!--Start Calendar CSS and JS-->
 
 
+
 </head>
 <body>
 
@@ -43,15 +44,18 @@
     <section class="hero is-light has-text-centered">
         <div class="hero-body hidden" id="renderedTweets">
           <!-- DATE PICKER  -->
-          <div id="datePickerContainer">
+          <!-- <div id="datePickerContainer">
             <p>Date: <input type="date" name="datePicker" id="datePicker">
           </div>
 
-          <br>
+          <br> -->
 
           <!-- RENDERED TWEETS -->
-          <div id="tweetContainer" class="tile is-ancestor ">
+          <!-- <div id="tweetContainer" class="tile is-ancestor"> -->
+          <div id="tweetContainer">
+
           </div>
+          
 
         </div>
 
@@ -71,19 +75,10 @@
 
     <script src="scripts/moment.js"></script>
     <script src="scripts/jquery-3.3.1.min.js"></script>
-    <!-- <script src="scripts/bloomberg-api.js"></script>
+    <script src="scripts/bloomberg-api.js"></script>
     <script src="scripts/alphavantage.js"></script>
-    <script src="https://kit.fontawesome.com/ff95eb7062.js"></script> fontawesome -->
+    <script src="https://kit.fontawesome.com/ff95eb7062.js"></script> 
     
-    <!-- REQUIRED TAUCHART SCRIPTS -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/d3@4.13.0/build/d3.min.js" charset="utf-8"></script> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/taucharts@2/dist/taucharts.min.js" type="text/javascript"></script> -->
-    <!-- END OF TAUCHART SCRIPTS -->
-
-    <!-- <script src="data/sample-data.js"></script> -->
-    <!-- <script src="scripts/chart.js"></script> -->
-
-
     <!-- FOR TWEET RENDERING  -->
     <script src="TWITTER DATE PARSING/moment.js"></script>
     <script src="historicalTweetsAsJS/condensed_2019.js"></script>
@@ -91,9 +86,12 @@
     <script src="historicalTweetsAsJS/condensed_2017.js"></script>
     <script src="scripts/tweets.js"></script>
     <script src="scripts/tweetsCalendar.js"></script>
+    <script src='scripts/calendar.js'></script> 
+
     <!-- END OF TWEET RENDERING  -->
 
     <script src="data/historical-stock-data.js"></script>
+
 
 </body>
 </html>
