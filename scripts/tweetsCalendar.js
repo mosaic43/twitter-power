@@ -16,15 +16,14 @@ document.addEventListener('DOMContentLoaded', function () {
   calendarEl.addEventListener("click", function(e) {
     var target = $(e.target);
     // console.log(e.target);
-
+    //renders tweets and stock ticker from number click
     if (target.hasClass('fc-day-number')) {
-
+      console.log('NUMBER CLICKER')
       
       findTweets(target.data('goto').date);
+      changeStockTicker(target.data('goto').date)
 
-    } else if (target.hasClass('fc-day')) {
-      findTweets(target.data('date'))
-    }
+    } 
   })
 })
 

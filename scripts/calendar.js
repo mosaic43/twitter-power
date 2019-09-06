@@ -137,6 +137,7 @@ function setCalendar() {
     eventOrder: "-title",
     dateClick: function(info) {
       calendarDateClick = info.dateStr
+      findTweets(info.dateStr)
     }
 });
 
