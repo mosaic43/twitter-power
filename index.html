@@ -11,6 +11,7 @@
     <link href='fullcalendar/core/main.css' rel='stylesheet' />
     <link href='fullcalendar/daygrid/main.css' rel='stylesheet' />
     <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/Chart.css">
 
 
 </head>
@@ -27,11 +28,11 @@
     
     <!-- STOCK TICKER  -->
 
-    <section id="stockTicker">
+    <!-- <section id="stockTicker">
       <div class="ticker-wrap">
         <div id="ticker" class="ticker"></div>
       </div>
-    </section>
+    </section> -->
   
     <!-- RENDERED TWEETS  -->
   
@@ -49,8 +50,23 @@
 
     </section>
 
+    <section id="chartListener" class="hero is-light has-text-centered">
+      <canvas class="hero-body" id="myChart" width="1600" height="900"></canvas>
+
+      <div id="buttonBox">
+        <button id="2017Button">2017</button>
+        <button id="2018Button">2018</button>
+        <button id="2019Button">2019</button>
+        <button id="2017to2018Button">2017-2018</button>
+        <button id="2018to2019Button">2018-2019</button>
+        <button id="2017to2019Button">2017-2019</button>
+      </div>
+    </section>
+
+
+
     <!-- CALENDER  -->
-    <div id='calendar'></div>
+    <!-- <div id='calendar'></div> -->
 
     <!-- JS  -->
     <script src="scripts/moment.js"></script>
@@ -74,10 +90,12 @@
     <script src="scripts/tweets.js"></script>
     <script src="scripts/tweetsCalendar.js"></script>
     <script src='scripts/calendar.js'></script> 
+    <script src="scripts/Chart.js"></script>
 
     <!-- END OF TWEET RENDERING  -->
 
     <script src="data/historical-stock-data.js"></script>
+    <script src="scripts/chartRender.js"></script>
 
 
 </body>

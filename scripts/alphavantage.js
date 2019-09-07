@@ -46,9 +46,9 @@ function fetchDow () {
     })
     .then(function (json) {
       fullDowJSON = json
-      // console.log('fullDowJSON:')
-      // console.log(fullDowJSON)
-      // console.log('~~~~~~~~~~')
+      console.log('fullDowJSON:')
+      console.log(fullDowJSON)
+      console.log('~~~~~~~~~~')
       dowArray = [json['Meta Data']['2. Symbol'], json['Time Series (Daily)'][yesterday]['1. open'], json['Time Series (Daily)'][yesterday]['4. close']]
       return dowArray
     })
