@@ -1,6 +1,8 @@
 
-var keyOne = '95HH1JNCQL22W9NX'
-var keyTwo = 'W9RSPLFTK9VC6IAY'
+// var keyOne = '95HH1JNCQL22W9NX'
+var keyOne = 'YB6ZT5O0KXPJUC7J'
+// var keyTwo = 'W9RSPLFTK9VC6IAY'
+var keyTwo = 'DGAKEYRA6U8QOI3S'
 var keyThree = '5BFY5U7SB317S6H0'
 //var calendarEvents = []
 var symbolTicker
