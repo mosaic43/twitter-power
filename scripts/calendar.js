@@ -45,9 +45,9 @@ function getEvents(tickerData) {
     var thisClose = stockDates[key][close]
 
     if (thisClose > thisOpen) {
-      colorStock = 'darkgreen'
+      colorStock = 'green'
     } else {
-      colorStock = 'darkred'
+      colorStock = 'red'
     }
   var thisEvent = {title: symbolTicker[0], start: key, color:colorStock}
   calendarEvents.push(thisEvent)
@@ -125,7 +125,7 @@ function setCalendar() {
   var calendar = new FullCalendar.Calendar(calendarEl, {
     plugins: ['dayGrid', 'interaction'],
     header: {
-      left: 'prevYear,prev,next,nextYear today',
+      left: 'prevYear,prev,next,nextYear',
       center: 'title,addEventButton',
       right: 'dayGridMonth,dayGridWeek,dayGridDay'
     },
