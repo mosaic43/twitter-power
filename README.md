@@ -24,8 +24,9 @@ The purpose of this project was to work as a group to incorporate the following:
 ## CSS Framework
 * [Bulma](https://bulma.io/)
 
-## JS Library
-* [chart.js](https://www.chartjs.org/)
+## JS Libraries
+* [Chart.js](https://www.chartjs.org/)
+* [FullCalendar](https://fullcalendar.io/)
 
 ## Deployment
 * [Netlify](https://www.netlify.com/)

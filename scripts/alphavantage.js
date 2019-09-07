@@ -1,5 +1,6 @@
 var yesterday = moment().subtract(1, "days").format("YYYY-MM-DD");
-var firstAPIKey = "NOO8RI5C6S41PIKA"
+// var firstAPIKey = "NOO8RI5C6S41PIKA"
+var firstAPIKey = "UOINNFW5UREJSQU0"
 function checkForWeekday () {
   // console.log("running checkForWeekday")
   if (moment(yesterday).format('dddd') === "Sunday") {
