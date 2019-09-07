@@ -11,6 +11,7 @@
     <link href='fullcalendar/core/main.css' rel='stylesheet' />
     <link href='fullcalendar/daygrid/main.css' rel='stylesheet' />
     <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/Chart.css">
 
 
 </head>
@@ -33,24 +34,43 @@
       </div>
     </section>
   
-    <!-- RENDERED TWEETS  -->
-  
-    <section class="hero is-light has-text-centered">
-        <div class="hero-body hidden" id="renderedTweets">
-          
-          <!-- RENDERED TWEETS -->
+   
 
-          <div id="tweetContainer" class="tile is-ancestor">
+    <section id="chartListener" class="hero is-light has-text-centered">
 
-          </div>
-          
+    <!-- //CHART  -->
+      <canvas class="hero-body" id="myChart" width="1600" height="400"></canvas>
 
-        </div>
-
+      <div id="buttonBox">
+        <button id="2017Button">2017</button>
+        <button id="2018Button">2018</button>
+        <button id="2019Button">2019</button>
+        <button id="2017to2018Button">2017-2018</button>
+        <button id="2018to2019Button">2018-2019</button>
+        <button id="2017to2019Button">2017-2019</button>
+      </div>
     </section>
 
+ <!-- RENDERED TWEETS  -->
+  
+ <section class="hero is-light has-text-centered">
+    <div class="hero-body hidden" id="renderedTweets">
+      
+      <!-- RENDERED TWEETS -->
+
+      <div id="tweetContainer" class="tile is-ancestor">
+
+      </div>
+      
+
+    </div>
+
+</section>
+
     <!-- CALENDER  -->
-    <div id='calendar'></div>
+    <div id='calendar' class="is-light"></div>
+
+    
 
     <!-- JS  -->
     <script src="scripts/moment.js"></script>
@@ -74,10 +94,12 @@
     <script src="scripts/tweets.js"></script>
     <script src="scripts/tweetsCalendar.js"></script>
     <script src='scripts/calendar.js'></script> 
+    <script src="scripts/Chart.js"></script>
 
     <!-- END OF TWEET RENDERING  -->
 
     <script src="data/historical-stock-data.js"></script>
+    <script src="scripts/chartRender.js"></script>
 
 
 </body>

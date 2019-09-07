@@ -20,4 +20,4 @@ function parseTwitterDate(aDate)
     // var formatted = date.toString("MM-dd-yyyy");
     return date;
 }
-JSONcontainer.innerHTML = JSON.stringify(changeDateFormat(tweets2019), null, 4)
+JSONcontainer.innerHTML = JSON.stringify(changeDateFormat(tweets2019Update), null, 4)
