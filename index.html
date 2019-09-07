@@ -28,30 +28,18 @@
     
     <!-- STOCK TICKER  -->
 
-    <!-- <section id="stockTicker">
+    <section id="stockTicker">
       <div class="ticker-wrap">
         <div id="ticker" class="ticker"></div>
       </div>
-    </section> -->
-  
-    <!-- RENDERED TWEETS  -->
-  
-    <section class="hero is-light has-text-centered">
-        <div class="hero-body hidden" id="renderedTweets">
-          
-          <!-- RENDERED TWEETS -->
-
-          <div id="tweetContainer" class="tile is-ancestor">
-
-          </div>
-          
-
-        </div>
-
     </section>
+  
+   
 
     <section id="chartListener" class="hero is-light has-text-centered">
-      <canvas class="hero-body" id="myChart" width="1600" height="900"></canvas>
+
+    <!-- //CHART  -->
+      <canvas class="hero-body" id="myChart" width="1600" height="400"></canvas>
 
       <div id="buttonBox">
         <button id="2017Button">2017</button>
@@ -63,10 +51,26 @@
       </div>
     </section>
 
+ <!-- RENDERED TWEETS  -->
+  
+ <section class="hero is-light has-text-centered">
+    <div class="hero-body hidden" id="renderedTweets">
+      
+      <!-- RENDERED TWEETS -->
 
+      <div id="tweetContainer" class="tile is-ancestor">
+
+      </div>
+      
+
+    </div>
+
+</section>
 
     <!-- CALENDER  -->
-    <!-- <div id='calendar'></div> -->
+    <div id='calendar' class="is-light"></div>
+
+    
 
     <!-- JS  -->
     <script src="scripts/moment.js"></script>

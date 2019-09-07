@@ -441,7 +441,7 @@ function only2017to2019 () {
 
 // Listener for CHART
 
-const chartDiv = $("#chartListener");
+const chartDiv = $("#myChart");
 
 chartDiv.click(function (event) {
     console.log(historicalDowTime2017To2019[event.clientX], event.clientX)
