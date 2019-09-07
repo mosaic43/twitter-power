@@ -2,21 +2,14 @@
 //document.addEventListener('DOMContentLoaded', function () {
 /////////////////Alphavantage Import////////////////////
 // var yesterday = moment().subtract(1, "days").format("YYYY-MM-DD");
-var keyOne = '95HH1JNCQL22W9NX'
-var keyTwo = 'W9RSPLFTK9VC6IAY'
+// var keyOne = '95HH1JNCQL22W9NX'
+// var keyTwo = 'W9RSPLFTK9VC6IAY'
+// var keyThree = '5BFY5U7SB317S6H0'
+var keyOne = 'YB6ZT5O0KXPJUC7J'
+var keyTwo = 'DGAKEYRA6U8QOI3S'
 var keyThree = '5BFY5U7SB317S6H0'
 // var calendarEvents = []
-// var dowArray = []
-// var SP500Array = []
-// var NASDAQArray = []
-// var oilArray = []
-// var goldArray = []
-// var fullDowJSON = []
-// var fullSP500JSON = []
-// var fullNASDAQJSON = []
-// var fullOilJSON = []
-// var fullGoldJSON = []
-// var calendarDateClick = ""
+
 var symbolTicker
 var open = "1. open"
 var close = "4. close"
@@ -129,7 +122,7 @@ function setCalendar() {
       center: 'title,addEventButton',
       right: 'dayGridMonth,dayGridWeek,dayGridDay'
     },
-    defaultDate: '2019-08-12',
+    defaultDate: '2019-09-07',
     navLinks: true, // can click day/week names to navigate views
     editable: true,
     eventLimit: true, // allow "more" link when too many events
