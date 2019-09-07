@@ -1,40 +1,31 @@
-# twitter-power  [![Build Status](https://travis-ci.org/mosaic43/twitter-power.svg?branch=master)](https://travis-ci.org/mosaic43/twitter-power)
+# Rendering Returns  [![Build Status](https://travis-ci.org/mosaic43/twitter-power.svg?branch=master)](https://travis-ci.org/mosaic43/twitter-power)
 A correlation of Trump tweets and the stock market.
 
-## Roles
+## Collaborators
 
-* Chantee
-** Financial API & search
+* [Chantee Smith](https://github.com/mosaic43/)
+* [Gaura Klein](https://github.com/Gauraklein)
+* [Joey Killam](https://github.com/jhkillam)
 
-Gaura
-* Twitter API & page layout
+## Objective
+The purpose of this project was to work as a group to incorporate the following: 
 
-Joey
-* Charts
+* At least one JavaScript library other than jQuery
+* A CSS framework
+* At least two remote APIs
+* Deploy to somewhere other than GitHub Pages
+* Integrate with [Travis CI](https://travis-ci.org/)
+* Code to be split into multiple files / modules
 
-## Name ideas
-* Twitter Power
+## APIs Used
+* [Twitter](https://developer.twitter.com/en/docs)
+* [Alpha Vantage](https://www.alphavantage.co/)
 
-## Feature ideas
-* Search for keywords in tweets
-* Pull random tweet
-* Search for certain stock name/company
-* Find random big price swing up/down, patterns
-* Show comments/share reactions
-* Trump reaction image based on stocks up or down
-* Timeline that shows Trump face to indicate Tweets along a graph of a stock price
-
-## APIs to use
-* Twitter https://developer.twitter.com/en/docs
-* Alpha Vantage https://www.alphavantage.co/
-
-## CSS Frameworks
-* Bulma https://bulma.io/
+## CSS Framework
+* [Bulma](https://bulma.io/)
 
 ## JS Library
-* Chartist https://gionkunz.github.io/chartist-js/
-* TauCharts https://taucharts.com/
+* [chart.js](https://www.chartjs.org/)
 
 ## Deployment
-* Netlify?
-* Amazon? 
+* [Netlify](https://www.netlify.com/)
