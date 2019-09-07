@@ -105,3 +105,16 @@ body {
     padding-right: 15px;
 }
 
+.navbarSiteName {
+	/* display: inline-block; */
+	/* padding: 0 2rem 0 .5rem; */
+	font-size: 1.5rem;
+    color: red;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.is-vertical-center {
+    display: flex;
+    align-items: center;
+  }
+

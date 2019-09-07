@@ -122,7 +122,7 @@ function setCalendar() {
       center: 'title,addEventButton',
       right: 'dayGridMonth,dayGridWeek,dayGridDay'
     },
-    defaultDate: '2019-09-07',
+    defaultDate: '2019-08-21',
     navLinks: true, // can click day/week names to navigate views
     editable: true,
     eventLimit: true, // allow "more" link when too many events
