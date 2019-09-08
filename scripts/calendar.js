@@ -5,9 +5,9 @@
 // var keyOne = '95HH1JNCQL22W9NX'
 // var keyTwo = 'W9RSPLFTK9VC6IAY'
 // var keyThree = '5BFY5U7SB317S6H0'
-var keyOne = 'YB6ZT5O0KXPJUC7J'
-var keyTwo = 'DGAKEYRA6U8QOI3S'
-var keyThree = '5BFY5U7SB317S6H0'
+// var keyOne = 'YB6ZT5O0KXPJUC7J'
+// var keyTwo = 'DGAKEYRA6U8QOI3S'
+// var keyThree = '5BFY5U7SB317S6H0'
 // var calendarEvents = []
 
 var symbolTicker
@@ -30,7 +30,7 @@ function getEvents(tickerData) {
  var symbolTicker = [tickerData['Meta Data']['2. Symbol']]
  var tickerObject = [tickerData['Meta Data']['2. Symbol'], tickerData['Time Series (Daily)']]
  
-  var stockDates = tickerObject[1]
+ var stockDates = tickerObject[1]
 
  var result = Object.keys(stockDates).map(function(key, object) {
     var colorStock = ''     
@@ -42,71 +42,77 @@ function getEvents(tickerData) {
     } else {
       colorStock = 'red'
     }
-  var thisEvent = {title: symbolTicker[0], start: key, color:colorStock}
-  calendarEvents.push(thisEvent)
-})
+    var thisEvent = {title: symbolTicker[0], start: key, color:colorStock}
+    calendarEvents.push(thisEvent)
+  // console.log("got events for " + tickerData)
+  })
 }
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// This code is no longer needed for calling the API, the calendar data is now loaded with a call via API in the alphavantage.js file
 
 ////////////// Function for each Ticker ///////////////
-function fetchNASDAQ () {
-    return fetch(`https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=NDAQ&outputsize=full&apikey=${keyOne}`)
-    .then(function (response) {
-    return  response.json() 
-    })
-    .then(function (json) {
-      getEvents(json) 
-    })
+// function fetchNASDAQ () {
+//     return fetch(`https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=NDAQ&outputsize=full&apikey=${keyOne}`)
+//     .then(function (response) {
+//     return  response.json() 
+//     })
+//     .then(function (json) {
+//       getEvents(json) 
+//     })
 
- }
+//  }
 
- function fetchSP500 () {
-    return fetch(`https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=SPX&outputsize=full&apikey=${keyTwo}`)
-    .then(function (response) {
-    return  response.json() 
-    })
-    .then(function (json) {
-      getEvents(json) 
-    })
-}
+//  function fetchSP500 () {
+//     return fetch(`https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=SPX&outputsize=full&apikey=${keyTwo}`)
+//     .then(function (response) {
+//     return  response.json() 
+//     })
+//     .then(function (json) {
+//       getEvents(json) 
+//     })
+// }
 
-function fetchOil () {
-    return fetch(`https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=OIL&outputsize=full&apikey=${keyThree}`)
-    .then(function (response) {
-    return  response.json() 
-    })
-    .then(function (json) {
-      getEvents(json) 
-    })
-  }
+// function fetchOil () {
+//     return fetch(`https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=OIL&outputsize=full&apikey=${keyThree}`)
+//     .then(function (response) {
+//     return  response.json() 
+//     })
+//     .then(function (json) {
+//       getEvents(json) 
+//     })
+//   }
 
-  function fetchGold () {
-    return fetch(`https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=GOLD&outputsize=full&apikey=${keyOne}`)
-    .then(function (response) {
-    return  response.json() 
-    })
-    .then(function (json) {
-      getEvents(json) 
-    })
-  }
+//   function fetchGold () {
+//     return fetch(`https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=GOLD&outputsize=full&apikey=${keyOne}`)
+//     .then(function (response) {
+//     return  response.json() 
+//     })
+//     .then(function (json) {
+//       getEvents(json) 
+//     })
+//   }
 
-  function fetchDow () {
-    return fetch(`https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=DOW&outputsize=full&apikey=${keyTwo}`)
-    .then(function (response) {
-    return  response.json() 
-    })
-    .then(function (json) {
-      getEvents(json) 
-    })
-  }
+//   function fetchDow () {
+//     return fetch(`https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=DOW&outputsize=full&apikey=${keyTwo}`)
+//     .then(function (response) {
+//     return  response.json() 
+//     })
+//     .then(function (json) {
+//       getEvents(json) 
+//     })
+//   }
 
-  //////Promise which calls all functions//////
-  Promise.all([fetchDow(), fetchSP500(), fetchNASDAQ(), fetchOil(), fetchGold()])
-    .then(function () {
-      setCalendar(calendarEvents) 
-    })
-    .catch(function() {
-      setCalendar()
-    })
+//////Promise which calls all functions//////
+// Promise.all([fetchDow(), fetchSP500(), fetchNASDAQ(), fetchOil(), fetchGold()])
+//   .then(function () {
+//     setCalendar(calendarEvents) 
+//   })
+//   .catch(function() {
+//     setCalendar()
+//   })
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 
    
@@ -122,7 +128,7 @@ function setCalendar() {
       center: 'title,addEventButton',
       right: 'dayGridMonth,dayGridWeek,dayGridDay'
     },
-    defaultDate: '2019-08-21',
+    defaultDate: yesterday,
     navLinks: true, // can click day/week names to navigate views
     editable: true,
     eventLimit: true, // allow "more" link when too many events
@@ -132,10 +138,10 @@ function setCalendar() {
       calendarDateClick = info.dateStr
       findTweets(info.dateStr)
     }
-});
+  });
 
 
-// End calendar changes for 9-3
-calendar.render()
+  // End calendar changes for 9-3
+  calendar.render()
 }
   
