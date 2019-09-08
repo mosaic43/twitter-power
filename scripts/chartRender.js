@@ -342,7 +342,24 @@ var myChart = new Chart(ctx, {
         fill: false
       }
     ]
-  }
+  },
+  options: {
+      responsive: true,
+      maintainAspectRatio: false,
+    // Sloppy function to get value of a point and run it into the tweets function
+    // also resizes the canvas
+    onClick: function (e) {
+        var activePoints = myChart.getElementsAtEvent(e);
+        var selectedIndex = activePoints[0]._index;
+        var chartDate = this.data.labels[selectedIndex]
+        //resizes chart
+        const chartDiv = $("#chartDiv")
+        chartDiv.removeClass('is-full')
+        chartDiv.addClass('is-two-thirds')
+        findTweets(chartDate);
+    }
+    
+}
 });
 
 //CHART UPDATE BUTTONS
@@ -441,11 +458,11 @@ function only2017to2019 () {
 
 // Listener for CHART
 
-const chartDiv = $("#myChart");
+// const chartDiv = $("#myChart");
 
-chartDiv.click(function (event) {
-    console.log(historicalDowTime2017To2019[event.clientX], event.clientX)
-})
+// chartDiv.click(function (event) {
+//     console.log(historicalDowTime2017To2019[event.clientX], event.clientX)
+// })
 
 //creates an object with timestamp: XXX and close: XXXX
 function getCloseDates (stockArray) {

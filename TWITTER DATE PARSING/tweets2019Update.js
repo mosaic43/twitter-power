@@ -1,4 +1,4 @@
-let tweets2019Update = [
+[
   {
     source: "Twitter for iPhone",
     text:
@@ -7,17 +7,19 @@ let tweets2019Update = [
     retweet_count: 2076,
     favorite_count: 7252,
     is_retweet: false,
-    id_str: "1169600039188160512"
+    id_str: "1169600039188160512",
+    date: "2019-09-05"
   },
   {
     source: "Twitter for iPhone",
     text:
-      "Bad “actress” Debra The Mess Messing is in hot water. She wants to create a “Blacklist” of Trump supporters, &amp; is being accused of McCarthyism. Is also being accused of being a Racist because of the terrible things she said about blacks and mental illness. If Roseanne Barr....",
+      "Bad “actress” Debra The Mess Messing is in hot water. She wants to create a “Blacklist” of Trump supporters, & is being accused of McCarthyism. Is also being accused of being a Racist because of the terrible things she said about blacks and mental illness. If Roseanne Barr....",
     created_at: "Thu Sep 05 13:15:53 +0000 2019",
     retweet_count: 2413,
     favorite_count: 8178,
     is_retweet: false,
-    id_str: "1169600037053247488"
+    id_str: "1169600037053247488",
+    date: "2019-09-05"
   },
   {
     source: "Twitter for iPhone",
@@ -27,7 +29,8 @@ let tweets2019Update = [
     retweet_count: 1504,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1169584600055799810"
+    id_str: "1169584600055799810",
+    date: "2019-09-05"
   },
   {
     source: "Twitter for iPhone",
@@ -37,7 +40,8 @@ let tweets2019Update = [
     retweet_count: 1820,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1169584505797189632"
+    id_str: "1169584505797189632",
+    date: "2019-09-05"
   },
   {
     source: "Twitter for iPhone",
@@ -47,7 +51,8 @@ let tweets2019Update = [
     retweet_count: 845,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1169584437899747330"
+    id_str: "1169584437899747330",
+    date: "2019-09-05"
   },
   {
     source: "Twitter for iPhone",
@@ -57,7 +62,8 @@ let tweets2019Update = [
     retweet_count: 2316,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1169582555697426432"
+    id_str: "1169582555697426432",
+    date: "2019-09-05"
   },
   {
     source: "Twitter for iPhone",
@@ -67,17 +73,19 @@ let tweets2019Update = [
     retweet_count: 11666,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1169578377352765440"
+    id_str: "1169578377352765440",
+    date: "2019-09-05"
   },
   {
     source: "Twitter for iPhone",
     text:
-      "In the early days of the hurricane, when it was predicted that Dorian would go through Miami or West Palm Beach, even before it reached the Bahamas, certain models strongly suggested that Alabama &amp; Georgia would be hit as it made its way through Florida &amp; to the Gulf....",
+      "In the early days of the hurricane, when it was predicted that Dorian would go through Miami or West Palm Beach, even before it reached the Bahamas, certain models strongly suggested that Alabama & Georgia would be hit as it made its way through Florida & to the Gulf....",
     created_at: "Thu Sep 05 11:48:56 +0000 2019",
     retweet_count: 4269,
     favorite_count: 20467,
     is_retweet: false,
-    id_str: "1169578155096584192"
+    id_str: "1169578155096584192",
+    date: "2019-09-05"
   },
   {
     source: "Twitter for iPhone",
@@ -87,7 +95,8 @@ let tweets2019Update = [
     retweet_count: 4249,
     favorite_count: 20676,
     is_retweet: false,
-    id_str: "1169578155948072962"
+    id_str: "1169578155948072962",
+    date: "2019-09-05"
   },
   {
     source: "Twitter for iPhone",
@@ -97,7 +106,8 @@ let tweets2019Update = [
     retweet_count: 2432,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1169571407816253441"
+    id_str: "1169571407816253441",
+    date: "2019-09-05"
   },
   {
     source: "Twitter for iPhone",
@@ -106,7 +116,8 @@ let tweets2019Update = [
     retweet_count: 8503,
     favorite_count: 31467,
     is_retweet: false,
-    id_str: "1169459039132102657"
+    id_str: "1169459039132102657",
+    date: "2019-09-04"
   },
   {
     source: "Twitter for iPhone",
@@ -116,17 +127,19 @@ let tweets2019Update = [
     retweet_count: 14944,
     favorite_count: 52460,
     is_retweet: false,
-    id_str: "1169455923712221185"
+    id_str: "1169455923712221185",
+    date: "2019-09-04"
   },
   {
     source: "Twitter for iPhone",
     text:
-      "RT @NHC_Atlantic: 7 pm Tropical Cyclone Update:  #Dorian lashing the Georgia and South Carolina Coast. The next intermediate advisory will…",
+      "RT @NHC_Atlantic: 7 pm Tropical Cyclone Update: #Dorian lashing the Georgia and South Carolina Coast. The next intermediate advisory will…",
     created_at: "Thu Sep 05 03:08:30 +0000 2019",
     retweet_count: 1933,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1169447181872521218"
+    id_str: "1169447181872521218",
+    date: "2019-09-04"
   },
   {
     source: "Twitter for iPhone",
@@ -135,17 +148,19 @@ let tweets2019Update = [
     retweet_count: 9163,
     favorite_count: 26547,
     is_retweet: false,
-    id_str: "1169415182029901824"
+    id_str: "1169415182029901824",
+    date: "2019-09-04"
   },
   {
     source: "Twitter for iPhone",
     text:
-      "“Absolutely nothing is more important than going back &amp; getting to the bottom of the origins of the investigation. We had an administration using America’s Spying Apparatus to spy on a political opponent at the height of a presidential election. Those are all known, undisputed...",
+      "“Absolutely nothing is more important than going back & getting to the bottom of the origins of the investigation. We had an administration using America’s Spying Apparatus to spy on a political opponent at the height of a presidential election. Those are all known, undisputed...",
     created_at: "Thu Sep 05 00:49:29 +0000 2019",
     retweet_count: 17113,
     favorite_count: 63393,
     is_retweet: false,
-    id_str: "1169412197841350657"
+    id_str: "1169412197841350657",
+    date: "2019-09-04"
   },
   {
     source: "Twitter for iPhone",
@@ -155,17 +170,19 @@ let tweets2019Update = [
     retweet_count: 10796,
     favorite_count: 44518,
     is_retweet: false,
-    id_str: "1169412198692732928"
+    id_str: "1169412198692732928",
+    date: "2019-09-04"
   },
   {
     source: "Twitter for iPhone",
     text:
-      "....information does come out.” Charlie Hurt, Washington Times  @LouDobbs",
+      "....information does come out.” Charlie Hurt, Washington Times @LouDobbs",
     created_at: "Thu Sep 05 00:49:29 +0000 2019",
     retweet_count: 10216,
     favorite_count: 42911,
     is_retweet: false,
-    id_str: "1169412199611326464"
+    id_str: "1169412199611326464",
+    date: "2019-09-04"
   },
   {
     source: "Twitter for iPhone",
@@ -175,17 +192,19 @@ let tweets2019Update = [
     retweet_count: 11666,
     favorite_count: 47635,
     is_retweet: false,
-    id_str: "1169375550806351872"
+    id_str: "1169375550806351872",
+    date: "2019-09-04"
   },
   {
     source: "Twitter for iPhone",
     text:
-      "State Rep Greg Murphy is running for Congress in North Carolina, District 3. We really need Greg in Washington. He is great w/ the Military, our Vets, &amp; your 2A. Strong on Crime and the Border, has had my Total Endorsement for a long time. Please vote for Greg on September 10th!",
+      "State Rep Greg Murphy is running for Congress in North Carolina, District 3. We really need Greg in Washington. He is great w/ the Military, our Vets, & your 2A. Strong on Crime and the Border, has had my Total Endorsement for a long time. Please vote for Greg on September 10th!",
     created_at: "Wed Sep 04 21:47:56 +0000 2019",
     retweet_count: 11977,
     favorite_count: 41045,
     is_retweet: false,
-    id_str: "1169366511439552512"
+    id_str: "1169366511439552512",
+    date: "2019-09-04"
   },
   {
     source: "Twitter for iPhone",
@@ -195,17 +214,19 @@ let tweets2019Update = [
     retweet_count: 21377,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1169360837498351618"
+    id_str: "1169360837498351618",
+    date: "2019-09-04"
   },
   {
     source: "Twitter for iPhone",
     text:
-      "1. Which country has the largest carbon emission reduction?\n\nAMERICA!\n\n2. Who has dumped the most carbon into the air?  \n \nCHINA!\n\n3. 91% of the world’s population are exposed to air pollution above the World Health Organization’s suggested level.  \n \nNONE ARE IN THE U.S.A.!",
+      "1. Which country has the largest carbon emission reduction?\n\nAMERICA!\n\n2. Who has dumped the most carbon into the air? \n \nCHINA!\n\n3. 91% of the world’s population are exposed to air pollution above the World Health Organization’s suggested level. \n \nNONE ARE IN THE U.S.A.!",
     created_at: "Wed Sep 04 21:08:58 +0000 2019",
     retweet_count: 9718,
     favorite_count: 28754,
     is_retweet: false,
-    id_str: "1169356703126773762"
+    id_str: "1169356703126773762",
+    date: "2019-09-04"
   },
   {
     source: "Twitter for iPhone",
@@ -215,7 +236,8 @@ let tweets2019Update = [
     retweet_count: 7351,
     favorite_count: 24651,
     is_retweet: false,
-    id_str: "1169356704028516353"
+    id_str: "1169356704028516353",
+    date: "2019-09-04"
   },
   {
     source: "Twitter for iPhone",
@@ -225,7 +247,8 @@ let tweets2019Update = [
     retweet_count: 9556,
     favorite_count: 39728,
     is_retweet: false,
-    id_str: "1169356704926109696"
+    id_str: "1169356704926109696",
+    date: "2019-09-04"
   },
   {
     source: "Twitter for iPhone",
@@ -235,7 +258,8 @@ let tweets2019Update = [
     retweet_count: 10850,
     favorite_count: 43971,
     is_retweet: false,
-    id_str: "1169356705857187840"
+    id_str: "1169356705857187840",
+    date: "2019-09-04"
   },
   {
     source: "Twitter for iPhone",
@@ -244,7 +268,8 @@ let tweets2019Update = [
     retweet_count: 13504,
     favorite_count: 48463,
     is_retweet: false,
-    id_str: "1169356701943894017"
+    id_str: "1169356701943894017",
+    date: "2019-09-04"
   },
   {
     source: "Twitter for iPhone",
@@ -254,7 +279,8 @@ let tweets2019Update = [
     retweet_count: 6567,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1169301734725967872"
+    id_str: "1169301734725967872",
+    date: "2019-09-04"
   },
   {
     source: "Twitter for iPhone",
@@ -264,7 +290,8 @@ let tweets2019Update = [
     retweet_count: 3361,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1169291720837816321"
+    id_str: "1169291720837816321",
+    date: "2019-09-04"
   },
   {
     source: "Twitter for iPhone",
@@ -274,7 +301,8 @@ let tweets2019Update = [
     retweet_count: 10927,
     favorite_count: 49956,
     is_retweet: false,
-    id_str: "1169253299981303810"
+    id_str: "1169253299981303810",
+    date: "2019-09-04"
   },
   {
     source: "Twitter for iPhone",
@@ -284,7 +312,8 @@ let tweets2019Update = [
     retweet_count: 11924,
     favorite_count: 52516,
     is_retweet: false,
-    id_str: "1169253301138919424"
+    id_str: "1169253301138919424",
+    date: "2019-09-04"
   },
   {
     source: "Twitter for iPhone",
@@ -294,37 +323,41 @@ let tweets2019Update = [
     retweet_count: 16157,
     favorite_count: 71533,
     is_retweet: false,
-    id_str: "1169253298169438208"
+    id_str: "1169253298169438208",
+    date: "2019-09-04"
   },
   {
     source: "Twitter for iPhone",
     text:
-      "RT @NHC_Atlantic: @NOAA @NWS Water levels could begin to rise well in advance of the arrival of strong winds.  The surge will be accompanie…",
+      "RT @NHC_Atlantic: @NOAA @NWS Water levels could begin to rise well in advance of the arrival of strong winds. The surge will be accompanie…",
     created_at: "Wed Sep 04 14:01:16 +0000 2019",
     retweet_count: 2564,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1169249070990462978"
+    id_str: "1169249070990462978",
+    date: "2019-09-04"
   },
   {
     source: "Twitter for iPhone",
     text:
-      "RT @NHC_Atlantic: Here's the latest #Dorian storm surge forecast from this morning.  The water could reach the following heights above grou…",
+      "RT @NHC_Atlantic: Here's the latest #Dorian storm surge forecast from this morning. The water could reach the following heights above grou…",
     created_at: "Wed Sep 04 14:01:07 +0000 2019",
     retweet_count: 3296,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1169249032197345281"
+    id_str: "1169249032197345281",
+    date: "2019-09-04"
   },
   {
     source: "Twitter for iPhone",
     text:
-      "RT @NHC_Atlantic: The @NWSWPC has issued a High Risk area for flash flooding over eastern South Carolina &amp; SE North Carolina for Thursday d…",
+      "RT @NHC_Atlantic: The @NWSWPC has issued a High Risk area for flash flooding over eastern South Carolina & SE North Carolina for Thursday d…",
     created_at: "Wed Sep 04 14:00:44 +0000 2019",
     retweet_count: 2552,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1169248935447281665"
+    id_str: "1169248935447281665",
+    date: "2019-09-04"
   },
   {
     source: "Twitter for iPhone",
@@ -333,7 +366,8 @@ let tweets2019Update = [
     retweet_count: 12744,
     favorite_count: 55688,
     is_retweet: false,
-    id_str: "1169246982508072960"
+    id_str: "1169246982508072960",
+    date: "2019-09-04"
   },
   {
     source: "Twitter for iPhone",
@@ -343,7 +377,8 @@ let tweets2019Update = [
     retweet_count: 2806,
     favorite_count: 10962,
     is_retweet: false,
-    id_str: "1169244732691767296"
+    id_str: "1169244732691767296",
+    date: "2019-09-04"
   },
   {
     source: "Twitter for iPhone",
@@ -353,7 +388,8 @@ let tweets2019Update = [
     retweet_count: 3318,
     favorite_count: 12935,
     is_retweet: false,
-    id_str: "1169244729801871360"
+    id_str: "1169244729801871360",
+    date: "2019-09-04"
   },
   {
     source: "Twitter for iPhone",
@@ -363,7 +399,8 @@ let tweets2019Update = [
     retweet_count: 2578,
     favorite_count: 10371,
     is_retweet: false,
-    id_str: "1169244730661769216"
+    id_str: "1169244730661769216",
+    date: "2019-09-04"
   },
   {
     source: "Twitter for iPhone",
@@ -373,7 +410,8 @@ let tweets2019Update = [
     retweet_count: 13060,
     favorite_count: 59118,
     is_retweet: false,
-    id_str: "1169062380040523776"
+    id_str: "1169062380040523776",
+    date: "2019-09-03"
   },
   {
     source: "Twitter for iPhone",
@@ -383,7 +421,8 @@ let tweets2019Update = [
     retweet_count: 23890,
     favorite_count: 91413,
     is_retweet: false,
-    id_str: "1169062379134574592"
+    id_str: "1169062379134574592",
+    date: "2019-09-03"
   },
   {
     source: "Twitter for iPhone",
@@ -393,7 +432,8 @@ let tweets2019Update = [
     retweet_count: 27445,
     favorite_count: 113083,
     is_retweet: false,
-    id_str: "1169053562904678405"
+    id_str: "1169053562904678405",
+    date: "2019-09-03"
   },
   {
     source: "Twitter for iPhone",
@@ -403,7 +443,8 @@ let tweets2019Update = [
     retweet_count: 18965,
     favorite_count: 71095,
     is_retweet: false,
-    id_str: "1169050760098791431"
+    id_str: "1169050760098791431",
+    date: "2019-09-03"
   },
   {
     source: "Twitter for iPhone",
@@ -413,7 +454,8 @@ let tweets2019Update = [
     retweet_count: 12111,
     favorite_count: 60823,
     is_retweet: false,
-    id_str: "1169048221026590725"
+    id_str: "1169048221026590725",
+    date: "2019-09-03"
   },
   {
     source: "Twitter for iPhone",
@@ -423,7 +465,8 @@ let tweets2019Update = [
     retweet_count: 4588,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1169003721096925184"
+    id_str: "1169003721096925184",
+    date: "2019-09-03"
   },
   {
     source: "Twitter for iPhone",
@@ -433,7 +476,8 @@ let tweets2019Update = [
     retweet_count: 3547,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1169003671948054531"
+    id_str: "1169003671948054531",
+    date: "2019-09-03"
   },
   {
     source: "Twitter for iPhone",
@@ -443,7 +487,8 @@ let tweets2019Update = [
     retweet_count: 16419,
     favorite_count: 78962,
     is_retweet: false,
-    id_str: "1169002093476290563"
+    id_str: "1169002093476290563",
+    date: "2019-09-03"
   },
   {
     source: "Twitter for iPhone",
@@ -453,7 +498,8 @@ let tweets2019Update = [
     retweet_count: 3452,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1168997636302626816"
+    id_str: "1168997636302626816",
+    date: "2019-09-03"
   },
   {
     source: "Twitter for iPhone",
@@ -463,7 +509,8 @@ let tweets2019Update = [
     retweet_count: 2501,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1168997619290521600"
+    id_str: "1168997619290521600",
+    date: "2019-09-03"
   },
   {
     source: "Twitter for iPhone",
@@ -473,7 +520,8 @@ let tweets2019Update = [
     retweet_count: 2588,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1168997552685015043"
+    id_str: "1168997552685015043",
+    date: "2019-09-03"
   },
   {
     source: "Twitter for iPhone",
@@ -482,7 +530,8 @@ let tweets2019Update = [
     retweet_count: 593,
     favorite_count: 2486,
     is_retweet: false,
-    id_str: "1168997258945323008"
+    id_str: "1168997258945323008",
+    date: "2019-09-03"
   },
   {
     source: "Twitter for iPhone",
@@ -492,7 +541,8 @@ let tweets2019Update = [
     retweet_count: 22221,
     favorite_count: 104272,
     is_retweet: false,
-    id_str: "1168898508608421888"
+    id_str: "1168898508608421888",
+    date: "2019-09-03"
   },
   {
     source: "Twitter for iPhone",
@@ -502,7 +552,8 @@ let tweets2019Update = [
     retweet_count: 18238,
     favorite_count: 89409,
     is_retweet: false,
-    id_str: "1168898509841555456"
+    id_str: "1168898509841555456",
+    date: "2019-09-03"
   },
   {
     source: "Twitter for iPhone",
@@ -512,7 +563,8 @@ let tweets2019Update = [
     retweet_count: 17668,
     favorite_count: 65621,
     is_retweet: false,
-    id_str: "1168893583283425280"
+    id_str: "1168893583283425280",
+    date: "2019-09-03"
   },
   {
     source: "Twitter for iPhone",
@@ -522,7 +574,8 @@ let tweets2019Update = [
     retweet_count: 3420,
     favorite_count: 14524,
     is_retweet: false,
-    id_str: "1168891437032857600"
+    id_str: "1168891437032857600",
+    date: "2019-09-03"
   },
   {
     source: "Twitter for iPhone",
@@ -532,7 +585,8 @@ let tweets2019Update = [
     retweet_count: 3046,
     favorite_count: 13757,
     is_retweet: false,
-    id_str: "1168891438324756481"
+    id_str: "1168891438324756481",
+    date: "2019-09-03"
   },
   {
     source: "Twitter for iPhone",
@@ -542,17 +596,19 @@ let tweets2019Update = [
     retweet_count: 12677,
     favorite_count: 51609,
     is_retweet: false,
-    id_str: "1168882690713690112"
+    id_str: "1168882690713690112",
+    date: "2019-09-03"
   },
   {
     source: "Twitter for iPhone",
     text:
-      "For all of the “geniuses” out there, many who have been in other administrations and “taken to the cleaners” by China, that want me to get together with the EU and others to go after China Trade practices remember, the EU &amp; all treat us VERY unfairly on Trade also. Will change!",
+      "For all of the “geniuses” out there, many who have been in other administrations and “taken to the cleaners” by China, that want me to get together with the EU and others to go after China Trade practices remember, the EU & all treat us VERY unfairly on Trade also. Will change!",
     created_at: "Tue Sep 03 13:33:16 +0000 2019",
     retweet_count: 16645,
     favorite_count: 68114,
     is_retweet: false,
-    id_str: "1168879633984643072"
+    id_str: "1168879633984643072",
+    date: "2019-09-03"
   },
   {
     source: "Twitter for iPhone",
@@ -562,7 +618,8 @@ let tweets2019Update = [
     retweet_count: 16648,
     favorite_count: 78134,
     is_retweet: false,
-    id_str: "1168874291376656384"
+    id_str: "1168874291376656384",
+    date: "2019-09-03"
   },
   {
     source: "Twitter for iPhone",
@@ -572,17 +629,19 @@ let tweets2019Update = [
     retweet_count: 12653,
     favorite_count: 60027,
     is_retweet: false,
-    id_str: "1168874292626501633"
+    id_str: "1168874292626501633",
+    date: "2019-09-03"
   },
   {
     source: "Twitter for iPhone",
     text:
-      "RT @NHC_Atlantic: The 7 am EDT Tropical Cyclone Update has been released:  Southern eyewall of #Dorian continues to lash Grand Bahama Islan…",
+      "RT @NHC_Atlantic: The 7 am EDT Tropical Cyclone Update has been released: Southern eyewall of #Dorian continues to lash Grand Bahama Islan…",
     created_at: "Tue Sep 03 12:45:52 +0000 2019",
     retweet_count: 3138,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1168867708705943552"
+    id_str: "1168867708705943552",
+    date: "2019-09-03"
   },
   {
     source: "Twitter for iPhone",
@@ -592,7 +651,8 @@ let tweets2019Update = [
     retweet_count: 2361,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1168867685536600064"
+    id_str: "1168867685536600064",
+    date: "2019-09-03"
   },
   {
     source: "Twitter for iPhone",
@@ -602,7 +662,8 @@ let tweets2019Update = [
     retweet_count: 2913,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1168867635053891584"
+    id_str: "1168867635053891584",
+    date: "2019-09-03"
   },
   {
     source: "Twitter for iPhone",
@@ -612,7 +673,8 @@ let tweets2019Update = [
     retweet_count: 4017,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1168727433970892806"
+    id_str: "1168727433970892806",
+    date: "2019-09-02"
   },
   {
     source: "Twitter for iPhone",
@@ -622,17 +684,19 @@ let tweets2019Update = [
     retweet_count: 14009,
     favorite_count: 66492,
     is_retweet: false,
-    id_str: "1168714707307565058"
+    id_str: "1168714707307565058",
+    date: "2019-09-02"
   },
   {
     source: "Twitter for iPhone",
     text:
-      "...Trade Agreement.” @business @ChuckGrassley @joniernst @SenatorFischer @BenSasse Making great progress for our Farmers. Approved E-15, year round. Big additional list to be submitted &amp; approved within two weeks. Will be even better for Ethanol, and we save our small refineries!",
+      "...Trade Agreement.” @business @ChuckGrassley @joniernst @SenatorFischer @BenSasse Making great progress for our Farmers. Approved E-15, year round. Big additional list to be submitted & approved within two weeks. Will be even better for Ethanol, and we save our small refineries!",
     created_at: "Tue Sep 03 02:37:54 +0000 2019",
     retweet_count: 10575,
     favorite_count: 52295,
     is_retweet: false,
-    id_str: "1168714708691632129"
+    id_str: "1168714708691632129",
+    date: "2019-09-02"
   },
   {
     source: "Twitter for iPhone",
@@ -642,7 +706,8 @@ let tweets2019Update = [
     retweet_count: 14612,
     favorite_count: 69976,
     is_retweet: false,
-    id_str: "1168664114677407745"
+    id_str: "1168664114677407745",
+    date: "2019-09-02"
   },
   {
     source: "Twitter for iPhone",
@@ -652,7 +717,8 @@ let tweets2019Update = [
     retweet_count: 14159,
     favorite_count: 71870,
     is_retweet: false,
-    id_str: "1168664116095082496"
+    id_str: "1168664116095082496",
+    date: "2019-09-02"
   },
   {
     source: "Twitter for iPhone",
@@ -662,7 +728,8 @@ let tweets2019Update = [
     retweet_count: 709,
     favorite_count: 2455,
     is_retweet: false,
-    id_str: "1168663012837904385"
+    id_str: "1168663012837904385",
+    date: "2019-09-02"
   },
   {
     source: "Twitter for iPhone",
@@ -672,7 +739,8 @@ let tweets2019Update = [
     retweet_count: 1321,
     favorite_count: 4747,
     is_retweet: false,
-    id_str: "1168663013806792704"
+    id_str: "1168663013806792704",
+    date: "2019-09-02"
   },
   {
     source: "Twitter for iPhone",
@@ -682,17 +750,19 @@ let tweets2019Update = [
     retweet_count: 5539,
     favorite_count: 21596,
     is_retweet: false,
-    id_str: "1168644326060122113"
+    id_str: "1168644326060122113",
+    date: "2019-09-02"
   },
   {
     source: "Twitter for iPhone",
     text:
-      "....Trade Agreement.” @business @ChuckGrassley @joniernst  @debfisher @BenSasse Making great progress for our Farmers. Approved E-15, year round. Big additional list to be submitted and approved within two weeks. Will be even better for Ethanol, and we save our small refineries!",
+      "....Trade Agreement.” @business @ChuckGrassley @joniernst @debfisher @BenSasse Making great progress for our Farmers. Approved E-15, year round. Big additional list to be submitted and approved within two weeks. Will be even better for Ethanol, and we save our small refineries!",
     created_at: "Mon Sep 02 21:58:14 +0000 2019",
     retweet_count: 5905,
     favorite_count: 22528,
     is_retweet: false,
-    id_str: "1168644326982901763"
+    id_str: "1168644326982901763",
+    date: "2019-09-02"
   },
   {
     source: "Twitter for iPhone",
@@ -701,7 +771,8 @@ let tweets2019Update = [
     retweet_count: 11292,
     favorite_count: 45949,
     is_retweet: false,
-    id_str: "1168583512888397824"
+    id_str: "1168583512888397824",
+    date: "2019-09-02"
   },
   {
     source: "Twitter for iPhone",
@@ -711,17 +782,19 @@ let tweets2019Update = [
     retweet_count: 8737,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1168569919186886656"
+    id_str: "1168569919186886656",
+    date: "2019-09-02"
   },
   {
     source: "Twitter for iPhone",
     text:
-      "RT @VCFD_PIO: #CoastInc:  @VCFD responded to boat fire off the north side of Santa Cruz Island at approximately 3:28am. @USCG helping suppo…",
+      "RT @VCFD_PIO: #CoastInc: @VCFD responded to boat fire off the north side of Santa Cruz Island at approximately 3:28am. @USCG helping suppo…",
     created_at: "Mon Sep 02 13:38:19 +0000 2019",
     retweet_count: 4784,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1168518518947667969"
+    id_str: "1168518518947667969",
+    date: "2019-09-02"
   },
   {
     source: "Twitter for iPhone",
@@ -731,17 +804,19 @@ let tweets2019Update = [
     retweet_count: 3748,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1168517815420297216"
+    id_str: "1168517815420297216",
+    date: "2019-09-02"
   },
   {
     source: "Twitter for iPhone",
     text:
-      "RT @USCGLosAngeles: BREAKING NEWS:  The Coast Guard has launched multiple rescue assets along with assets from local agencies to assist mor…",
+      "RT @USCGLosAngeles: BREAKING NEWS: The Coast Guard has launched multiple rescue assets along with assets from local agencies to assist mor…",
     created_at: "Mon Sep 02 13:34:07 +0000 2019",
     retweet_count: 4206,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1168517462310182913"
+    id_str: "1168517462310182913",
+    date: "2019-09-02"
   },
   {
     source: "Twitter for iPhone",
@@ -751,7 +826,8 @@ let tweets2019Update = [
     retweet_count: 5130,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1168503106101006337"
+    id_str: "1168503106101006337",
+    date: "2019-09-02"
   },
   {
     source: "Twitter for iPhone",
@@ -761,7 +837,8 @@ let tweets2019Update = [
     retweet_count: 3913,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1168503075264434179"
+    id_str: "1168503075264434179",
+    date: "2019-09-02"
   },
   {
     source: "Twitter for iPhone",
@@ -771,7 +848,8 @@ let tweets2019Update = [
     retweet_count: 31304,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1168501851303682049"
+    id_str: "1168501851303682049",
+    date: "2019-09-02"
   },
   {
     source: "Twitter for iPhone",
@@ -781,7 +859,8 @@ let tweets2019Update = [
     retweet_count: 15633,
     favorite_count: 67148,
     is_retweet: false,
-    id_str: "1168499357131427840"
+    id_str: "1168499357131427840",
+    date: "2019-09-02"
   },
   {
     source: "Twitter for iPhone",
@@ -791,7 +870,8 @@ let tweets2019Update = [
     retweet_count: 21998,
     favorite_count: 88324,
     is_retweet: false,
-    id_str: "1168499355248205826"
+    id_str: "1168499355248205826",
+    date: "2019-09-02"
   },
   {
     source: "Twitter for iPhone",
@@ -801,17 +881,19 @@ let tweets2019Update = [
     retweet_count: 25192,
     favorite_count: 99940,
     is_retweet: false,
-    id_str: "1168496276918480896"
+    id_str: "1168496276918480896",
+    date: "2019-09-02"
   },
   {
     source: "Twitter for iPhone",
     text:
-      "....Average hourly wages growth has far outpaced what we saw with President Obama. Across all industries, from mining and construction, to leisure &amp; hospitality, With President Trump we see income growth in states like Iowa, Ohio, Pennsylvania, Wisconsin, Nevada, Florida,......",
+      "....Average hourly wages growth has far outpaced what we saw with President Obama. Across all industries, from mining and construction, to leisure & hospitality, With President Trump we see income growth in states like Iowa, Ohio, Pennsylvania, Wisconsin, Nevada, Florida,......",
     created_at: "Mon Sep 02 11:57:40 +0000 2019",
     retweet_count: 4774,
     favorite_count: 17194,
     is_retweet: false,
-    id_str: "1168493188056829952"
+    id_str: "1168493188056829952",
+    date: "2019-09-02"
   },
   {
     source: "Twitter for iPhone",
@@ -821,7 +903,8 @@ let tweets2019Update = [
     retweet_count: 9318,
     favorite_count: 45526,
     is_retweet: false,
-    id_str: "1168493189050896384"
+    id_str: "1168493189050896384",
+    date: "2019-09-02"
   },
   {
     source: "Twitter for iPhone",
@@ -831,7 +914,8 @@ let tweets2019Update = [
     retweet_count: 9241,
     favorite_count: 44203,
     is_retweet: false,
-    id_str: "1168493190468558848"
+    id_str: "1168493190468558848",
+    date: "2019-09-02"
   },
   {
     source: "Twitter for iPhone",
@@ -841,7 +925,8 @@ let tweets2019Update = [
     retweet_count: 13789,
     favorite_count: 62269,
     is_retweet: false,
-    id_str: "1168493185758355456"
+    id_str: "1168493185758355456",
+    date: "2019-09-02"
   },
   {
     source: "Twitter for iPhone",
@@ -851,7 +936,8 @@ let tweets2019Update = [
     retweet_count: 12135,
     favorite_count: 51775,
     is_retweet: false,
-    id_str: "1168491084818894849"
+    id_str: "1168491084818894849",
+    date: "2019-09-02"
   },
   {
     source: "Twitter for iPhone",
@@ -861,7 +947,8 @@ let tweets2019Update = [
     retweet_count: 13268,
     favorite_count: 59321,
     is_retweet: false,
-    id_str: "1168490495980519424"
+    id_str: "1168490495980519424",
+    date: "2019-09-02"
   },
   {
     source: "Twitter for iPhone",
@@ -871,7 +958,8 @@ let tweets2019Update = [
     retweet_count: 11392,
     favorite_count: 53333,
     is_retweet: false,
-    id_str: "1168490496857128960"
+    id_str: "1168490496857128960",
+    date: "2019-09-02"
   },
   {
     source: "Twitter for iPhone",
@@ -881,17 +969,19 @@ let tweets2019Update = [
     retweet_count: 13282,
     favorite_count: 56644,
     is_retweet: false,
-    id_str: "1168488487433232384"
+    id_str: "1168488487433232384",
+    date: "2019-09-02"
   },
   {
     source: "Twitter for iPhone",
     text:
-      "“When you put everything together, the pro growth Tax &amp; Regulation Cuts, help to retrain workers, the Tariffs which encourage manufacturers to come back to America, along with President Trumps tough approach on immigration (strong stance on illegals, promoting Merit Based), it...",
+      "“When you put everything together, the pro growth Tax & Regulation Cuts, help to retrain workers, the Tariffs which encourage manufacturers to come back to America, along with President Trumps tough approach on immigration (strong stance on illegals, promoting Merit Based), it...",
     created_at: "Mon Sep 02 11:36:41 +0000 2019",
     retweet_count: 11232,
     favorite_count: 52341,
     is_retweet: false,
-    id_str: "1168487907725840384"
+    id_str: "1168487907725840384",
+    date: "2019-09-02"
   },
   {
     source: "Twitter for iPhone",
@@ -901,7 +991,8 @@ let tweets2019Update = [
     retweet_count: 9017,
     favorite_count: 42724,
     is_retweet: false,
-    id_str: "1168487909584003072"
+    id_str: "1168487909584003072",
+    date: "2019-09-02"
   },
   {
     source: "Twitter for iPhone",
@@ -911,7 +1002,8 @@ let tweets2019Update = [
     retweet_count: 2907,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1168487018516680704"
+    id_str: "1168487018516680704",
+    date: "2019-09-02"
   },
   {
     source: "Twitter for iPhone",
@@ -921,7 +1013,8 @@ let tweets2019Update = [
     retweet_count: 3471,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1168486977764757504"
+    id_str: "1168486977764757504",
+    date: "2019-09-02"
   },
   {
     source: "Twitter for iPhone",
@@ -931,7 +1024,8 @@ let tweets2019Update = [
     retweet_count: 2771,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1168486878909259779"
+    id_str: "1168486878909259779",
+    date: "2019-09-02"
   },
   {
     source: "Twitter for iPhone",
@@ -941,7 +1035,8 @@ let tweets2019Update = [
     retweet_count: 4851,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1168362796926607360"
+    id_str: "1168362796926607360",
+    date: "2019-09-01"
   },
   {
     source: "Twitter for iPhone",
@@ -951,7 +1046,8 @@ let tweets2019Update = [
     retweet_count: 14863,
     favorite_count: 67580,
     is_retweet: false,
-    id_str: "1168326060955570184"
+    id_str: "1168326060955570184",
+    date: "2019-09-01"
   },
   {
     source: "Twitter for iPhone",
@@ -961,17 +1057,19 @@ let tweets2019Update = [
     retweet_count: 18783,
     favorite_count: 80336,
     is_retweet: false,
-    id_str: "1168326060280307712"
+    id_str: "1168326060280307712",
+    date: "2019-09-01"
   },
   {
     source: "Twitter for iPhone",
     text:
-      "Pray for the people in the Bahamas. Being hit like never before, Category 5.  Almost 200 MPH winds.",
+      "Pray for the people in the Bahamas. Being hit like never before, Category 5. Almost 200 MPH winds.",
     created_at: "Sun Sep 01 19:35:40 +0000 2019",
     retweet_count: 26017,
     favorite_count: 127657,
     is_retweet: false,
-    id_str: "1168246061951004672"
+    id_str: "1168246061951004672",
+    date: "2019-09-01"
   },
   {
     source: "Twitter for iPhone",
@@ -981,7 +1079,8 @@ let tweets2019Update = [
     retweet_count: 10785,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1168236497901957122"
+    id_str: "1168236497901957122",
+    date: "2019-09-01"
   },
   {
     source: "Twitter for iPhone",
@@ -991,7 +1090,8 @@ let tweets2019Update = [
     retweet_count: 10936,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1168236454415409152"
+    id_str: "1168236454415409152",
+    date: "2019-09-01"
   },
   {
     source: "Twitter for iPhone",
@@ -1001,7 +1101,8 @@ let tweets2019Update = [
     retweet_count: 12365,
     favorite_count: 59801,
     is_retweet: false,
-    id_str: "1168178555777404929"
+    id_str: "1168178555777404929",
+    date: "2019-09-01"
   },
   {
     source: "Twitter for iPhone",
@@ -1011,7 +1112,8 @@ let tweets2019Update = [
     retweet_count: 17999,
     favorite_count: 73151,
     is_retweet: false,
-    id_str: "1168174613827899393"
+    id_str: "1168174613827899393",
+    date: "2019-09-01"
   },
   {
     source: "Twitter for iPhone",
@@ -1021,7 +1123,8 @@ let tweets2019Update = [
     retweet_count: 7302,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1168164584223576064"
+    id_str: "1168164584223576064",
+    date: "2019-09-01"
   },
   {
     source: "Twitter for iPhone",
@@ -1031,7 +1134,8 @@ let tweets2019Update = [
     retweet_count: 6671,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1168164365629100032"
+    id_str: "1168164365629100032",
+    date: "2019-09-01"
   },
   {
     source: "Twitter for iPhone",
@@ -1041,7 +1145,8 @@ let tweets2019Update = [
     retweet_count: 3580,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1168164322121584640"
+    id_str: "1168164322121584640",
+    date: "2019-09-01"
   },
   {
     source: "Twitter for iPhone",
@@ -1051,7 +1156,8 @@ let tweets2019Update = [
     retweet_count: 3603,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1168164061374242816"
+    id_str: "1168164061374242816",
+    date: "2019-09-01"
   },
   {
     source: "Twitter for iPhone",
@@ -1061,7 +1167,8 @@ let tweets2019Update = [
     retweet_count: 3627,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1168163990041702406"
+    id_str: "1168163990041702406",
+    date: "2019-09-01"
   },
   {
     source: "Twitter for iPhone",
@@ -1071,7 +1178,8 @@ let tweets2019Update = [
     retweet_count: 5925,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1168163800429879296"
+    id_str: "1168163800429879296",
+    date: "2019-09-01"
   },
   {
     source: "Twitter for iPhone",
@@ -1081,7 +1189,8 @@ let tweets2019Update = [
     retweet_count: 3732,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1168163290163372032"
+    id_str: "1168163290163372032",
+    date: "2019-09-01"
   },
   {
     source: "Twitter for iPhone",
@@ -1090,7 +1199,8 @@ let tweets2019Update = [
     retweet_count: 11611,
     favorite_count: 43645,
     is_retweet: false,
-    id_str: "1168163118347890689"
+    id_str: "1168163118347890689",
+    date: "2019-09-01"
   },
   {
     source: "Twitter for iPhone",
@@ -1100,7 +1210,8 @@ let tweets2019Update = [
     retweet_count: 19172,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1168162956082851840"
+    id_str: "1168162956082851840",
+    date: "2019-09-01"
   },
   {
     source: "Twitter for iPhone",
@@ -1110,7 +1221,8 @@ let tweets2019Update = [
     retweet_count: 11174,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1168162933920141312"
+    id_str: "1168162933920141312",
+    date: "2019-09-01"
   },
   {
     source: "Twitter for iPhone",
@@ -1120,7 +1232,8 @@ let tweets2019Update = [
     retweet_count: 14220,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1168162758136872961"
+    id_str: "1168162758136872961",
+    date: "2019-09-01"
   },
   {
     source: "Twitter for iPhone",
@@ -1130,7 +1243,8 @@ let tweets2019Update = [
     retweet_count: 17774,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1168162618999300097"
+    id_str: "1168162618999300097",
+    date: "2019-09-01"
   },
   {
     source: "Twitter for iPhone",
@@ -1140,7 +1254,8 @@ let tweets2019Update = [
     retweet_count: 16587,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1168162608245092354"
+    id_str: "1168162608245092354",
+    date: "2019-09-01"
   },
   {
     source: "Twitter for iPhone",
@@ -1150,7 +1265,8 @@ let tweets2019Update = [
     retweet_count: 3320,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1168162421854412805"
+    id_str: "1168162421854412805",
+    date: "2019-09-01"
   },
   {
     source: "Twitter for iPhone",
@@ -1160,7 +1276,8 @@ let tweets2019Update = [
     retweet_count: 4446,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1168162054139731968"
+    id_str: "1168162054139731968",
+    date: "2019-09-01"
   },
   {
     source: "Twitter for iPhone",
@@ -1170,7 +1287,8 @@ let tweets2019Update = [
     retweet_count: 9585,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1168162012750340096"
+    id_str: "1168162012750340096",
+    date: "2019-09-01"
   },
   {
     source: "Twitter for iPhone",
@@ -1180,7 +1298,8 @@ let tweets2019Update = [
     retweet_count: 9902,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1168161891933405185"
+    id_str: "1168161891933405185",
+    date: "2019-09-01"
   },
   {
     source: "Twitter for iPhone",
@@ -1190,17 +1309,19 @@ let tweets2019Update = [
     retweet_count: 18660,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1168161869149945860"
+    id_str: "1168161869149945860",
+    date: "2019-09-01"
   },
   {
     source: "Twitter for iPhone",
     text:
-      "I have not forgotten that when it was announced that I was going to do The Apprentice, and when it then became a big hit, helping NBC’s failed lineup greatly, @DebraMessing came up to me at an Upfront &amp; profusely thanked me, even calling me “Sir.” How times have changed!",
+      "I have not forgotten that when it was announced that I was going to do The Apprentice, and when it then became a big hit, helping NBC’s failed lineup greatly, @DebraMessing came up to me at an Upfront & profusely thanked me, even calling me “Sir.” How times have changed!",
     created_at: "Sun Sep 01 13:26:03 +0000 2019",
     retweet_count: 18664,
     favorite_count: 82223,
     is_retweet: false,
-    id_str: "1168153045026463747"
+    id_str: "1168153045026463747",
+    date: "2019-09-01"
   },
   {
     source: "Twitter for iPhone",
@@ -1209,7 +1330,8 @@ let tweets2019Update = [
     retweet_count: 10119,
     favorite_count: 42677,
     is_retweet: false,
-    id_str: "1168147289027821569"
+    id_str: "1168147289027821569",
+    date: "2019-09-01"
   },
   {
     source: "Twitter for iPhone",
@@ -1219,7 +1341,8 @@ let tweets2019Update = [
     retweet_count: 14891,
     favorite_count: 64140,
     is_retweet: false,
-    id_str: "1168146167215079424"
+    id_str: "1168146167215079424",
+    date: "2019-09-01"
   },
   {
     source: "Twitter for iPhone",
@@ -1229,7 +1352,8 @@ let tweets2019Update = [
     retweet_count: 17212,
     favorite_count: 77265,
     is_retweet: false,
-    id_str: "1168146165130518528"
+    id_str: "1168146165130518528",
+    date: "2019-09-01"
   },
   {
     source: "Twitter for iPhone",
@@ -1239,7 +1363,8 @@ let tweets2019Update = [
     retweet_count: 6777,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1168138324168585216"
+    id_str: "1168138324168585216",
+    date: "2019-09-01"
   },
   {
     source: "Twitter for iPhone",
@@ -1249,27 +1374,30 @@ let tweets2019Update = [
     retweet_count: 2291,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1168138262864695296"
+    id_str: "1168138262864695296",
+    date: "2019-09-01"
   },
   {
     source: "Twitter for iPhone",
     text:
-      "RT @NHC_Atlantic: NEW: #Dorian is now a category 5 #hurricane with 160 mph sustained winds.   The eyewall of this catastrophic hurricane is…",
+      "RT @NHC_Atlantic: NEW: #Dorian is now a category 5 #hurricane with 160 mph sustained winds. The eyewall of this catastrophic hurricane is…",
     created_at: "Sun Sep 01 12:27:01 +0000 2019",
     retweet_count: 10379,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1168138187400712193"
+    id_str: "1168138187400712193",
+    date: "2019-09-01"
   },
   {
     source: "Twitter for iPhone",
     text:
-      "RT @fema: Stay alert &amp; get prepared for #Dorian if you are in the Southeast. Monitor forecasts closely, as the storm's track can change qui…",
+      "RT @fema: Stay alert & get prepared for #Dorian if you are in the Southeast. Monitor forecasts closely, as the storm's track can change qui…",
     created_at: "Sun Sep 01 12:26:35 +0000 2019",
     retweet_count: 2254,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1168138078214660096"
+    id_str: "1168138078214660096",
+    date: "2019-09-01"
   },
   {
     source: "Twitter for iPhone",
@@ -1279,7 +1407,8 @@ let tweets2019Update = [
     retweet_count: 2554,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1168137989618315264"
+    id_str: "1168137989618315264",
+    date: "2019-09-01"
   },
   {
     source: "Twitter for iPhone",
@@ -1289,7 +1418,8 @@ let tweets2019Update = [
     retweet_count: 11605,
     favorite_count: 56093,
     is_retweet: false,
-    id_str: "1168137799712854016"
+    id_str: "1168137799712854016",
+    date: "2019-09-01"
   },
   {
     source: "Twitter for iPhone",
@@ -1299,7 +1429,8 @@ let tweets2019Update = [
     retweet_count: 14394,
     favorite_count: 64738,
     is_retweet: false,
-    id_str: "1168137797280174080"
+    id_str: "1168137797280174080",
+    date: "2019-09-01"
   },
   {
     source: "Twitter for iPhone",
@@ -1309,7 +1440,8 @@ let tweets2019Update = [
     retweet_count: 14689,
     favorite_count: 69202,
     is_retweet: false,
-    id_str: "1167928855199272961"
+    id_str: "1167928855199272961",
+    date: "2019-08-31"
   },
   {
     source: "Twitter for iPhone",
@@ -1319,7 +1451,8 @@ let tweets2019Update = [
     retweet_count: 17880,
     favorite_count: 72837,
     is_retweet: false,
-    id_str: "1167893379461443585"
+    id_str: "1167893379461443585",
+    date: "2019-08-31"
   },
   {
     source: "Twitter for iPhone",
@@ -1329,7 +1462,8 @@ let tweets2019Update = [
     retweet_count: 16989,
     favorite_count: 66701,
     is_retweet: false,
-    id_str: "1167876729538400259"
+    id_str: "1167876729538400259",
+    date: "2019-08-31"
   },
   {
     source: "Twitter for iPhone",
@@ -1339,7 +1473,8 @@ let tweets2019Update = [
     retweet_count: 13666,
     favorite_count: 71591,
     is_retweet: false,
-    id_str: "1167876404945383425"
+    id_str: "1167876404945383425",
+    date: "2019-08-31"
   },
   {
     source: "Twitter for iPhone",
@@ -1349,7 +1484,8 @@ let tweets2019Update = [
     retweet_count: 19145,
     favorite_count: 87132,
     is_retweet: false,
-    id_str: "1167876317745860608"
+    id_str: "1167876317745860608",
+    date: "2019-08-31"
   },
   {
     source: "Twitter for iPhone",
@@ -1359,7 +1495,8 @@ let tweets2019Update = [
     retweet_count: 15669,
     favorite_count: 67535,
     is_retweet: false,
-    id_str: "1167867052410802178"
+    id_str: "1167867052410802178",
+    date: "2019-08-31"
   },
   {
     source: "Twitter for iPhone",
@@ -1369,7 +1506,8 @@ let tweets2019Update = [
     retweet_count: 4610,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1167818828530769920"
+    id_str: "1167818828530769920",
+    date: "2019-08-31"
   },
   {
     source: "Twitter for iPhone",
@@ -1379,7 +1517,8 @@ let tweets2019Update = [
     retweet_count: 14491,
     favorite_count: 69171,
     is_retweet: false,
-    id_str: "1167805241926066176"
+    id_str: "1167805241926066176",
+    date: "2019-08-31"
   },
   {
     source: "Twitter for iPhone",
@@ -1388,7 +1527,8 @@ let tweets2019Update = [
     retweet_count: 8872,
     favorite_count: 34935,
     is_retweet: false,
-    id_str: "1167800370292240384"
+    id_str: "1167800370292240384",
+    date: "2019-08-31"
   },
   {
     source: "Twitter for iPhone",
@@ -1398,7 +1538,8 @@ let tweets2019Update = [
     retweet_count: 11120,
     favorite_count: 47690,
     is_retweet: false,
-    id_str: "1167799335096131584"
+    id_str: "1167799335096131584",
+    date: "2019-08-31"
   },
   {
     source: "Twitter for iPhone",
@@ -1408,7 +1549,8 @@ let tweets2019Update = [
     retweet_count: 29006,
     favorite_count: 154871,
     is_retweet: false,
-    id_str: "1167786555509002241"
+    id_str: "1167786555509002241",
+    date: "2019-08-31"
   },
   {
     source: "Twitter for iPhone",
@@ -1417,7 +1559,8 @@ let tweets2019Update = [
     retweet_count: 18525,
     favorite_count: 81227,
     is_retweet: false,
-    id_str: "1167786066985848833"
+    id_str: "1167786066985848833",
+    date: "2019-08-31"
   },
   {
     source: "Twitter for iPhone",
@@ -1427,17 +1570,19 @@ let tweets2019Update = [
     retweet_count: 3638,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1167785000642732034"
+    id_str: "1167785000642732034",
+    date: "2019-08-31"
   },
   {
     source: "Twitter for iPhone",
     text:
-      "RT @FLSERT: Find the latest information, on #HurricaneDorian&gt;&gt;&gt; \nhttps://t.co/Dn8xfWBr2W #flprepares https://t.co/JinCfSiUL2",
+      "RT @FLSERT: Find the latest information, on #HurricaneDorian>>> \nhttps://t.co/Dn8xfWBr2W #flprepares https://t.co/JinCfSiUL2",
     created_at: "Sat Aug 31 13:03:30 +0000 2019",
     retweet_count: 3195,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1167784979000102914"
+    id_str: "1167784979000102914",
+    date: "2019-08-31"
   },
   {
     source: "Twitter for iPhone",
@@ -1447,7 +1592,8 @@ let tweets2019Update = [
     retweet_count: 3957,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1167784951242268672"
+    id_str: "1167784951242268672",
+    date: "2019-08-31"
   },
   {
     source: "Twitter for iPhone",
@@ -1457,7 +1603,8 @@ let tweets2019Update = [
     retweet_count: 2641,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1167784846866956289"
+    id_str: "1167784846866956289",
+    date: "2019-08-31"
   },
   {
     source: "Twitter for iPhone",
@@ -1467,7 +1614,8 @@ let tweets2019Update = [
     retweet_count: 2550,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1167784791808323585"
+    id_str: "1167784791808323585",
+    date: "2019-08-31"
   },
   {
     source: "Twitter for iPhone",
@@ -1477,7 +1625,8 @@ let tweets2019Update = [
     retweet_count: 2468,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1167784731989172224"
+    id_str: "1167784731989172224",
+    date: "2019-08-31"
   },
   {
     source: "Twitter for iPhone",
@@ -1487,7 +1636,8 @@ let tweets2019Update = [
     retweet_count: 2544,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1167784655518654464"
+    id_str: "1167784655518654464",
+    date: "2019-08-31"
   },
   {
     source: "Twitter for iPhone",
@@ -1497,7 +1647,8 @@ let tweets2019Update = [
     retweet_count: 2535,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1167784623268667392"
+    id_str: "1167784623268667392",
+    date: "2019-08-31"
   },
   {
     source: "Twitter for iPhone",
@@ -1506,17 +1657,19 @@ let tweets2019Update = [
     retweet_count: 5471,
     favorite_count: 24454,
     is_retweet: false,
-    id_str: "1167784531535060992"
+    id_str: "1167784531535060992",
+    date: "2019-08-31"
   },
   {
     source: "Twitter for iPhone",
     text:
-      "RT @NHC_Atlantic: Here are the 5 AM EDT Saturday, August 31 Key Messages for Hurricane #Dorian.  A prolonged period of storm surge and hurr…",
+      "RT @NHC_Atlantic: Here are the 5 AM EDT Saturday, August 31 Key Messages for Hurricane #Dorian. A prolonged period of storm surge and hurr…",
     created_at: "Sat Aug 31 13:01:10 +0000 2019",
     retweet_count: 3364,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1167784395111092224"
+    id_str: "1167784395111092224",
+    date: "2019-08-31"
   },
   {
     source: "Twitter for iPhone",
@@ -1526,7 +1679,8 @@ let tweets2019Update = [
     retweet_count: 4663,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1167784343055556608"
+    id_str: "1167784343055556608",
+    date: "2019-08-31"
   },
   {
     source: "Twitter for iPhone",
@@ -1536,7 +1690,8 @@ let tweets2019Update = [
     retweet_count: 2728,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1167784275715997698"
+    id_str: "1167784275715997698",
+    date: "2019-08-31"
   },
   {
     source: "Twitter for iPhone",
@@ -1546,7 +1701,8 @@ let tweets2019Update = [
     retweet_count: 19299,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1167783929534980096"
+    id_str: "1167783929534980096",
+    date: "2019-08-31"
   },
   {
     source: "Twitter for iPhone",
@@ -1556,7 +1712,8 @@ let tweets2019Update = [
     retweet_count: 17206,
     favorite_count: 85017,
     is_retweet: false,
-    id_str: "1167783720021123073"
+    id_str: "1167783720021123073",
+    date: "2019-08-31"
   },
   {
     source: "Twitter for iPhone",
@@ -1566,7 +1723,8 @@ let tweets2019Update = [
     retweet_count: 10934,
     favorite_count: 55445,
     is_retweet: false,
-    id_str: "1167782135786332161"
+    id_str: "1167782135786332161",
+    date: "2019-08-31"
   },
   {
     source: "Twitter for iPhone",
@@ -1576,7 +1734,8 @@ let tweets2019Update = [
     retweet_count: 6109,
     favorite_count: 28947,
     is_retweet: false,
-    id_str: "1167772799081099264"
+    id_str: "1167772799081099264",
+    date: "2019-08-31"
   },
   {
     source: "Twitter for iPhone",
@@ -1586,7 +1745,8 @@ let tweets2019Update = [
     retweet_count: 3027,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1167771998505844736"
+    id_str: "1167771998505844736",
+    date: "2019-08-31"
   },
   {
     source: "Twitter for iPhone",
@@ -1596,17 +1756,19 @@ let tweets2019Update = [
     retweet_count: 2671,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1167771932835688448"
+    id_str: "1167771932835688448",
+    date: "2019-08-31"
   },
   {
     source: "Twitter for iPhone",
     text:
-      "RT @JimInhofe: A historic meeting with U.S. military &amp; Mexican officials protecting both sides of our southern border. Due to joint coopera…",
+      "RT @JimInhofe: A historic meeting with U.S. military & Mexican officials protecting both sides of our southern border. Due to joint coopera…",
     created_at: "Sat Aug 31 12:11:32 +0000 2019",
     retweet_count: 3628,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1167771902103969792"
+    id_str: "1167771902103969792",
+    date: "2019-08-31"
   },
   {
     source: "Twitter for iPhone",
@@ -1616,17 +1778,19 @@ let tweets2019Update = [
     retweet_count: 7996,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1167771839936028678"
+    id_str: "1167771839936028678",
+    date: "2019-08-31"
   },
   {
     source: "Twitter for iPhone",
     text:
-      "“The IG found that James Comey leaked Classified Documents to his attorneys, which can be (is) a violation of the Espionage Act. This is consistent with all the lies that Comey has been spreading. @GreggJarrett  @ByronYork @LouDobbs",
+      "“The IG found that James Comey leaked Classified Documents to his attorneys, which can be (is) a violation of the Espionage Act. This is consistent with all the lies that Comey has been spreading. @GreggJarrett @ByronYork @LouDobbs",
     created_at: "Sat Aug 31 12:11:16 +0000 2019",
     retweet_count: 10602,
     favorite_count: 37986,
     is_retweet: false,
-    id_str: "1167771834059755520"
+    id_str: "1167771834059755520",
+    date: "2019-08-31"
   },
   {
     source: "Twitter for iPhone",
@@ -1635,7 +1799,8 @@ let tweets2019Update = [
     retweet_count: 4492,
     favorite_count: 20943,
     is_retweet: false,
-    id_str: "1167771830947590144"
+    id_str: "1167771830947590144",
+    date: "2019-08-31"
   },
   {
     source: "Twitter for iPhone",
@@ -1645,7 +1810,8 @@ let tweets2019Update = [
     retweet_count: 2714,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1167770738864140288"
+    id_str: "1167770738864140288",
+    date: "2019-08-31"
   },
   {
     source: "Twitter for iPhone",
@@ -1655,7 +1821,8 @@ let tweets2019Update = [
     retweet_count: 3067,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1167770710829346822"
+    id_str: "1167770710829346822",
+    date: "2019-08-31"
   },
   {
     source: "Twitter for iPhone",
@@ -1665,17 +1832,19 @@ let tweets2019Update = [
     retweet_count: 2900,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1167770710841921536"
+    id_str: "1167770710841921536",
+    date: "2019-08-31"
   },
   {
     source: "Twitter for iPhone",
     text:
-      "RT @SenatorLankford: As I travel around the state, a lot of people ask about securing the US-Mexico border &amp; what Congress can do to fix th…",
+      "RT @SenatorLankford: As I travel around the state, a lot of people ask about securing the US-Mexico border & what Congress can do to fix th…",
     created_at: "Sat Aug 31 12:06:46 +0000 2019",
     retweet_count: 2788,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1167770704579911681"
+    id_str: "1167770704579911681",
+    date: "2019-08-31"
   },
   {
     source: "Twitter for iPhone",
@@ -1685,7 +1854,8 @@ let tweets2019Update = [
     retweet_count: 2035,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1167770637777166343"
+    id_str: "1167770637777166343",
+    date: "2019-08-31"
   },
   {
     source: "Twitter for iPhone",
@@ -1695,7 +1865,8 @@ let tweets2019Update = [
     retweet_count: 4320,
     favorite_count: 20952,
     is_retweet: false,
-    id_str: "1167770637789749249"
+    id_str: "1167770637789749249",
+    date: "2019-08-31"
   },
   {
     source: "Twitter for iPhone",
@@ -1705,7 +1876,8 @@ let tweets2019Update = [
     retweet_count: 2204,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1167770624221204481"
+    id_str: "1167770624221204481",
+    date: "2019-08-31"
   },
   {
     source: "Twitter for iPhone",
@@ -1715,7 +1887,8 @@ let tweets2019Update = [
     retweet_count: 1770,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1167770620127514624"
+    id_str: "1167770620127514624",
+    date: "2019-08-31"
   },
   {
     source: "Twitter for iPhone",
@@ -1725,7 +1898,8 @@ let tweets2019Update = [
     retweet_count: 2070,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1167770613727055872"
+    id_str: "1167770613727055872",
+    date: "2019-08-31"
   },
   {
     source: "Twitter for iPhone",
@@ -1734,7 +1908,8 @@ let tweets2019Update = [
     retweet_count: 5814,
     favorite_count: 26596,
     is_retweet: false,
-    id_str: "1167769103240765440"
+    id_str: "1167769103240765440",
+    date: "2019-08-31"
   },
   {
     source: "Twitter for iPhone",
@@ -1744,17 +1919,19 @@ let tweets2019Update = [
     retweet_count: 2284,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1167768784133918723"
+    id_str: "1167768784133918723",
+    date: "2019-08-31"
   },
   {
     source: "Twitter for iPhone",
     text:
-      "RT @SenateGOP: .@SenatorIsakson serves the people of Georgia with honor, distinction and deep devotion. Johnny is a true gentleman.   A pow…",
+      "RT @SenateGOP: .@SenatorIsakson serves the people of Georgia with honor, distinction and deep devotion. Johnny is a true gentleman. A pow…",
     created_at: "Sat Aug 31 11:58:57 +0000 2019",
     retweet_count: 2307,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1167768737468047360"
+    id_str: "1167768737468047360",
+    date: "2019-08-31"
   },
   {
     source: "Twitter for iPhone",
@@ -1764,7 +1941,8 @@ let tweets2019Update = [
     retweet_count: 2216,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1167768700126146560"
+    id_str: "1167768700126146560",
+    date: "2019-08-31"
   },
   {
     source: "Twitter for iPhone",
@@ -1773,7 +1951,8 @@ let tweets2019Update = [
     retweet_count: 5445,
     favorite_count: 24806,
     is_retweet: false,
-    id_str: "1167768685349679106"
+    id_str: "1167768685349679106",
+    date: "2019-08-31"
   },
   {
     source: "Twitter for iPhone",
@@ -1782,7 +1961,8 @@ let tweets2019Update = [
     retweet_count: 3833,
     favorite_count: 18445,
     is_retweet: false,
-    id_str: "1167768683105652742"
+    id_str: "1167768683105652742",
+    date: "2019-08-31"
   },
   {
     source: "Twitter for iPhone",
@@ -1792,7 +1972,8 @@ let tweets2019Update = [
     retweet_count: 2714,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1167767578854473728"
+    id_str: "1167767578854473728",
+    date: "2019-08-31"
   },
   {
     source: "Twitter for iPhone",
@@ -1802,7 +1983,8 @@ let tweets2019Update = [
     retweet_count: 2218,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1167767510969737216"
+    id_str: "1167767510969737216",
+    date: "2019-08-31"
   },
   {
     source: "Twitter for iPhone",
@@ -1812,7 +1994,8 @@ let tweets2019Update = [
     retweet_count: 5302,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1167767330782359552"
+    id_str: "1167767330782359552",
+    date: "2019-08-31"
   },
   {
     source: "Twitter for iPhone",
@@ -1822,7 +2005,8 @@ let tweets2019Update = [
     retweet_count: 4426,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1167767241863118849"
+    id_str: "1167767241863118849",
+    date: "2019-08-31"
   },
   {
     source: "Twitter for iPhone",
@@ -1832,7 +2016,8 @@ let tweets2019Update = [
     retweet_count: 3202,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1167766942880542720"
+    id_str: "1167766942880542720",
+    date: "2019-08-31"
   },
   {
     source: "Twitter for iPhone",
@@ -1842,7 +2027,8 @@ let tweets2019Update = [
     retweet_count: 4842,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1167766852346568704"
+    id_str: "1167766852346568704",
+    date: "2019-08-31"
   },
   {
     source: "Twitter for iPhone",
@@ -1851,17 +2037,19 @@ let tweets2019Update = [
     retweet_count: 3512,
     favorite_count: 18458,
     is_retweet: false,
-    id_str: "1167766772398854144"
+    id_str: "1167766772398854144",
+    date: "2019-08-31"
   },
   {
     source: "Twitter for iPhone",
     text:
-      "RT @MarshaBlackburn: The independence of our judicial branch is under attack.\n \nOur Democrat colleagues’ threats to pack the Court are an e…",
+      "RT @MarshaBlackburn: The independence of our judicial branch is under attack.\n \nOur Democrat colleagues’ threats to pack the Court are an e…",
     created_at: "Sat Aug 31 11:51:05 +0000 2019",
     retweet_count: 4313,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1167766758347935745"
+    id_str: "1167766758347935745",
+    date: "2019-08-31"
   },
   {
     source: "Twitter for iPhone",
@@ -1871,7 +2059,8 @@ let tweets2019Update = [
     retweet_count: 3534,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1167766739624611840"
+    id_str: "1167766739624611840",
+    date: "2019-08-31"
   },
   {
     source: "Twitter for iPhone",
@@ -1881,7 +2070,8 @@ let tweets2019Update = [
     retweet_count: 6538,
     favorite_count: 26947,
     is_retweet: false,
-    id_str: "1167765375972519936"
+    id_str: "1167765375972519936",
+    date: "2019-08-31"
   },
   {
     source: "Twitter for iPhone",
@@ -1891,7 +2081,8 @@ let tweets2019Update = [
     retweet_count: 10648,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1167652569637933057"
+    id_str: "1167652569637933057",
+    date: "2019-08-30"
   },
   {
     source: "Twitter for iPhone",
@@ -1901,27 +2092,30 @@ let tweets2019Update = [
     retweet_count: 9051,
     favorite_count: 37477,
     is_retweet: false,
-    id_str: "1167651639806898176"
+    id_str: "1167651639806898176",
+    date: "2019-08-30"
   },
   {
     source: "Twitter for iPhone",
     text:
-      "“They could have charged Comey with theft of government documents, 641 of the Criminal Code, because the IG found these were not his personal documents, these were government documents.” @GreggJarrett  “Comey’s claim that these were just his own personal recollections would not..",
+      "“They could have charged Comey with theft of government documents, 641 of the Criminal Code, because the IG found these were not his personal documents, these were government documents.” @GreggJarrett “Comey’s claim that these were just his own personal recollections would not..",
     created_at: "Fri Aug 30 23:54:24 +0000 2019",
     retweet_count: 14204,
     favorite_count: 60431,
     is_retweet: false,
-    id_str: "1167586395654950912"
+    id_str: "1167586395654950912",
+    date: "2019-08-30"
   },
   {
     source: "Twitter for iPhone",
     text:
-      "....pass the laugh test, and the Inspector General just knocked that down.” @ByronYork  @LouDobbs",
+      "....pass the laugh test, and the Inspector General just knocked that down.” @ByronYork @LouDobbs",
     created_at: "Fri Aug 30 23:54:24 +0000 2019",
     retweet_count: 10224,
     favorite_count: 49137,
     is_retweet: false,
-    id_str: "1167586397924057098"
+    id_str: "1167586397924057098",
+    date: "2019-08-30"
   },
   {
     source: "Twitter for iPhone",
@@ -1930,17 +2124,19 @@ let tweets2019Update = [
     retweet_count: 9831,
     favorite_count: 70395,
     is_retweet: false,
-    id_str: "1167582228433580032"
+    id_str: "1167582228433580032",
+    date: "2019-08-30"
   },
   {
     source: "Twitter for iPhone",
     text:
-      "The Great State of North Carolina has EARLY VOTING for a very important Congressional (Ninth) race. Please vote early (now), or on Election Day, September 10th, for Dan Bishop, a great guy. His opponent wants Open Borders, Sanctuary Cities &amp; is weak on Crime, Military &amp; Vets!",
+      "The Great State of North Carolina has EARLY VOTING for a very important Congressional (Ninth) race. Please vote early (now), or on Election Day, September 10th, for Dan Bishop, a great guy. His opponent wants Open Borders, Sanctuary Cities & is weak on Crime, Military & Vets!",
     created_at: "Fri Aug 30 21:39:54 +0000 2019",
     retweet_count: 19127,
     favorite_count: 60738,
     is_retweet: false,
-    id_str: "1167552549974675458"
+    id_str: "1167552549974675458",
+    date: "2019-08-30"
   },
   {
     source: "Twitter for iPhone",
@@ -1949,7 +2145,8 @@ let tweets2019Update = [
     retweet_count: 9987,
     favorite_count: 39490,
     is_retweet: false,
-    id_str: "1167527540518522883"
+    id_str: "1167527540518522883",
+    date: "2019-08-30"
   },
   {
     source: "Twitter Media Studio",
@@ -1959,7 +2156,8 @@ let tweets2019Update = [
     retweet_count: 18446,
     favorite_count: 64046,
     is_retweet: false,
-    id_str: "1167515540199530499"
+    id_str: "1167515540199530499",
+    date: "2019-08-30"
   },
   {
     source: "Twitter Media Studio",
@@ -1968,7 +2166,8 @@ let tweets2019Update = [
     retweet_count: 10543,
     favorite_count: 35113,
     is_retweet: false,
-    id_str: "1167511801984114691"
+    id_str: "1167511801984114691",
+    date: "2019-08-30"
   },
   {
     source: "Twitter Media Studio",
@@ -1978,7 +2177,8 @@ let tweets2019Update = [
     retweet_count: 17935,
     favorite_count: 53636,
     is_retweet: false,
-    id_str: "1167510759724765186"
+    id_str: "1167510759724765186",
+    date: "2019-08-30"
   },
   {
     source: "Twitter Media Studio",
@@ -1987,7 +2187,8 @@ let tweets2019Update = [
     retweet_count: 9518,
     favorite_count: 34458,
     is_retweet: false,
-    id_str: "1167498482581680128"
+    id_str: "1167498482581680128",
+    date: "2019-08-30"
   },
   {
     source: "Twitter for iPhone",
@@ -1997,7 +2198,8 @@ let tweets2019Update = [
     retweet_count: 17212,
     favorite_count: 59186,
     is_retweet: false,
-    id_str: "1167493371973255170"
+    id_str: "1167493371973255170",
+    date: "2019-08-30"
   },
   {
     source: "Twitter for iPhone",
@@ -2007,7 +2209,8 @@ let tweets2019Update = [
     retweet_count: 4027,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1167474568325488641"
+    id_str: "1167474568325488641",
+    date: "2019-08-30"
   },
   {
     source: "Twitter for iPhone",
@@ -2017,7 +2220,8 @@ let tweets2019Update = [
     retweet_count: 6367,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1167474506673348609"
+    id_str: "1167474506673348609",
+    date: "2019-08-30"
   },
   {
     source: "Twitter for iPhone",
@@ -2027,7 +2231,8 @@ let tweets2019Update = [
     retweet_count: 13118,
     favorite_count: 53289,
     is_retweet: false,
-    id_str: "1167439383932391425"
+    id_str: "1167439383932391425",
+    date: "2019-08-30"
   },
   {
     source: "Twitter for iPhone",
@@ -2037,7 +2242,8 @@ let tweets2019Update = [
     retweet_count: 14447,
     favorite_count: 63312,
     is_retweet: false,
-    id_str: "1167435723823341568"
+    id_str: "1167435723823341568",
+    date: "2019-08-30"
   },
   {
     source: "Twitter for iPhone",
@@ -2047,7 +2253,8 @@ let tweets2019Update = [
     retweet_count: 11688,
     favorite_count: 52418,
     is_retweet: false,
-    id_str: "1167435724557361152"
+    id_str: "1167435724557361152",
+    date: "2019-08-30"
   },
   {
     source: "Twitter Media Studio",
@@ -2056,17 +2263,19 @@ let tweets2019Update = [
     retweet_count: 10873,
     favorite_count: 32485,
     is_retweet: false,
-    id_str: "1167435552234311681"
+    id_str: "1167435552234311681",
+    date: "2019-08-30"
   },
   {
     source: "Twitter for iPhone",
     text:
-      "Bryan Dean Wright, former CIA Officer(Dem): “In 2016 we had a Coup. We have to take Comey and others to task. Makes no sense not to prosecute him. Comey got a book deal. I fear for my Country. He tried to kneecap our duly elected president, and there are no consequences.” @fox&amp;Fs",
+      "Bryan Dean Wright, former CIA Officer(Dem): “In 2016 we had a Coup. We have to take Comey and others to task. Makes no sense not to prosecute him. Comey got a book deal. I fear for my Country. He tried to kneecap our duly elected president, and there are no consequences.” @fox&Fs",
     created_at: "Fri Aug 30 13:17:25 +0000 2019",
     retweet_count: 18494,
     favorite_count: 59067,
     is_retweet: false,
-    id_str: "1167426094032666624"
+    id_str: "1167426094032666624",
+    date: "2019-08-30"
   },
   {
     source: "Twitter for iPhone",
@@ -2076,7 +2285,8 @@ let tweets2019Update = [
     retweet_count: 15766,
     favorite_count: 67933,
     is_retweet: false,
-    id_str: "1167420374482599936"
+    id_str: "1167420374482599936",
+    date: "2019-08-30"
   },
   {
     source: "Twitter for iPhone",
@@ -2086,7 +2296,8 @@ let tweets2019Update = [
     retweet_count: 26100,
     favorite_count: 102058,
     is_retweet: false,
-    id_str: "1167413739320201216"
+    id_str: "1167413739320201216",
+    date: "2019-08-30"
   },
   {
     source: "Twitter for iPhone",
@@ -2096,7 +2307,8 @@ let tweets2019Update = [
     retweet_count: 4479,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1167410616082010120"
+    id_str: "1167410616082010120",
+    date: "2019-08-30"
   },
   {
     source: "Twitter for iPhone",
@@ -2106,17 +2318,19 @@ let tweets2019Update = [
     retweet_count: 4569,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1167410570041155585"
+    id_str: "1167410570041155585",
+    date: "2019-08-30"
   },
   {
     source: "Twitter for iPhone",
     text:
-      "RT @club4growth: Agreed, @SenTedCruz &amp; @taxreformer. We’re not tired of all this winning. @realdonaldtrump should boost our already winning…",
+      "RT @club4growth: Agreed, @SenTedCruz & @taxreformer. We’re not tired of all this winning. @realdonaldtrump should boost our already winning…",
     created_at: "Fri Aug 30 12:12:09 +0000 2019",
     retweet_count: 4218,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1167409671357026309"
+    id_str: "1167409671357026309",
+    date: "2019-08-30"
   },
   {
     source: "Twitter for iPhone",
@@ -2125,7 +2339,8 @@ let tweets2019Update = [
     retweet_count: 6631,
     favorite_count: 28549,
     is_retweet: false,
-    id_str: "1167409533867712513"
+    id_str: "1167409533867712513",
+    date: "2019-08-30"
   },
   {
     source: "Twitter for iPhone",
@@ -2135,7 +2350,8 @@ let tweets2019Update = [
     retweet_count: 17023,
     favorite_count: 77483,
     is_retweet: false,
-    id_str: "1167408293062594560"
+    id_str: "1167408293062594560",
+    date: "2019-08-30"
   },
   {
     source: "Twitter Media Studio",
@@ -2144,7 +2360,8 @@ let tweets2019Update = [
     retweet_count: 19199,
     favorite_count: 73664,
     is_retweet: false,
-    id_str: "1167222697748762624"
+    id_str: "1167222697748762624",
+    date: "2019-08-29"
   },
   {
     source: "Twitter for iPhone",
@@ -2154,7 +2371,8 @@ let tweets2019Update = [
     retweet_count: 8087,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1167199919100309504"
+    id_str: "1167199919100309504",
+    date: "2019-08-29"
   },
   {
     source: "Twitter for iPhone",
@@ -2163,7 +2381,8 @@ let tweets2019Update = [
     retweet_count: 14545,
     favorite_count: 53211,
     is_retweet: false,
-    id_str: "1167175093241438214"
+    id_str: "1167175093241438214",
+    date: "2019-08-29"
   },
   {
     source: "Twitter for iPhone",
@@ -2173,7 +2392,8 @@ let tweets2019Update = [
     retweet_count: 30839,
     favorite_count: 121631,
     is_retweet: false,
-    id_str: "1167136119823224833"
+    id_str: "1167136119823224833",
+    date: "2019-08-29"
   },
   {
     source: "Twitter for iPhone",
@@ -2183,7 +2403,8 @@ let tweets2019Update = [
     retweet_count: 18364,
     favorite_count: 80977,
     is_retweet: false,
-    id_str: "1167064301565358080"
+    id_str: "1167064301565358080",
+    date: "2019-08-29"
   },
   {
     source: "Twitter for iPhone",
@@ -2193,7 +2414,8 @@ let tweets2019Update = [
     retweet_count: 15125,
     favorite_count: 64999,
     is_retweet: false,
-    id_str: "1167060675480473600"
+    id_str: "1167060675480473600",
+    date: "2019-08-29"
   },
   {
     source: "Twitter for iPhone",
@@ -2203,17 +2425,19 @@ let tweets2019Update = [
     retweet_count: 23703,
     favorite_count: 96945,
     is_retweet: false,
-    id_str: "1167041192539959296"
+    id_str: "1167041192539959296",
+    date: "2019-08-29"
   },
   {
     source: "Twitter for iPhone",
     text:
-      "Crazy Lawrence O’Donnell, who has been calling me wrong from even before I announced my run for the Presidency, even being previously forced by NBC to apologize, which he did while crying, for things he said about me &amp; The Apprentice, was again forced to apologize, this time.....",
+      "Crazy Lawrence O’Donnell, who has been calling me wrong from even before I announced my run for the Presidency, even being previously forced by NBC to apologize, which he did while crying, for things he said about me & The Apprentice, was again forced to apologize, this time.....",
     created_at: "Thu Aug 29 11:31:42 +0000 2019",
     retweet_count: 17024,
     favorite_count: 82252,
     is_retweet: false,
-    id_str: "1167037101038342146"
+    id_str: "1167037101038342146",
+    date: "2019-08-29"
   },
   {
     source: "Twitter for iPhone",
@@ -2223,7 +2447,8 @@ let tweets2019Update = [
     retweet_count: 15835,
     favorite_count: 78008,
     is_retweet: false,
-    id_str: "1167037101906497536"
+    id_str: "1167037101906497536",
+    date: "2019-08-29"
   },
   {
     source: "Twitter for iPhone",
@@ -2233,17 +2458,19 @@ let tweets2019Update = [
     retweet_count: 14229,
     favorite_count: 59194,
     is_retweet: false,
-    id_str: "1167030041303310336"
+    id_str: "1167030041303310336",
+    date: "2019-08-29"
   },
   {
     source: "Twitter for iPhone",
     text:
-      "Puerto Rico is in great shape with Hurricane Dorian taking a largely different route than anticipated. Thank you to FEMA, first responders, and all, for working so hard &amp; being so well prepared. A great result! The bad news, Florida get ready! Storm is building and will be BIG!",
+      "Puerto Rico is in great shape with Hurricane Dorian taking a largely different route than anticipated. Thank you to FEMA, first responders, and all, for working so hard & being so well prepared. A great result! The bad news, Florida get ready! Storm is building and will be BIG!",
     created_at: "Thu Aug 29 10:58:11 +0000 2019",
     retweet_count: 11135,
     favorite_count: 50089,
     is_retweet: false,
-    id_str: "1167028669988126722"
+    id_str: "1167028669988126722",
+    date: "2019-08-29"
   },
   {
     source: "Twitter for iPhone",
@@ -2253,17 +2480,19 @@ let tweets2019Update = [
     retweet_count: 11341,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1166901550251499520"
+    id_str: "1166901550251499520",
+    date: "2019-08-28"
   },
   {
     source: "Twitter for iPhone",
     text:
-      "RT @mike_pence: During the last Administration the VA was removing Bibles &amp; even banning Christmas carols to be politically correct, but un…",
+      "RT @mike_pence: During the last Administration the VA was removing Bibles & even banning Christmas carols to be politically correct, but un…",
     created_at: "Thu Aug 29 02:32:01 +0000 2019",
     retweet_count: 15807,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1166901287247630336"
+    id_str: "1166901287247630336",
+    date: "2019-08-28"
   },
   {
     source: "Twitter for iPhone",
@@ -2273,17 +2502,19 @@ let tweets2019Update = [
     retweet_count: 35504,
     favorite_count: 144255,
     is_retweet: false,
-    id_str: "1166871882764824577"
+    id_str: "1166871882764824577",
+    date: "2019-08-28"
   },
   {
     source: "Twitter for iPhone",
     text:
-      "The  Amazon Washington Post and @CNN just did a Fake Interview on Pardons for Aids on the Wall, and that I didn’t think the Wall on the Southern Border was that important to stop Illegals wanting to come into our Country. WRONG, vitally important. Will make a BIG impact. So bad!",
+      "The Amazon Washington Post and @CNN just did a Fake Interview on Pardons for Aids on the Wall, and that I didn’t think the Wall on the Southern Border was that important to stop Illegals wanting to come into our Country. WRONG, vitally important. Will make a BIG impact. So bad!",
     created_at: "Thu Aug 29 00:21:40 +0000 2019",
     retweet_count: 14055,
     favorite_count: 57255,
     is_retweet: false,
-    id_str: "1166868481620492296"
+    id_str: "1166868481620492296",
+    date: "2019-08-28"
   },
   {
     source: "Twitter for iPhone",
@@ -2293,7 +2524,8 @@ let tweets2019Update = [
     retweet_count: 34814,
     favorite_count: 208646,
     is_retweet: false,
-    id_str: "1166839524762296320"
+    id_str: "1166839524762296320",
+    date: "2019-08-28"
   },
   {
     source: "Twitter for iPhone",
@@ -2303,7 +2535,8 @@ let tweets2019Update = [
     retweet_count: 30460,
     favorite_count: 118279,
     is_retweet: false,
-    id_str: "1166790123658371073"
+    id_str: "1166790123658371073",
+    date: "2019-08-28"
   },
   {
     source: "Twitter for iPhone",
@@ -2313,7 +2546,8 @@ let tweets2019Update = [
     retweet_count: 20321,
     favorite_count: 79615,
     is_retweet: false,
-    id_str: "1166789207215484928"
+    id_str: "1166789207215484928",
+    date: "2019-08-28"
   },
   {
     source: "Twitter for iPhone",
@@ -2323,7 +2557,8 @@ let tweets2019Update = [
     retweet_count: 24483,
     favorite_count: 94229,
     is_retweet: false,
-    id_str: "1166769660450226177"
+    id_str: "1166769660450226177",
+    date: "2019-08-28"
   },
   {
     source: "Twitter for iPhone",
@@ -2333,7 +2568,8 @@ let tweets2019Update = [
     retweet_count: 20178,
     favorite_count: 89104,
     is_retweet: false,
-    id_str: "1166723477879087104"
+    id_str: "1166723477879087104",
+    date: "2019-08-28"
   },
   {
     source: "Twitter for iPhone",
@@ -2343,7 +2579,8 @@ let tweets2019Update = [
     retweet_count: 14749,
     favorite_count: 73905,
     is_retweet: false,
-    id_str: "1166723478776684544"
+    id_str: "1166723478776684544",
+    date: "2019-08-28"
   },
   {
     source: "Twitter for iPhone",
@@ -2353,7 +2590,8 @@ let tweets2019Update = [
     retweet_count: 15308,
     favorite_count: 55615,
     is_retweet: false,
-    id_str: "1166721267527012352"
+    id_str: "1166721267527012352",
+    date: "2019-08-28"
   },
   {
     source: "Twitter for iPhone",
@@ -2363,47 +2601,52 @@ let tweets2019Update = [
     retweet_count: 26657,
     favorite_count: 104679,
     is_retweet: false,
-    id_str: "1166712943196680193"
+    id_str: "1166712943196680193",
+    date: "2019-08-28"
   },
   {
     source: "Twitter for iPhone",
     text:
-      "Just watched @FoxNews heavily promoting the Democrats through their DNC Communications Director, spewing out whatever she wanted with zero pushback by anchor, @SandraSmithFox. Terrible considering that Fox couldn’t even land a debate, the Dems give them NOTHING! @CNN &amp; @MSNBC....",
+      "Just watched @FoxNews heavily promoting the Democrats through their DNC Communications Director, spewing out whatever she wanted with zero pushback by anchor, @SandraSmithFox. Terrible considering that Fox couldn’t even land a debate, the Dems give them NOTHING! @CNN & @MSNBC....",
     created_at: "Wed Aug 28 13:57:56 +0000 2019",
     retweet_count: 14395,
     favorite_count: 58386,
     is_retweet: false,
-    id_str: "1166711516701347842"
+    id_str: "1166711516701347842",
+    date: "2019-08-28"
   },
   {
     source: "Twitter for iPhone",
     text:
-      "....are all in for the Open Border Socialists (or beyond). Fox hires “give Hillary the questions” @donnabrazile, Juan Williams and low ratings Shep Smith. HOPELESS &amp; CLUELESS! They should go all the way LEFT and I will still find a way to Win - That’s what I do, Win. Too Bad!....",
+      "....are all in for the Open Border Socialists (or beyond). Fox hires “give Hillary the questions” @donnabrazile, Juan Williams and low ratings Shep Smith. HOPELESS & CLUELESS! They should go all the way LEFT and I will still find a way to Win - That’s what I do, Win. Too Bad!....",
     created_at: "Wed Aug 28 13:57:56 +0000 2019",
     retweet_count: 12725,
     favorite_count: 53482,
     is_retweet: false,
-    id_str: "1166711517536030720"
+    id_str: "1166711517536030720",
+    date: "2019-08-28"
   },
   {
     source: "Twitter for iPhone",
     text:
-      "Would be very hard for Jeremy Corbyn, the leader of Britain’s Labour Party, to seek a no-confidence vote against New Prime Minister Boris Johnson, especially in light of the fact that Boris is exactly what the U.K. has been looking for, &amp; will prove to be “a great one!” Love U.K.",
+      "Would be very hard for Jeremy Corbyn, the leader of Britain’s Labour Party, to seek a no-confidence vote against New Prime Minister Boris Johnson, especially in light of the fact that Boris is exactly what the U.K. has been looking for, & will prove to be “a great one!” Love U.K.",
     created_at: "Wed Aug 28 13:36:43 +0000 2019",
     retweet_count: 21417,
     favorite_count: 93062,
     is_retweet: false,
-    id_str: "1166706175003545600"
+    id_str: "1166706175003545600",
+    date: "2019-08-28"
   },
   {
     source: "Twitter for iPhone",
     text:
-      "We are tracking closely tropical storm Dorian as it heads, as usual, to Puerto Rico. FEMA and all others are ready,  and will do a great job. When they do, let them know it, and give them a big Thank You - Not like last time. That includes from the incompetent Mayor of San Juan!",
+      "We are tracking closely tropical storm Dorian as it heads, as usual, to Puerto Rico. FEMA and all others are ready, and will do a great job. When they do, let them know it, and give them a big Thank You - Not like last time. That includes from the incompetent Mayor of San Juan!",
     created_at: "Wed Aug 28 12:15:18 +0000 2019",
     retweet_count: 13997,
     favorite_count: 59432,
     is_retweet: false,
-    id_str: "1166685686105329664"
+    id_str: "1166685686105329664",
+    date: "2019-08-28"
   },
   {
     source: "Twitter for iPhone",
@@ -2413,17 +2656,19 @@ let tweets2019Update = [
     retweet_count: 24437,
     favorite_count: 111853,
     is_retweet: false,
-    id_str: "1166683442098163712"
+    id_str: "1166683442098163712",
+    date: "2019-08-28"
   },
   {
     source: "Twitter for iPhone",
     text:
-      "“The infestation of bedbugs at The New York Times office” @OANN  was perhaps brought in by lightweight journalist Bret Stephens, a Conservative who does anything that his bosses at the paper tell him to do! He is now quitting Twitter after being called a “bedbug.” Tough guy!",
+      "“The infestation of bedbugs at The New York Times office” @OANN was perhaps brought in by lightweight journalist Bret Stephens, a Conservative who does anything that his bosses at the paper tell him to do! He is now quitting Twitter after being called a “bedbug.” Tough guy!",
     created_at: "Wed Aug 28 11:22:27 +0000 2019",
     retweet_count: 14313,
     favorite_count: 64133,
     is_retweet: false,
-    id_str: "1166672386214772736"
+    id_str: "1166672386214772736",
+    date: "2019-08-28"
   },
   {
     source: "Twitter for iPhone",
@@ -2433,7 +2678,8 @@ let tweets2019Update = [
     retweet_count: 12784,
     favorite_count: 54790,
     is_retweet: false,
-    id_str: "1166551774431498247"
+    id_str: "1166551774431498247",
+    date: "2019-08-27"
   },
   {
     source: "Twitter for iPhone",
@@ -2443,7 +2689,8 @@ let tweets2019Update = [
     retweet_count: 20749,
     favorite_count: 108030,
     is_retweet: false,
-    id_str: "1166494781935095810"
+    id_str: "1166494781935095810",
+    date: "2019-08-27"
   },
   {
     source: "Twitter for iPhone",
@@ -2453,7 +2700,8 @@ let tweets2019Update = [
     retweet_count: 16357,
     favorite_count: 88504,
     is_retweet: false,
-    id_str: "1166494782904000512"
+    id_str: "1166494782904000512",
+    date: "2019-08-27"
   },
   {
     source: "Twitter for iPhone",
@@ -2463,7 +2711,8 @@ let tweets2019Update = [
     retweet_count: 35,
     favorite_count: 150,
     is_retweet: false,
-    id_str: "1166494465357438976"
+    id_str: "1166494465357438976",
+    date: "2019-08-27"
   },
   {
     source: "Twitter for iPhone",
@@ -2473,7 +2722,8 @@ let tweets2019Update = [
     retweet_count: 23126,
     favorite_count: 98647,
     is_retweet: false,
-    id_str: "1166493307377078272"
+    id_str: "1166493307377078272",
+    date: "2019-08-27"
   },
   {
     source: "Twitter for iPhone",
@@ -2483,17 +2733,19 @@ let tweets2019Update = [
     retweet_count: 16772,
     favorite_count: 76464,
     is_retweet: false,
-    id_str: "1166471454705274880"
+    id_str: "1166471454705274880",
+    date: "2019-08-27"
   },
   {
     source: "Twitter for iPhone",
     text:
-      "It is amazing that I can be at 51% with Zogby when the Fake &amp; Corrupt News is almost 100% against me. Great job Mr. President!",
+      "It is amazing that I can be at 51% with Zogby when the Fake & Corrupt News is almost 100% against me. Great job Mr. President!",
     created_at: "Tue Aug 27 21:49:01 +0000 2019",
     retweet_count: 15632,
     favorite_count: 79054,
     is_retweet: false,
-    id_str: "1166467681182261248"
+    id_str: "1166467681182261248",
+    date: "2019-08-27"
   },
   {
     source: "Twitter for iPhone",
@@ -2503,7 +2755,8 @@ let tweets2019Update = [
     retweet_count: 18006,
     favorite_count: 77329,
     is_retweet: false,
-    id_str: "1166467125155905539"
+    id_str: "1166467125155905539",
+    date: "2019-08-27"
   },
   {
     source: "Twitter for iPhone",
@@ -2513,7 +2766,8 @@ let tweets2019Update = [
     retweet_count: 11361,
     favorite_count: 42189,
     is_retweet: false,
-    id_str: "1166466892770549765"
+    id_str: "1166466892770549765",
+    date: "2019-08-27"
   },
   {
     source: "Twitter for iPhone",
@@ -2523,7 +2777,8 @@ let tweets2019Update = [
     retweet_count: 11719,
     favorite_count: 49314,
     is_retweet: false,
-    id_str: "1166464374900514818"
+    id_str: "1166464374900514818",
+    date: "2019-08-27"
   },
   {
     source: "Twitter for iPhone",
@@ -2533,7 +2788,8 @@ let tweets2019Update = [
     retweet_count: 19927,
     favorite_count: 75609,
     is_retweet: false,
-    id_str: "1166389407588466690"
+    id_str: "1166389407588466690",
+    date: "2019-08-27"
   },
   {
     source: "Twitter for iPhone",
@@ -2543,7 +2799,8 @@ let tweets2019Update = [
     retweet_count: 14390,
     favorite_count: 0,
     is_retweet: true,
-    id_str: "1166386916322938880"
+    id_str: "1166386916322938880",
+    date: "2019-08-27"
   },
   {
     source: "Twitter for iPhone",
@@ -2552,7 +2809,8 @@ let tweets2019Update = [
     retweet_count: 13231,
     favorite_count: 55815,
     is_retweet: false,
-    id_str: "1166386714211946497"
+    id_str: "1166386714211946497",
+    date: "2019-08-27"
   },
   {
     source: "Twitter for iPhone",
@@ -2562,7 +2820,8 @@ let tweets2019Update = [
     retweet_count: 14473,
     favorite_count: 65900,
     is_retweet: false,
-    id_str: "1166382203808440320"
+    id_str: "1166382203808440320",
+    date: "2019-08-27"
   },
   {
     source: "Twitter for iPhone",
@@ -2572,7 +2831,8 @@ let tweets2019Update = [
     retweet_count: 14969,
     favorite_count: 68882,
     is_retweet: false,
-    id_str: "1166361079716503553"
+    id_str: "1166361079716503553",
+    date: "2019-08-27"
   },
   {
     source: "Twitter for iPhone",
@@ -2582,17 +2842,19 @@ let tweets2019Update = [
     retweet_count: 16467,
     favorite_count: 68784,
     is_retweet: false,
-    id_str: "1166359891193344000"
+    id_str: "1166359891193344000",
+    date: "2019-08-27"
   },
   {
     source: "Twitter for iPhone",
     text:
-      "Starting to look good for the highly respected Prime Minister of the Italian Republic, Giuseppe Conte. Represented Italy powerfully at the G-7. Loves his Country greatly &amp; works well with the USA. A very talented man who will hopefully remain Prime Minister!",
+      "Starting to look good for the highly respected Prime Minister of the Italian Republic, Giuseppe Conte. Represented Italy powerfully at the G-7. Loves his Country greatly & works well with the USA. A very talented man who will hopefully remain Prime Minister!",
     created_at: "Tue Aug 27 14:36:03 +0000 2019",
     retweet_count: 11806,
     favorite_count: 52556,
     is_retweet: false,
-    id_str: "1166358721875894272"
+    id_str: "1166358721875894272",
+    date: "2019-08-27"
   },
   {
     source: "Twitter for iPhone",
@@ -2602,16 +2864,18 @@ let tweets2019Update = [
     retweet_count: 25543,
     favorite_count: 121984,
     is_retweet: false,
-    id_str: "1166357258726498304"
+    id_str: "1166357258726498304",
+    date: "2019-08-27"
   },
   {
     source: "Twitter for iPhone",
     text:
-      "Starting to look good for the highly respected Prime Minister of the Italian Republic, Giuseppi Conte. Represented Italy powerfully at the G-7. Loves his Country greatly &amp; works well with the USA. A very talented man who will hopefully remain Prime Minister!",
+      "Starting to look good for the highly respected Prime Minister of the Italian Republic, Giuseppi Conte. Represented Italy powerfully at the G-7. Loves his Country greatly & works well with the USA. A very talented man who will hopefully remain Prime Minister!",
     created_at: "Tue Aug 27 14:15:39 +0000 2019",
     retweet_count: 2482,
     favorite_count: 10793,
     is_retweet: false,
-    id_str: "1166353587217285120"
-  }
+    id_str: "1166353587217285120",
+    date: "2019-08-27"
+  },
 ];

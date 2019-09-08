@@ -17,31 +17,130 @@
 </head>
 <body>
 
+  <!-- BULMA CODE  -->
+<!-- NAVBAR  -->
+  <section class="hero is-light is-large">
+      <div class="hero-head">
+        <nav class="navbar">
+          <div class="container">
+            <div class="navbar-brand">
+              <a class="navbar-item">
+                <img id="navbar-photo" src="img/happy-trump-face.png" alt="Logo">
+              </a>
+            </div>
+            <div id="navbarMenuHeroB" class="navbar-menu">
+              <div class="navbar-end">
+                <a class="navbar-item">
+                  Home
+                </a>
+                <a class="navbar-item">
+                  About
+                </a>
+                <span class="navbar-item">
+                  <a class="button is-info is-inverted">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Source Code</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    <!-- BODY  -->
+
+      <div class="hero-body" id="mainContent">
+        <div class="columns">
+
+            <div id="chartDiv" class="column is-full">
+
+              <!-- remove is-6 for full screen height=750 -->
+
+                <!-- <canvas class="hero-body" id="myChart" width="800" height="600"></canvas> -->
+
+                <canvas class="" id="myChart" width="1400" height="600"></canvas>
+
+
+            </div>
+ 
+
+          
+            <div id="tweetContainer" class="column hidden">
+
+             
+
+            </div>
+           
+
+        </div>
+        
+      </div>
+    <!-- FOOTER  -->
+
+      <div class="hero-foot">
+        <nav class="tabs is-boxed is-fullwidth">
+          <div class="container">
+            <ul>
+              <li class="is-active">
+                <a id="2017Button">2017</a>
+              </li>
+              <li>
+                <a id="2018Button">2018</a>
+              </li>
+              <li>
+                <a id="2019Button">2019</a>
+              </li>
+              <li>
+                <a id="2017to2018Button">2017-2018</a>
+              </li>
+              <li>
+                <a id="2018to2019Button">2018-2019</a>
+              </li>
+              <li>
+                <a id="2017to2019Button">2017-2019</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </section>
+
+
+  <!-- END BULMA  -->
     <!-- NAVBAR  -->
 
-    <nav class="navbar is-dark is-fixed-top">
+    <!-- <nav class="navbar is-dark is-fixed-top">
         <div class="navbar-brand">
             <img class="navbar-item" id="navbar-photo" src="img/trump-face.png" alt="Trump Face">
             <span class="navbarSiteName navbar-item is-vertical-center">Rendering Returns</span>
         </div>
-    </nav>
+    </nav> -->
     
     <!-- STOCK TICKER  -->
 
-    <section id="stockTicker">
+    <!-- <section id="stockTicker">
       <div class="ticker-wrap">
         <div id="ticker" class="ticker"></div>
       </div>
-    </section>
+    </section> -->
   
    
 
-    <section id="chartListener" class="hero is-light has-text-centered">
+    <!-- <section class="hero is-link is-fullheight-with-navbar">
+      <div class="hero-body">
+        <div class="container">
+          <p class="title">
+            Fullheight hero with navbar
+          </p>
+        </div>
+      </div>
+    </section>
 
-    <!-- //CHART  -->
-      <canvas class="hero-body" id="myChart" width="1600" height="400"></canvas>
+     //CHART  -->
 
-      <div id="buttonBox">
+      <!-- <div id="buttonBox">
         <button id="2017Button">2017</button>
         <button id="2018Button">2018</button>
         <button id="2019Button">2019</button>
@@ -49,26 +148,25 @@
         <button id="2018to2019Button">2018-2019</button>
         <button id="2017to2019Button">2017-2019</button>
       </div>
-    </section>
+    </section> --> 
 
  <!-- RENDERED TWEETS  -->
   
- <section class="hero is-light has-text-centered">
-    <div class="hero-body hidden" id="renderedTweets">
+ <!-- <section class="hero is-light has-text-centered">
+    <div class="hero-body hidden" id="renderedTweets"> -->
       
       <!-- RENDERED TWEETS -->
 
-      <div id="tweetContainer" class="tile is-ancestor">
+      <!-- <div id="tweetContainer" class="tile is-ancestor">
 
       </div>
       
 
     </div>
 
-</section>
-
+</section> --> 
     <!-- CALENDER  -->
-    <div id='calendar' class="is-light"></div>
+    <!-- <div id='calendar' class="is-light"></div> -->
 
     
 
