@@ -128,3 +128,7 @@ body {
   #chartDiv {
       position: relative;
   }
+
+  #tweetDateDiv {
+      text-align: center;
+  }

@@ -11,7 +11,6 @@ datePickerEl.change(findTweets) //listens for a change on the datepicker
 function findTweets (e) {
   const chosenDate = datePickerEl.val()
 
-  tweetContainer.empty() // clears out previous tweets
 
   if (chosenDate.includes('2019')) {
     // for 2019

@@ -300,6 +300,9 @@ historicalGoldTimeAndClose.map(createdDowObject => {
 
 }) 
 
+//for legend
+
+var defaultLegendClickHandler = Chart.defaults.global.legend.onClick
 
 // ACTUAL CHART 
 
@@ -352,16 +355,75 @@ var myChart = new Chart(ctx, {
         var activePoints = myChart.getElementsAtEvent(e);
         var selectedIndex = activePoints[0]._index;
         var chartDate = this.data.labels[selectedIndex]
+        console.log(e.target)
         //resizes chart
         const chartDiv = $("#chartDiv")
         chartDiv.removeClass('is-full')
         chartDiv.addClass('is-two-thirds')
+        pushDailyTweetCount(chartDate);
         findTweets(chartDate);
+    },
+    legend: {
+        display: true,
+        onClick: defaultLegendClickHandler
     }
     
 }
 });
 
+//Puts Daily Tweet Count in container
+function pushDailyTweetCount (specificDate) {
+    let tweetCount = 0;
+    
+    $('#tweetDateDiv').empty();
+    tweetContainer.empty() // clears out previous tweets
+    
+    if (specificDate.includes(2019)) {
+
+        tweets2019.map(individualTweet => {
+
+            if (individualTweet.date === specificDate) {
+                tweetCount++;
+            }
+
+        })
+
+    } else if (specificDate.includes(2018)) {
+
+        tweets2018.map(individualTweet => {
+
+            if (individualTweet.date === specificDate) {
+                tweetCount++;
+            }
+        })
+    } else if (specificDate.includes(2017)) {
+        
+        tweets2017.map(individualTweet => {
+
+            if (individualTweet.date === specificDate) {
+                tweetCount++;
+            }
+
+        })
+    }
+
+    var dateAndTweetHeading = `
+    
+        <h1>
+        On ${specificDate} Trump tweeted ${tweetCount} times
+        </h1>
+
+        
+
+    `
+    //What i'm putting in tweetContainer
+    //Date plus how many tweets make it a variable
+    //then redo what clears out the tweet container
+    // console.log(dateAndTweetHeading)
+    return $('#tweetDateDiv').append(dateAndTweetHeading)
+    
+     
+    }
 //CHART UPDATE BUTTONS
 
 let button2017 = $('#2017Button')
