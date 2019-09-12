@@ -41,6 +41,68 @@ function findTweets (e) {
   }
 }
 
+
+function renderTweets (tweet) { 
+  return `
+  <article class="media" id="mediaTweet">
+  <div class="media-left" id="mediaLeft">
+    <p class="image is-64x64">
+      <img src="img/trump-face.png" alt="Trump Face">
+    </p>
+  </div>
+  <div class="media-content" id="mediaRight">
+    <div class="content">
+      <p>
+        <strong>Donald J. Trump</strong> <small>@realDonaldTrump</small> <small>${moment(tweet.created_at).format('h:mm A')}</small>
+        <br>
+        ${tweet.text}
+      </p>
+    </div>
+    <nav class="level is-mobile">
+      <div class="level-left">
+        <a class="level-item">
+          <span class="icon is-small"><i class="fas fa-retweet"></i></span><span class="tweetNumbers">${tweet.retweet_count}</span>
+        </a>
+        <a class="level-item">
+          <span class="icon is-small"><i class="fas fa-heart"></i></span><span class="tweetNumbers">${tweet.favorite_count}</span>
+        </a>
+      </div>
+    </nav>
+  </div>
+</article>
+  `
+}
+
+//JOEY TWEET
+
+// `
+//     <div class="tweetCard">
+
+//       <div class="twitterUserHeader">
+
+//         <div class="twitterProfilePic">
+//           <img src="img/trump-face.png" alt="Trump Face">
+//         </div>
+
+//         <div>
+//           <p class="twitterUserName">Donald J. Trump <i class="fas fa-user-check"></i> ${moment(tweet.created_at).format('h:mm A')} <span class="twitterHandle">@realDonaldTrump</span></p>
+//         </div>
+
+//       </div>
+
+//       <div class="tweetMessage">
+//         <p>${tweet.text}</p>
+//       </div>
+
+//       <div class="tweetFooter">
+//         <i class="fas fa-retweet"></i> <span class="tweetFooterPadding">${tweet.retweet_count}</span> <i class="far fa-heart"></i> <span class="tweetFooterPadding">${tweet.favorite_count}</span>
+//       </div>
+//     </div>
+//   `
+
+//GK ORIGINAL 
+
+
 // function renderTweets (tweet) {
 //   return `
 //     <div class="tile is-4 is-parent">
@@ -71,33 +133,6 @@ function findTweets (e) {
 //         </div>
 //     </div>`
 // }
-
-function renderTweets (tweet) { 
-  return `
-    <div class="tweetCard">
-
-      <div class="twitterUserHeader">
-
-        <div class="twitterProfilePic">
-          <img src="img/trump-face.png" alt="Trump Face">
-        </div>
-
-        <div>
-          <p class="twitterUserName">Donald J. Trump <i class="fas fa-user-check"></i> ${moment(tweet.created_at).format('h:mm A')} <span class="twitterHandle">@realDonaldTrump</span></p>
-        </div>
-
-      </div>
-
-      <div class="tweetMessage">
-        <p>${tweet.text}</p>
-      </div>
-
-      <div class="tweetFooter">
-        <i class="fas fa-retweet"></i> <span class="tweetFooterPadding">${tweet.retweet_count}</span> <i class="far fa-heart"></i> <span class="tweetFooterPadding">${tweet.favorite_count}</span>
-      </div>
-    </div>
-  `
-}
 
 // PROMISES!!
 

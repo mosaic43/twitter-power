@@ -132,3 +132,18 @@ body {
   #tweetDateDiv {
       text-align: center;
   }
+
+  #mediaTweet {
+    
+      width: 100%;
+  }
+
+
+
+  .tweetNumbers {
+      padding-left: 5px;
+  }
+
+  h2 {
+      font-size: 2em;
+  }
