@@ -7,7 +7,7 @@
     <title>Twitter Power</title>
     <link rel="stylesheet" href="styles/bulma.css">
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/stock-ticker.css">
+    <!-- <link rel="stylesheet" href="styles/stock-ticker.css"> -->
     <link href='fullcalendar/core/main.css' rel='stylesheet' />
     <link href='fullcalendar/daygrid/main.css' rel='stylesheet' />
     <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
@@ -27,17 +27,17 @@
               <a class="navbar-item">
                 <img id="navbar-photo" src="img/happy-trump-face.png" alt="Logo">
               </a>
+              <a class="navbar-item" >
+                <h3>Rendering Returns</h3>
+              </a>
+            
+              
+              
             </div>
             <div id="navbarMenuHeroB" class="navbar-menu">
               <div class="navbar-end">
-                <a class="navbar-item">
-                  Home
-                </a>
-                <a class="navbar-item">
-                  About
-                </a>
                 <span class="navbar-item">
-                  <a class="button is-info is-inverted">
+                  <a target="_blank" href="https://github.com/mosaic43/twitter-power" class="button is-info is-inverted">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
@@ -51,24 +51,52 @@
       </div>
     <!-- BODY  -->
 
+    <!-- LEGEND  -->
+
+    <div class="hero-foot">
+      <nav id="legendNav" class="tabs is-boxed is-fullwidth">
+        <div class="container">
+          <ul id="stockChanger">
+            <li class="stockBtn">
+              <a class="isNasdaq" id="nasdaqButton">NASDAQ</a>
+            </li>
+            <li class="stockBtn">
+              <a class="isOil" id="oilButton">Oil</a>
+            </li>
+            <li class="stockBtn">
+              <a class="isGold" id="goldButton">Gold</a>
+            </li>
+            <li class="stockBtn">
+              <a class="strike" id="sp500Button">S&P 500</a>
+            </li>
+            <li class="stockBtn">
+              <a class="strike" id="dowButton">DOW</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!-- CHART/TWEETCONTAINER  -->
+
       <div class="hero-body" id="mainContent">
         <div class="columns">
-
+          <!-- CHART DIV  -->
             <div id="chartDiv" class="column is-full">
-
-              <!-- remove is-6 for full screen height=750 -->
-
-                <!-- <canvas class="hero-body" id="myChart" width="800" height="600"></canvas> -->
 
                 <canvas class="" id="myChart" width="1400" height="600"></canvas>
 
 
             </div>
  
+            <!-- TWEET DIV  -->
 
           <div id="tweetContainerParent" class="column">
+            <div id="deleteButtonContainer">
+              <button id="deleteButton" class="delete"></button>
+            </div>
             <div id="tweetDateDiv">
-
+              
             </div>
             <div id="tweetContainer" class="hidden">
 
@@ -123,7 +151,9 @@
 
     <section class="hero is-dark has-text-centered">
         
-        <h2>A Visualization of the stock market and President Trump's Tweeting Habits</h2>
+        <h5>A Visualization of Trump, Twitter and the Stock Market </h5>
+        <br>
+        <h6>Coded by <span class="emphasizeGreen"><a target="blank" href="https://github.com/Gauraklein">Gaura Klein</a></span>, <span class="emphasizePurple"><a target="blank" href="https://github.com/jhkillam">Joey Killam</a></span> and <span class="emphasizeOrange"><a target="blank" href="https://github.com/mosaic43">Chantee Smith</a></span></h6>
       </section>
 
 

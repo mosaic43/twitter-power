@@ -12,7 +12,7 @@
 
 #tweetContainer {
     flex-wrap: wrap;
-    height: 75vh;
+    height: 60vh;
     overflow: auto;
     display: flex;
     justify-content: center;
@@ -127,6 +127,7 @@ body {
 
   #chartDiv {
       position: relative;
+
   }
 
   #tweetDateDiv {
@@ -146,4 +147,85 @@ body {
 
   h2 {
       font-size: 2em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+  h5 {
+      font-size: 1em;
+  }
+
+  .isNasdaq {
+    background-color: hsl(141, 71%, 48%);
+    border-color: hsl(141, 71%, 48%);
+    color: whitesmoke;
+    border-radius: 5px 5px 0px 0px;
+  }
+
+  .isOil {
+    background-color: rgb(237, 110, 89);
+    border-color: rgb(237, 110, 89);
+    color: whitesmoke;
+    border-radius: 5px 5px 0px 0px;
+  }
+
+  .isGold {
+    background-color: hsl(348, 100%, 61%);
+    border-color: hsl(348, 100%, 61%);
+    color: whitesmoke;
+    border-radius: 5px 5px 0px 0px;
+  }
+
+  .isSP500 {
+    background-color: rgb(153, 119, 209);
+    border-color: rgb(153, 119, 209);
+    color: whitesmoke;
+    border-radius: 5px 5px 0px 0px;
+  }
+
+  .isDow {
+    background-color: hsl(204, 86%, 53%);
+    border-color: hsl(204, 86%, 53%);
+    color: whitesmoke;
+    border-radius: 5px 5px 0px 0px;
+  }
+
+  .strike {
+    text-decoration: line-through;
+  }
+
+  .stockBtn {
+      margin: 5px;
+      border-radius: 5px;
+  }
+
+  #deleteButtonContainer {
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      padding-right: 10px;
+  }
+
+  body {
+      background: rgb(54, 54, 54);
+      /* padding: 0px; */
+      
+  }
+
+  h6 {
+      font-size: .8em;
+  }
+
+  .emphasizeGreen {
+      color: rgb(32, 188, 86);
+  }
+
+  .emphasizeOrange {
+   color: rgb(237, 110, 89);
+  }
+
+  .emphasizePurple {
+    color: rgb(128, 69, 228);
   }
