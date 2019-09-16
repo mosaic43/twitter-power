@@ -7,7 +7,7 @@
     <title>Twitter Power</title>
     <link rel="stylesheet" href="styles/bulma.css">
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/stock-ticker.css">
+    <!-- <link rel="stylesheet" href="styles/stock-ticker.css"> -->
     <link href='fullcalendar/core/main.css' rel='stylesheet' />
     <link href='fullcalendar/daygrid/main.css' rel='stylesheet' />
     <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
@@ -17,31 +17,179 @@
 </head>
 <body>
 
+  <!-- BULMA CODE  -->
+<!-- NAVBAR  -->
+  <section class="hero is-light is-large">
+      <div class="hero-head">
+        <nav class="navbar">
+          <div class="container">
+            <div class="navbar-brand">
+              <a class="navbar-item">
+                <img id="navbar-photo" src="img/happy-trump-face.png" alt="Logo">
+              </a>
+              <a class="navbar-item" >
+                <h3>Rendering Returns</h3>
+              </a>
+            
+              
+              
+            </div>
+            <div id="navbarMenuHeroB" class="navbar-menu">
+              <div class="navbar-end">
+                <span class="navbar-item">
+                  <a target="_blank" href="https://github.com/mosaic43/twitter-power" class="button is-info is-inverted">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Source Code</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    <!-- BODY  -->
+
+    <!-- LEGEND  -->
+
+    <div class="hero-foot">
+      <nav id="legendNav" class="tabs is-boxed is-fullwidth">
+        <div class="container">
+          <ul id="stockChanger">
+            <li class="stockBtn">
+              <a class="isNasdaq" id="nasdaqButton">NASDAQ</a>
+            </li>
+            <li class="stockBtn">
+              <a class="isOil" id="oilButton">Oil</a>
+            </li>
+            <li class="stockBtn">
+              <a class="isGold" id="goldButton">Gold</a>
+            </li>
+            <li class="stockBtn">
+              <a class="strike" id="sp500Button">S&P 500</a>
+            </li>
+            <li class="stockBtn">
+              <a class="strike" id="dowButton">DOW</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!-- CHART/TWEETCONTAINER  -->
+
+      <div class="hero-body" id="mainContent">
+        <div class="columns">
+          <!-- CHART DIV  -->
+            <div id="chartDiv" class="column is-full">
+
+                <canvas class="" id="myChart" width="1400" height="600"></canvas>
+
+
+            </div>
+ 
+            <!-- TWEET DIV  -->
+
+          <div id="tweetContainerParent" class="column">
+            <div id="deleteButtonContainer">
+              <button id="deleteButton" class="delete"></button>
+            </div>
+            <div id="tweetDateDiv">
+              
+            </div>
+            <div id="tweetContainer" class="hidden">
+
+                
+
+             <!-- <div id="stockTicker">
+              <div class="ticker-wrap">
+                <div id="ticker" class="ticker"></div>
+              </div>
+            </div> -->
+
+            </div>
+          </div>
+
+        </div>
+        
+      </div>
+
+
+      
+    <!-- FOOTER  -->
+
+      <div class="hero-foot">
+        <nav class="tabs is-boxed is-fullwidth">
+          <div class="container">
+            <ul id="yearChanger">
+              <li class="btn">
+                <a id="2017Button">2017</a>
+              </li>
+              <li class="btn">
+                <a id="2018Button">2018</a>
+              </li>
+              <li class="btn is-active">
+                <a id="2019Button">2019</a>
+              </li>
+              <li class="btn">
+                <a id="2017to2018Button">2017-2018</a>
+              </li>
+              <li class="btn">
+                <a id="2018to2019Button">2018-2019</a>
+              </li>
+              <li class="btn">
+                <a id="2017to2019Button">2017-2019</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </section>
+
+    <!-- ABOUT  -->
+
+    <section class="hero is-dark has-text-centered">
+        
+        <h5>A Visualization of Trump, Twitter and the Stock Market </h5>
+        <br>
+        <h6>Coded by <span class="emphasizeGreen"><a target="blank" href="https://github.com/Gauraklein">Gaura Klein</a></span>, <span class="emphasizePurple"><a target="blank" href="https://github.com/jhkillam">Joey Killam</a></span> and <span class="emphasizeOrange"><a target="blank" href="https://github.com/mosaic43">Chantee Smith</a></span></h6>
+      </section>
+
+
+  <!-- END BULMA  -->
     <!-- NAVBAR  -->
 
-    <nav class="navbar is-dark is-fixed-top">
+    <!-- <nav class="navbar is-dark is-fixed-top">
         <div class="navbar-brand">
             <img class="navbar-item" id="navbar-photo" src="img/trump-face.png" alt="Trump Face">
             <span class="navbarSiteName navbar-item is-vertical-center">Rendering Returns</span>
         </div>
-    </nav>
+    </nav> -->
     
     <!-- STOCK TICKER  -->
 
-    <section id="stockTicker">
+    <!-- <section id="stockTicker">
       <div class="ticker-wrap">
         <div id="ticker" class="ticker"></div>
       </div>
-    </section>
+    </section> -->
   
    
 
-    <section id="chartListener" class="hero is-light has-text-centered">
+    <!-- <section class="hero is-link is-fullheight-with-navbar">
+      <div class="hero-body">
+        <div class="container">
+          <p class="title">
+            Fullheight hero with navbar
+          </p>
+        </div>
+      </div>
+    </section>
 
-    <!-- //CHART  -->
-      <canvas class="hero-body" id="myChart" width="1600" height="400"></canvas>
+     //CHART  -->
 
-      <div id="buttonBox">
+      <!-- <div id="buttonBox">
         <button id="2017Button">2017</button>
         <button id="2018Button">2018</button>
         <button id="2019Button">2019</button>
@@ -49,26 +197,25 @@
         <button id="2018to2019Button">2018-2019</button>
         <button id="2017to2019Button">2017-2019</button>
       </div>
-    </section>
+    </section> --> 
 
  <!-- RENDERED TWEETS  -->
   
- <section class="hero is-light has-text-centered">
-    <div class="hero-body hidden" id="renderedTweets">
+ <!-- <section class="hero is-light has-text-centered">
+    <div class="hero-body hidden" id="renderedTweets"> -->
       
       <!-- RENDERED TWEETS -->
 
-      <div id="tweetContainer" class="tile is-ancestor">
+      <!-- <div id="tweetContainer" class="tile is-ancestor">
 
       </div>
       
 
     </div>
 
-</section>
-
+</section> --> 
     <!-- CALENDER  -->
-    <div id='calendar' class="is-light"></div>
+    <!-- <div id='calendar' class="is-light"></div> -->
 
     
 
@@ -100,6 +247,7 @@
 
     <script src="data/historical-stock-data.js"></script>
     <script src="scripts/chartRender.js"></script>
+    <script src="scripts/buttons.js"></script>
 
 
 </body>

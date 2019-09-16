@@ -300,51 +300,65 @@ historicalGoldTimeAndClose.map(createdDowObject => {
 
 }) 
 
+//for legend
 
-// ACTUAL CHART 
+var defaultLegendClickHandler = Chart.defaults.global.legend.onClick
 
-var ctx = document.getElementById("myChart");
-var myChart = new Chart(ctx, {
-  type: 'line',
-  data: {
-    labels: historicalDowTime2019,
-    datasets: [
-      {
-        data: historicalNASDAQClose2017To2019,
-        label: "NASDAQ",
-        borderColor: "#3cba9f",
-        fill: false
-      },
-      {
-        data: historicalOilClose2019,
-        label: "Oil",
-        borderColor: "#e8c3b9",
-        fill: false
-      },
-      {
-        data: historicalGoldClose2019,
-        label: "Gold",
-        borderColor: "#c45850",
-        fill: false
-      },
-      {
-        data: historicalSP500Close2019,
-        label: "S&P 500",
-        borderColor: "#8e5ea2",
-        hidden: true,
-        fill: false
-      },
-      { 
-        data: historicalDowClose2019,
-        label: "DOW",
-        borderColor: "#3e95cd",
-        hidden: true,
-        fill: false
-      }
-    ]
-  }
-});
 
+
+//Puts Daily Tweet Count in container
+function pushDailyTweetCount (specificDate) {
+    let tweetCount = 0;
+    
+    $('#tweetDateDiv').empty();
+    tweetContainer.empty() // clears out previous tweets
+    
+    if (specificDate.includes(2019)) {
+
+        tweets2019.map(individualTweet => {
+
+            if (individualTweet.date === specificDate) {
+                tweetCount++;
+            }
+
+        })
+
+    } else if (specificDate.includes(2018)) {
+
+        tweets2018.map(individualTweet => {
+
+            if (individualTweet.date === specificDate) {
+                tweetCount++;
+            }
+        })
+    } else if (specificDate.includes(2017)) {
+        
+        tweets2017.map(individualTweet => {
+
+            if (individualTweet.date === specificDate) {
+                tweetCount++;
+            }
+
+        })
+    }
+
+    var dateAndTweetHeading = `
+    
+        <h3>
+        On <strong>${moment(specificDate).format("MMMM Do YYYY")}</strong> President Trump <strong>tweeted ${tweetCount} times</strong>:
+        </h3>
+
+        
+
+    `
+    //What i'm putting in tweetContainer
+    //Date plus how many tweets make it a variable
+    //then redo what clears out the tweet container
+    // console.log(dateAndTweetHeading)
+    return $('#tweetDateDiv').append(dateAndTweetHeading)
+    
+     
+    }
 //CHART UPDATE BUTTONS
 
 let button2017 = $('#2017Button')
@@ -441,11 +455,11 @@ function only2017to2019 () {
 
 // Listener for CHART
 
-const chartDiv = $("#myChart");
+// const chartDiv = $("#myChart");
 
-chartDiv.click(function (event) {
-    console.log(historicalDowTime2017To2019[event.clientX], event.clientX)
-})
+// chartDiv.click(function (event) {
+//     console.log(historicalDowTime2017To2019[event.clientX], event.clientX)
+// })
 
 //creates an object with timestamp: XXX and close: XXXX
 function getCloseDates (stockArray) {
@@ -457,3 +471,89 @@ function getCloseDates (stockArray) {
 
       return series
 }
+
+// ACTUAL CHART 
+
+var ctx = document.getElementById("myChart");
+var myChart = new Chart(ctx, {
+  type: 'line',
+  data: {
+    labels: historicalDowTime2019,
+    datasets: [
+      {
+        data: historicalNASDAQClose2017To2019,
+        label: "NASDAQ",
+        borderColor: "hsl(141, 71%, 48%)",
+        fill: false,
+        hidden: false
+      },
+      {
+        data: historicalOilClose2019,
+        label: "Oil",
+        borderColor: "rgb(237, 110, 89)",
+        fill: false,
+        hidden: false
+      },
+      {
+        data: historicalGoldClose2019,
+        label: "Gold",
+        borderColor: "hsl(348, 100%, 61%)",
+        fill: false,
+        hidden: false
+      },
+      {
+        data: historicalSP500Close2019,
+        label: "S&P 500",
+        borderColor: "rgb(153, 119, 209)",
+        hidden: true,
+        fill: false
+      },
+      { 
+        data: historicalDowClose2019,
+        label: "DOW",
+        borderColor: "hsl(204, 86%, 53%)",
+        hidden: true,
+        fill: false
+      }
+    ]
+  },
+  options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      scales: {
+    yAxes: [{
+      scaleLabel: {
+        display: true,
+        labelString: 'Stock Value'
+      }
+    }],
+    xAxes: [{
+        scaleLabel: {
+          display: true,
+          labelString: 'Date'
+        }
+      }]
+  },    
+    // Sloppy function to get value of a point and run it into the tweets function
+    // also resizes the canvas
+    onClick: function (e) {
+        var activePoints = myChart.getElementsAtEvent(e);
+        var selectedIndex = activePoints[0]._index;
+        var chartDate = this.data.labels[selectedIndex]
+        // console.log(e.target)
+        //resizes chart
+        const chartDiv = $("#chartDiv")
+        chartDiv.removeClass('is-full')
+        chartDiv.addClass('is-two-thirds')
+        pushDailyTweetCount(chartDate);
+        findTweets(chartDate);
+    },
+    legend: {
+        display: false,
+        onClick: function (e) {
+            console.log(e.target)
+        }
+    }
+    
+}
+});
