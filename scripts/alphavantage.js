@@ -213,7 +213,7 @@ document.addEventListener('DOMContentLoaded', function () {
       checkStockDelta(NASDAQArray)
       checkStockDelta(oilArray)
       checkStockDelta(goldArray)
-      setCalendar(calendarEvents) 
+      // setCalendar(calendarEvents) 
       // console.log(stockTickerHTML)
       ticker.innerHTML = `<div class="ticker__item__up">${moment(yesterday).format('dddd MMMM Do YYYY')}</div>` + stockTickerHTML
     })
@@ -232,11 +232,11 @@ document.addEventListener('DOMContentLoaded', function () {
       console.log("historical data assigned to stock arrays")
 
       // The getEvents function only seems to work when passing the actual historical data variable, need to troubleshoot this more, could be better optimized
-      getEvents(historicalDow)
-      getEvents(historicalSP500)
-      getEvents(historicalNASDAQ)
-      getEvents(historicalOil)
-      getEvents(historicalGold)
+      // getEvents(historicalDow)
+      // getEvents(historicalSP500)
+      // getEvents(historicalNASDAQ)
+      // getEvents(historicalOil)
+      // getEvents(historicalGold)
 
       // console.log("events gotten")
 
@@ -248,7 +248,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       // console.log("stock deltas checked")      
 
-      setCalendar(calendarEvents) 
+      // setCalendar(calendarEvents) 
 
       // console.log("calendar set")
       // console.log(stockTickerHTML)
